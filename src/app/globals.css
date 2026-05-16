@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* ============================================================
+   LPMV — Charte (issue des bornes du musée, voir Figma)
+   À affiner avec la designer du musée. Voir memory/design_lpmv_charte.md
+   ============================================================ */
+:root {
+  /* Fonds */
+  --color-parchment: #f5efe0;
+  --color-parchment-light: #faf6ec;
+  --color-parchment-dark: #ece5d0;
+
+  /* Texte principal — vert olive profond */
+  --color-olive: #4a5d3a;
+  --color-olive-soft: #6b7d5a;
+
+  /* Accents — bordeaux/rouge vin */
+  --color-burgundy: #7a1f2b;
+  --color-burgundy-light: #a6404f;
+
+  /* Neutres terreux */
+  --color-earth: #6b4f3a;
+  --color-earth-soft: #a08a72;
+
+  /* Sémantique de base */
+  --background: var(--color-parchment);
+  --foreground: var(--color-olive);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-parchment: var(--color-parchment);
+  --color-parchment-light: var(--color-parchment-light);
+  --color-parchment-dark: var(--color-parchment-dark);
+  --color-olive: var(--color-olive);
+  --color-olive-soft: var(--color-olive-soft);
+  --color-burgundy: var(--color-burgundy);
+  --color-burgundy-light: var(--color-burgundy-light);
+  --color-earth: var(--color-earth);
+  --color-earth-soft: var(--color-earth-soft);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
+/* Pas de mode sombre par défaut — la chaleur parchemin est la signature. */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
