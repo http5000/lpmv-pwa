@@ -199,8 +199,8 @@ export const CHAPITRES: Chapitre[] = [
         slug: "lire-une-etiquette",
         title: "Lire une étiquette",
         sourceModule: null,
-        status: "coming-soon",
-        teaser: "AOP, IGP, millésime, mentions : décrypte ce qui est devant toi.",
+        status: "available",
+        teaser: "AOP, millésime, labels, mentions Champagne — tout est sur le devant.",
       },
       {
         slug: "accords",
