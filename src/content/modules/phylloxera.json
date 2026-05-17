@@ -1,0 +1,128 @@
+{
+  "start": {
+    "title": "Le cousin d’Amérique qui a les pieds en France",
+    "info": "Le saviez-vous ? Presque toutes les vignes françaises reposent sur… <strong>un pied américain !</strong>",
+    "touchRule": "Touchez chaque élément pour en savoir plus"
+  },
+  "slide_1": {
+    "title": "Le fléau invisible : le phylloxéra",
+    "what": {
+      "title": "Qu’est-ce que c’est ?",
+      "content": "Un <strong>minuscule puceron</strong> venu d’Amérique dans les années 1860. Il <strong>ronge les racines</strong> des vignes européennes, qui n’ont aucune défense."
+    },
+    "consequence": {
+      "title": "Conséquence",
+      "content": "En quelques années, <strong>70 % du vignoble français meurt</strong>. Les feuilles paraissent saines, mais la vigne meurt en silence, <strong>par la racine</strong>."
+    },
+    "info": "Le revers d’une feuille de vigne est entièrement couvert de galles de phylloxéra.",
+    "didYouKnow": "On a tout tenté pour l’arrêter : enterrer des crapauds vivants, inonder les vignes, et même accuser les trains !"
+  },
+  "slide_2": {
+    "title": "Le salut venu d’Amérique",
+    "items": [
+      {
+        "id": "1",
+        "title": "Les racines de l’espoir",
+        "content": "Aux États-Unis, certaines vignes (<em>Vitis riparia, rupestris...</em>) résistent naturellement au phylloxéra."
+      },
+      {
+        "id": "2",
+        "title": "La solution : la greffe",
+        "content": "On décide de greffer les cépages européens (Syrah, Chardonnay...) sur des <strong>racines américaines résistantes</strong>."
+      },
+      {
+        "id": "3",
+        "title": "Une nouvelle norme",
+        "content": "La méthode se généralise dans les années 1880. Encore aujourd’hui, <strong>99 % des vignes françaises sont greffées !</strong>"
+      }
+    ]
+  },
+  "slide_3": {
+    "title": "Comment greffe-t-on une vigne ?",
+    "touchRule": "Glissez et déposez les images à leur place.",
+    "dragItemsIds": [1, 2, 3, 4, 5],
+    "items": [
+      {
+        "title": "1. Le porte-greffe",
+        "imgId": 1,
+        "content": "Il vient d’Amérique et sert de <strong>racine</strong>. Sélectionné pour résister au sol et aux maladies."
+      },
+      {
+        "title": "2. Le greffon",
+        "imgId": 5,
+        "content": "C’est le <strong>cépage choisi</strong> (Pinot, Gamay, etc.), coupé sur une vigne mère."
+      },
+      {
+        "title": "3. La greffe « Oméga »",
+        "imgId": 3,
+        "content": "<ul><li>Découpe des deux parties avec une encoche en forme d’Ω.</li><li>Emboîtement parfait.</li><li>Protection à la cire chaude.</li></ul>"
+      },
+      {
+        "title": "4. Conservation",
+        "imgId": 2,
+        "content": "Les plants greffés sont conservés en chambre froide quelques semaines."
+      },
+      {
+        "title": "5. Plantation au printemps",
+        "imgId": 4,
+        "content": "La cicatrisation est faite. La vigne a désormais deux identités : <strong>pied américain et raisin européen !</strong>"
+      }
+    ]
+  },
+  "slide_4": {
+    "title": "Autres ennemis de la vigne",
+    "info": "Le phylloxéra n’est pas le seul fléau. D’autres maladies menacent toujours la vigne et demandent une vigilance constante.",
+    "bottomInfo": "Le porte-greffe protège les racines, mais il faut aussi surveiller les attaques venues de l’air et des insectes !",
+    "didYouKnow": "Certaines vignes non greffées, dites <strong>« francs de pied »</strong>, existent encore… dans des sols sableux où le phylloxéra ne survit pas !",
+    "items": {
+      "1": {
+        "imgId": "1",
+        "title": "Mildiou",
+        "content": "Champignon qui attaque feuilles et grappes."
+      },
+      "2": {
+        "imgId": "2",
+        "title": "Oïdium",
+        "content": "Poussière blanche sur la vigne."
+      },
+      "3": {
+        "imgId": "3",
+        "title": "Flavescence dorée",
+        "content": "Maladie grave transmise par des insectes."
+      }
+    }
+  },
+  "slide_5": {
+    "title": "Qui a décidé de greffer ?",
+    "info": "Il n’y a pas eu de décret unique, mais une réaction collective face à l'urgence.",
+    "then": "Avant",
+    "today": "Aujourd’hui",
+    "bottomInfo": "L’<strong>INAO</strong> contrôle les greffages autorisés. C'est devenu la <strong>norme universelle</strong> en Europe.",
+    "didYouKnow": "Certaines régions ont longtemps résisté à l’idée… mais ont fini par céder pour survivre !",
+    "items": [
+      {
+        "number": "1",
+        "content": "Des scientifiques (Planchon, Riley) identifient le problème."
+      },
+      {
+        "number": "2",
+        "content": "Les pépiniéristes développent les techniques de greffe."
+      },
+      {
+        "number": "3",
+        "content": "L’État soutient financièrement la replantation."
+      },
+      {
+        "number": "4",
+        "content": "Les vignerons adoptent la solution pour sauver leur métier."
+      }
+    ]
+  },
+  "slide_6": {
+    "title": "Une alliance improbable… et géniale !",
+    "didYouKnow": "L’âme du vin reste française, seules les racines sont américaines.",
+    "topInfo": "<p>N’est-ce pas fascinant ? Toute la <strong>finesse du vin</strong>, née du terroir et du savoir-faire ancestral, repose sur des <strong>racines américaines rustiques</strong>.</p><p>Une racine venue du <strong>pays du Coca-Cola</strong> nourrit aujourd’hui les plus grands crus français.</p>",
+    "centerInfo": "<p>Cette union de la <strong>résistance</strong> et de la <strong>finesse</strong> crée un résultat unique au monde.</p>",
+    "bottomInfo": "<p>Le vin moderne est né d’un mélange de <strong>savant fou, de pragmatisme et d’intelligence collective.</strong></p><p>Grâce à cela, nous profitons de vins d’une qualité et d’une régularité exceptionnelles.</p>"
+  }
+}
