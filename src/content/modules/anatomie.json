@@ -1,0 +1,59 @@
+{
+    "title": "Anatomie de la vigne",
+    "items": {
+        "1": {
+            "title": "Feuille",
+            "quote": "La cuisine du raisin",
+            "didYouKnow": "Certaines feuilles, comme celles du Pinot, sont si distinctives que l'on peut identifier la vigne rien qu'en les regardant !",
+            "content": [
+                "Les feuilles captent la lumière du soleil et <strong>transforment l'eau et le CO₂ en sucres</strong> grâce à la <strong>photosynthèse.</strong> Cette énergie est envoyée aux raisins pour les faire mûrir ou redirigée vers les racines pour être stockée.",
+                "Elles se reconnaissent à leurs <strong>lobes caractéristiques</strong>, qui diffèrent selon le cépage."
+            ]
+        },
+        "2": {
+            "title": "Raisin",
+            "quote": "La promesse du vin",
+            "didYouKnow": "Un seul raisin peut contenir plus de 1000 arômes possibles, selon le cépage, le sol, le climat et le travail du vigneron !",
+            "content": [
+                "Le fruit de la vigne, le raisin, est composé de <strong>peau, pulpe et pépins</strong>. Pendant l'été, grâce à l'énergie produite par les feuilles, les baies grandissent, se remplissent de <strong>sucres et d'arômes</strong> et changent de couleur (véraison).",
+                "C’est la maturité du raisin qui déclenche les vendanges. Selon le style de vin, les raisins peuvent être récoltés plus tôt (pour un vin frais et vif) ou plus tard (pour un vin plus riche)."
+            ]
+        },
+        "3": {
+            "title": "Rameau et Sarment",
+            "quote": "Les bras de la vigne",
+            "didYouKnow": "Les sarments coupés sont parfois brûlés… mais dans certaines régions, on les garde pour griller des saucisses : c’est la « grillade des sarments » !",
+            "content": [
+                "Chaque année, de nouveaux rameaux poussent à partir des bourgeons. Ils porteront les feuilles et les fruits. Après la récolte, ils deviennent des sarments, <strong>taillés</strong> en hiver pour contrôler la production future.",
+                "Ils orientent la répartition de la sève : selon leur nombre et leur position, la vigne concentrera son énergie ici ou là."
+            ]
+        },
+        "4": {
+            "title": "Tronc (ou Cep)",
+            "quote": "La mémoire vivante de la plante",
+            "didYouKnow": "Dans certains vieux vignobles, les ceps sont si noueux qu’il faut les connaître individuellement pour bien les tailler!",
+            "content": [
+                "Souvent noueux, le tronc est la partie permanente de la vigne. Il transporte la sève entre les racines et les parties aériennes. Il peut vivre <strong>plus de 80 ans</strong> et garder les marques des tailles passées.",
+                "Il agit comme un <strong>réservoir tampon</strong> entre les réserves hivernales et les besoins saisonniers. Le bois mort protège le bois vivant qui pulse avec la vie au fil des saisons."
+            ]
+        },
+        "5": {
+            "title": "Racines",
+            "quote": "Les fondations invisibles de la vigne",
+            "didYouKnow": "Dans les sols très pierreux, on dit que la vigne «cherche le rocher». Elle y plonge ses racines pour y capter l’eau de ruissellement.",
+            "content": [
+                "Les racines ancrent solidement le pied dans le sol et absorbent l’eau et les sels minéraux. Elles peuvent <strong>descendre de 5 à 7 mètres</strong>, parfois plus dans les climats secs, à la recherche d'humidité.",
+                "En hiver, <strong>la vigne stocke sa sève dans les racines</strong> pour survivre. Au printemps, cette sève remonte par le tronc et les pousses : c'est la fameuse « pleure de la vigne », visible lors de la taille."
+            ]
+        },
+        "6": {
+            "title": "Bourgeon",
+            "quote": "L'avenir endormi",
+            "didYouKnow": " Le bourgeon contient déjà, en miniature, <strong>tout un futur rameau</strong> avec ses feuilles et ses grappes, comme une plante pliée en origami.",
+            "content": [
+                "En hiver, la vigne semble morte. Mais au sommet de chaque rameau, un <strong>bourgeon laineux</strong> protège les futures feuilles, fleurs et grappes. Dès les premiers redoux, la sève monte et le bourgeon s'ouvre (débourrement).",
+                "À partir de ce moment, tout s’enchaîne : feuilles, fleurs, fruits. C'est le point de départ du cycle végétatif de la vigne."
+            ]
+        }
+    }
+}
