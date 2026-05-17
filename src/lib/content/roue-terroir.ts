@@ -196,7 +196,7 @@ export function lookupCombo(
     climate: climateItem,
     management: managementItem,
     description: isTbd
-      ? "Cette combinaison reste à explorer — le musée a encore à dire sur ce mariage."
+      ? "Une combinaison rare et singulière — un terroir d'exploration à imaginer."
       : entry.description,
     acidity: isTbd ? "—" : entry.acidity,
     alcohol: isTbd ? "—" : entry.alcohol,

@@ -142,7 +142,7 @@ export default function PhylloxeraPage() {
             {c.slide3.title}
           </h2>
           <p className="mt-2 text-sm italic text-aubergine-soft">
-            {c.slide3.touchRule?.replace("Glissez et déposez les", "Sur la borne, on glisse les")}
+            Les 5 étapes du geste, à découvrir une à une.
           </p>
 
           <ol className="mt-4 space-y-3">

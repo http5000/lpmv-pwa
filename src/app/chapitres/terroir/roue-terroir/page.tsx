@@ -73,8 +73,8 @@ export default function RoueTerroirPage() {
         </section>
 
         <p className="mt-8 text-center text-xs text-champetre">
-          {real} terroirs détaillés sur {total} possibles — les autres restent à
-          écrire par le musée.
+          {total} combinaisons possibles — {real} déjà racontées en détail, les
+          autres attendent que tu les tires.
         </p>
       </main>
     </>

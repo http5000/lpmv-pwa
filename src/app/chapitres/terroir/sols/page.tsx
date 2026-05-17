@@ -56,10 +56,10 @@ export default function SolsPage() {
             trois piliers du terroir.
           </p>
 
-          {/* Repli pour lire la version intégrale du contenu borne */}
+          {/* Repli pour lire la version intégrale */}
           <details className="mt-4 border-t border-aubergine/15 pt-3">
             <summary className="cursor-pointer text-xs font-medium text-aubergine-soft underline-offset-4 hover:text-or hover:underline">
-              Lire la version complète du musée
+              Aller plus loin sur le rôle du sol
             </summary>
             <div
               className="prose prose-sm mt-3 max-w-none text-sm leading-relaxed text-aubergine [&_h2]:hidden [&_li]:my-0.5 [&_p]:my-2 [&_strong]:text-or"
