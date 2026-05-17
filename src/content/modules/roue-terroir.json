@@ -1,0 +1,489 @@
+{
+  "didYouKnow": "Le saviez-vous ?",
+  "title": "Faites tourner le terroir",
+  "subtitle": "Sol, Climat et Savoir-faire",
+  "info": {
+    "title": "Générateur de Terroir",
+    "main": {
+      "first": "Le <strong>terroir</strong> est ce qui donne à chaque vin son âme unique. Ce n'est pas seulement le sol sous les vignes, ni seulement le climat au-dessus.",
+      "second": "C'est l'alliance entre la <strong>terre qui nourrit la vigne</strong>, le <strong>ciel qui rythme ses saisons</strong>, et <strong>le savoir-faire du vigneron</strong> qui adapte sa conduite.",
+      "third": "C'est pourquoi un même cépage peut donner des vins très différents selon son terroir : légers ou puissants, acides ou ronds, discrets ou expressifs. C'est cette rencontre entre la nature et l'homme qui explique pourquoi deux parcelles voisines peuvent produire des vins aux caractères distincts."
+    },
+    "secondary": {
+      "title": "Fonctionnement du jeu",
+      "first": "3 roues : Sol, Climat et Savoir-faire",
+      "second": "Appuyez sur Tourner ! et regardez-les rouler comme une machine à sous.",
+      "third": "Qu'allez-vous créer ? Un blanc de montagne frais ? Un rouge méditerranéen ensoleillé ? Ou... le vin des dieux ?"
+    }
+  },
+  "elements": {
+    "chalk": "Craie",
+    "clay": "Argilo-calcaire",
+    "schist": "Schiste",
+    "granite": "Granite",
+    "volcanic": "Sol volcanique",
+    "redClay": "Argile rouge",
+    "pebbles": "Galets",
+    "sandsAndSilts": "Sables et limons",
+    "hotAndDry": "Chaud et sec",
+    "coolOceanic": "Océanique frais",
+    "oceanic": "Océanique",
+    "temperate": "Tempéré",
+    "dryContinental": "Continental sec",
+    "dryMountain": "Montagnard sec",
+    "mediterranean": "Méditerranéen",
+    "balancedManagement": "Gestion équilibrée",
+    "intensiveControl": "Contrôle intensif",
+    "minimalIntervention": "Intervention minimale",
+    "patientAging": "Élevage patient",
+    "yieldFocused": "Axé sur le rendement"
+  },
+  "modal": {
+    "win": {
+      "title": "Gagnant",
+      "message": "Votre vin est né !"
+    },
+    "loss": {
+      "title": "Perdant",
+      "message": "Mélange improbable... ou la naissance d'une nouvelle légende vinicole ?"
+    },
+    "jackpot": {
+      "title": "Jackpot",
+      "message": "Bacchus lui-même trinquerait – vous avez créé le vin des dieux !"
+    },
+    "examples": "Exemples",
+    "profile": {
+      "title": "Profil",
+      "acidity": "Acidité",
+      "alcohol": "Alcool",
+      "texture": "Texture",
+      "aromas": "Arômes"
+    },
+    "grapeVarieties": {
+      "title": "Cépages",
+      "chalk": "Chardonnay, Pinot Noir",
+      "clay": "Pinot Noir, Chardonnay, Merlot",
+      "schist": "Chenin Blanc, Syrah, Riesling",
+      "granite": "Gamay, Syrah, Alvarinho",
+      "volcanic": "Nerello Mascalese, Carricante, Assyrtiko",
+      "redClay": "Sangiovese, Tempranillo, Grenache",
+      "pebbles": "Grenache, Mourvèdre, Syrah",
+      "sandsAndSilts": "Pinot Noir, Cabernet Franc, Merlot"
+    },
+    "chalk": {
+      "coolOceanic": {
+        "intensiveControl": { "description": "Un vin frais et très précis : la craie apporte une structure saline, le froid donne de l'énergie, et un contrôle intensif affine l'ensemble pour un profil technique millimétré.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Saline et tendue", "aromas": "Zeste d'agrumes, pomme verte, embrun, craie humide" },
+        "balancedManagement": { "description": "L'équilibre classique : le sol calcaire offre sa tension saline, le climat froid sa dynamique, et une gestion équilibrée crée une harmonie élégante entre fruit et structure.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Saline et tendue", "aromas": "Zeste de citron, pomme verte, minéralité pure" },
+        "minimalIntervention": { "description": "Une expression brute : la craie et le froid océanique forgent un vin acéré, tandis que l'absence d'intervention dévoile une texture sauvage et une grande pureté.", "acidity": "Tranchante", "alcohol": "Léger", "texture": "Sèche et vibrante", "aromas": "Coquille d'huître, silex, citron vert" },
+        "patientAging": { "description": "La patine du temps : la tension naturelle de la craie et du climat frais est magnifiquement enrobée par un long élevage, offrant complexité et profondeur.", "acidity": "Vive mais fondue", "alcohol": "Léger à modéré", "texture": "Crémeuse et minérale", "aromas": "Brioche, amande, craie, agrumes confits" },
+        "yieldFocused": { "description": "Un vin de soif direct : la craie et le climat frais dominent, mais le haut rendement dilue légèrement la matière, offrant un vin très désaltérant à boire jeune.", "acidity": "Très vive", "alcohol": "Léger", "texture": "Fluide et légère", "aromas": "Pomme verte, citron, notes herbacées" }
+      },
+      "oceanic": {
+        "intensiveControl": { "description": "Un vin net et régulier : la craie s'allie à la douceur océanique, et le travail technique en cave polit les arômes pour un résultat lisible et sans défaut.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Poudrée et nette", "aromas": "Fleurs blanches, poire, pointe saline" },
+        "balancedManagement": { "description": "Une expression souple et élégante : le sol calcaire structure le vin, le climat océanique l'adoucit, et l'intervention juste crée un équilibre parfait.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Structure saline fine", "aromas": "Poire, fleurs blanches, baies rouges, craie" },
+        "minimalIntervention": { "description": "L'authenticité du terroir : la douceur océanique sur craie est laissée libre, offrant un vin vivant, parfumé, avec une belle honnêteté de la matière.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Vivante et poudrée", "aromas": "Fleurs sauvages, poire, iode, craie humide" },
+        "patientAging": { "description": "La noblesse de l'élevage : le climat océanique apporte sa régularité, la craie sa tension, et le temps affine les tanins pour une longueur remarquable.", "acidity": "Équilibrée et longue", "alcohol": "Modéré", "texture": "Soyeuse et crayeuse", "aromas": "Miel, fleurs séchées, poire rôtie, silex" },
+        "yieldFocused": { "description": "Un vin simple et printanier : la douceur du climat et les forts rendements gomment un peu la craie, livrant un vin très gouleyant et immédiat.", "acidity": "Souple", "alcohol": "Léger à modéré", "texture": "Légère et fuyante", "aromas": "Fruits blancs simples, touche citronnée" }
+      },
+      "temperate": {
+        "intensiveControl": { "description": "L'excellence technique : le climat tempéré offre des raisins parfaits, la craie la profondeur, et la technique en cave sculpte un vin d'une précision redoutable.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Serrée et polie", "aromas": "Fruits à noyau mûrs, minéralité, fleurs" },
+        "balancedManagement": { "description": "Une harmonie évidente : sous ce climat idéal, la craie tempère la maturité des fruits, offrant un vin rond, juste, et délicatement texturé.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Ronde et saline", "aromas": "Pêche blanche, pomme mûre, épices douces" },
+        "minimalIntervention": { "description": "Un grand classique libre : la perfection du climat tempéré sur craie s'exprime sans fard, avec un fruit pur et une énergie presque vibrante.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Texture poudrée naturelle", "aromas": "Pomme croquante, fleurs, craie chaude" },
+        "patientAging": { "description": "Un vin de méditation : le temps transcende l'équilibre naturel de ce terroir tempéré et calcaire, développant une mâche savoureuse et persistante.", "acidity": "Fondue", "alcohol": "Modéré", "texture": "Patinée et élégante", "aromas": "Fruits confits, sous-bois, minéralité élégante" },
+        "yieldFocused": { "description": "Une cuvée de bistrot : l'équilibre tempéré sauve les forts rendements, offrant un vin abordable, agréable, mais à la minéralité plus discrète.", "acidity": "Souple", "alcohol": "Modéré", "texture": "Facile et fluide", "aromas": "Fruits à noyau, pointe de craie" }
+      },
+      "dryContinental": {
+        "intensiveControl": { "description": "Le choc thermique maîtrisé : la rudesse continentale et la craie sont domptées par une vinification experte, livrant un vin dense, ferme et éclatant.", "acidity": "Marquée et ferme", "alcohol": "Modéré à élevé", "texture": "Dense et tendue", "aromas": "Cerise noire, zeste de citron vert, silex" },
+        "balancedManagement": { "description": "Un vin de contrastes : la chaleur du jour mûrit le fruit, le froid de la nuit et la craie fixent l'acidité. La gestion équilibrée sublime ce mariage.", "acidity": "Marquée et tonique", "alcohol": "Modéré", "texture": "Ferme et saline", "aromas": "Cerise croquante, agrumes, craie humide" },
+        "minimalIntervention": { "description": "L'énergie à l'état pur : sans artifice, les forts contrastes de température sur sol calcaire explosent en bouche avec une droiture presque sauvage.", "acidity": "Tranchante", "alcohol": "Modéré", "texture": "Sèche et vibrante", "aromas": "Fruits rouges acidulés, poudre à canon" },
+        "patientAging": { "description": "L'assagissement du continent : l'élevage long vient polir la tension extrême de ce terroir, créant un vin puissant, structuré et de très longue garde.", "acidity": "Vive mais intégrée", "alcohol": "Modéré à élevé", "texture": "Soyeuse et ferme", "aromas": "Fruits séchés, cuir, minéralité profonde" },
+        "yieldFocused": { "description": "Un vin vif et nerveux : le manque de concentration dû au rendement exacerbe l'acidité continentale, livrant un vin franc, parfois un peu strict.", "acidity": "Agressive", "alcohol": "Léger", "texture": "Stricte et anguleuse", "aromas": "Cerise acide, notes herbacées" }
+      },
+      "dryMountain": {
+        "intensiveControl": { "description": "L'altitude sous contrôle : la craie et l'air sec de montagne créent une acidité mordante, que le vigneron cisèle pour obtenir un vin cristallin et pur.", "acidity": "Très marquée", "alcohol": "Léger à modéré", "texture": "Cristalline et droite", "aromas": "Fleurs d'altitude, citron, roche froide" },
+        "balancedManagement": { "description": "La tension des cimes : la craie et la montagne sèche insufflent une grande fraîcheur, harmonisée avec soin pour un vin élancé et salivant.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Saline et verticale", "aromas": "Herbes de montagne, pêche blanche, craie" },
+        "minimalIntervention": { "description": "L'esprit de la roche : un vin sans concession où l'air pur et le calcaire s'expriment brutalement. Un profil électrique pour les puristes.", "acidity": "Électrique", "alcohol": "Léger", "texture": "Rugueuse et vibrante", "aromas": "Herbes sèches, agrumes sauvages, pierre" },
+        "patientAging": { "description": "La noblesse des hauteurs : l'acidité foudroyante de la montagne sur craie trouve ici la paix grâce à un élevage lent qui lui donne une chair fabuleuse.", "acidity": "Tendue et patinée", "alcohol": "Modéré", "texture": "Crémeuse et saline", "aromas": "Miel de montagne, cire d'abeille, silex" },
+        "yieldFocused": { "description": "Un vin fluide et montagnard : dilué par le rendement, il perd sa minéralité profonde mais garde une fraîcheur désaltérante idéale pour l'apéritif.", "acidity": "Vive", "alcohol": "Léger", "texture": "Aqueuse", "aromas": "Citron vert, foin, pointe minérale" }
+      },
+      "mediterranean": {
+        "intensiveControl": { "description": "Un exercice de style : la chaleur méditerranéenne est rafraîchie par la craie, et une technique stricte empêche le vin de basculer dans la lourdeur.", "acidity": "Douce mais présente", "alcohol": "Généreux", "texture": "Dense et polie", "aromas": "Fruits noirs mûrs, garrigue, craie chaude" },
+        "balancedManagement": { "description": "La force maîtrisée : le soleil gorge les raisins, mais le sous-sol calcaire préserve une trame acide. Un grand vin du Sud, complet et digeste.", "acidity": "Douce", "alcohol": "Généreux", "texture": "Ample et crayeuse", "aromas": "Framboise mûre, olive, thym, minéralité" },
+        "minimalIntervention": { "description": "Le Sud libre : une expression chaleureuse et herbacée où la craie apporte sa salinité, laissée sauvage et authentique par le vigneron.", "acidity": "Basse", "alcohol": "Chaleureux", "texture": "Riche et poudrée", "aromas": "Herbes de garrigue, olive noire, craie humide" },
+        "patientAging": { "description": "Un seigneur méditerranéen : le temps marie la générosité solaire et la réserve calcaire pour offrir un vin puissant, fondu et extrêmement long.", "acidity": "Souple", "alcohol": "Puissant", "texture": "Veloutée et saline", "aromas": "Figue, épices douces, cacao, minéralité" },
+        "yieldFocused": { "description": "Un vin de soif estival : la productivité allège la chaleur du climat, laissant la craie s'exprimer timidement sur un profil très gouleyant.", "acidity": "Basse", "alcohol": "Modéré", "texture": "Légère et souple", "aromas": "Fruits rouges cuits, touche d'herbes sèches" }
+      },
+      "hotAndDry": {
+        "intensiveControl": { "description": "Le paradoxe maîtrisé : la chaleur extrême est contrebalancée techniquement en cave et par le sol crayeux, sauvant le vin de la lourdeur.", "acidity": "Corrigée et fraîche", "alcohol": "Généreux", "texture": "Lisse et chaleureuse", "aromas": "Fruits confits, vanille, touche crayeuse" },
+        "balancedManagement": { "description": "Une richesse domptée : le soleil brûlant apporte la sucrosité, mais la craie souterraine maintient une droiture qui équilibre ce vin très ample.", "acidity": "Douce", "alcohol": "Puissant", "texture": "Pleine et poudrée", "aromas": "Pruneau, réglisse, craie chaude, figue" },
+        "minimalIntervention": { "description": "La chaleur sans filtre : un vin extrême, dense et capiteux, où seul le sol calcaire vient parfois réveiller une gorgée très confiturée.", "acidity": "Très basse", "alcohol": "Très élevé", "texture": "Épaisse et chaleureuse", "aromas": "Fruits rôtis, cuir, épices, terre cuite" },
+        "patientAging": { "description": "Un élixir patiné : l'élevage très long est nécessaire pour digérer l'alcool et la puissance de ce terroir solaire, donnant un vin de méditation.", "acidity": "Fondue", "alcohol": "Puissant", "texture": "Soyeuse et ample", "aromas": "Fruits séchés, tabac, moka, minéralité chaude" },
+        "yieldFocused": { "description": "Un rouge de chaleur dilué : la forte production atténue l'impact du soleil torride, offrant un vin très (voire trop) facile à boire.", "acidity": "Basse", "alcohol": "Modéré à élevé", "texture": "Diluée et souple", "aromas": "Confiture de prune, herbes brûlées" }
+      }
+    },
+    "clay": {
+      "coolOceanic": {
+        "intensiveControl": { "description": "La rigueur incarnée : le froid tend la matière, l'argilo-calcaire structure les tanins, et la technique offre un vin précis, dense et droit.", "acidity": "Marquée et vive", "alcohol": "Modéré", "texture": "Serrée et polie", "aromas": "Fruits noirs croquants, graphite, menthol" },
+        "balancedManagement": { "description": "Une belle dualité : la fraîcheur de l'océan réveille la profondeur argileuse, offrant une harmonie parfaite entre tension et volume tannique.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Tanins fins et allongés", "aromas": "Pomme verte, cerise noire, embrun, pierre" },
+        "minimalIntervention": { "description": "Un vin de caractère : le terroir froid sur argile s'exprime sans masque, livrant une mâche terrienne, vibrante et parfois délicieusement austère.", "acidity": "Tranchante", "alcohol": "Léger", "texture": "Sèche et terrienne", "aromas": "Zeste, noyau de cerise, sous-bois froid" },
+        "patientAging": { "description": "Le temps fait son œuvre : la vivacité océanique et la puissance de l'argile se fondent majestueusement après des années d'élevage.", "acidity": "Fondue et longue", "alcohol": "Modéré", "texture": "Veloutée et ferme", "aromas": "Fruits confits, truffe, notes fumées" },
+        "yieldFocused": { "description": "Un vin dilué par le volume : la vigne surproduit, l'argile n'arrive pas à structurer le jus, laissant l'acidité océanique dominer le palais.", "acidity": "Mordante", "alcohol": "Léger", "texture": "Fluide et courte", "aromas": "Fruits verts, notes herbacées" }
+      },
+      "oceanic": {
+        "intensiveControl": { "description": "Le classicisme parfait : la douceur océanique et la richesse de l'argile sont sculptées avec une précision chirurgicale pour un vin de belle facture.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Dense et lisse", "aromas": "Fruits rouges mûrs, épices fines, boisé" },
+        "balancedManagement": { "description": "L'élégance naturelle : un équilibre formidable où le sol argilo-calcaire apporte la structure et le climat océanique la souplesse aromatique.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Ronde et structurée", "aromas": "Fleurs blanches, cerise, pierre chaude" },
+        "minimalIntervention": { "description": "Le fruit et la terre : sans filet, ce vin révèle la rondeur de l'argile et la fraîcheur du climat dans un jus vivant, vibrant et authentique.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Charnue et vivante", "aromas": "Fraise sauvage, poire, notes terriennes" },
+        "patientAging": { "description": "Un grand vin de garde : la structure tannique de l'argile est magnifiée par le temps, offrant une complexité et une longueur exceptionnelles.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Soyeuse et profonde", "aromas": "Cuir, sous-bois, fruits rôtis, pierre" },
+        "yieldFocused": { "description": "Un vin de copains facile : le sol riche et le climat doux pardonnent les forts rendements, donnant un vin très gouleyant mais sans profondeur.", "acidity": "Souple", "alcohol": "Modéré", "texture": "Légère et ronde", "aromas": "Fruits rouges simples, poire" }
+      },
+      "temperate": {
+        "intensiveControl": { "description": "Un profil très international : le climat idéal et le sol riche sont sur-travaillés pour offrir un vin puissant, concentré, séducteur mais très technique.", "acidity": "Modérée", "alcohol": "Généreux", "texture": "Lourde et veloutée", "aromas": "Fruits noirs très mûrs, vanille, moka" },
+        "balancedManagement": { "description": "La perfection du milieu : le climat tempéré et l'argile offrent naturellement des raisins parfaits, donnant un vin ample, riche et très bien équilibré.", "acidity": "Équilibrée", "alcohol": "Modéré à généreux", "texture": "Ample et charnue", "aromas": "Pêche mûre, cerise noire, épices douces" },
+        "minimalIntervention": { "description": "Un vin vivant et gourmand : la nature clémente et l'argile fertile s'expriment librement, offrant une mâche pulpeuse et des arômes intenses.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Pulpeuse et libre", "aromas": "Fruits à noyau, cerise croquante, terre" },
+        "patientAging": { "description": "La consécration du terroir : ce climat béni permet à l'argile de livrer des tanins nobles qui, après un long élevage, touchent à la perfection.", "acidity": "Fondue", "alcohol": "Généreux", "texture": "Soyeuse et ample", "aromas": "Tabac blond, fruits séchés, épices précieuses" },
+        "yieldFocused": { "description": "Un vin aimable et quotidien : le rendement allège la puissance de l'argile, donnant un jus facile, rond et agréable sur la jeunesse.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Souple et glissante", "aromas": "Fruits mûrs simples, note florale" }
+      },
+      "dryContinental": {
+        "intensiveControl": { "description": "L'architecture du vin : les forts contrastes de température et la richesse de l'argile sont sculptés pour créer un vin très concentré et précis.", "acidity": "Ferme", "alcohol": "Modéré à élevé", "texture": "Dense et accrocheuse", "aromas": "Cassis, zeste, poivre noir, réglisse" },
+        "balancedManagement": { "description": "Le choc des températures : le froid nocturne tend le vin, la chaleur diurne et l'argile le nourrissent. Le résultat est charpenté et très aromatique.", "acidity": "Marquée et vive", "alcohol": "Modéré", "texture": "Tanins fermes et longs", "aromas": "Cerise burlat, silex, pierre chaude" },
+        "minimalIntervention": { "description": "Une rusticité noble : le terroir rude et le sol lourd s'expriment sans filtre, offrant un vin très terrien, avec une poigne tannique impressionnante.", "acidity": "Tranchante", "alcohol": "Modéré", "texture": "Rugueuse et franche", "aromas": "Mûre sauvage, terre humide, herbes sèches" },
+        "patientAging": { "description": "Le domptage du continent : l'élevage prolongé est vital ici pour assouplir la structure massive apportée par le climat sec et l'argile profonde.", "acidity": "Vive mais intégrée", "alcohol": "Élevé", "texture": "Soyeuse et puissante", "aromas": "Fruits noirs confits, cuir de Russie, silex" },
+        "yieldFocused": { "description": "Un équilibre précaire : le haut rendement évite d'extraire trop de tanins durs, livrant un vin plus léger, désaltérant, mais qui manque de chair.", "acidity": "Vive", "alcohol": "Léger", "texture": "Fluide", "aromas": "Cerise rouge, notes végétales" }
+      },
+      "dryMountain": {
+        "intensiveControl": { "description": "Une prouesse d'altitude : la dureté du climat montagnard sur argile est domptée par la technique, offrant un vin concentré, éclatant et sans verdeur.", "acidity": "Très marquée", "alcohol": "Modéré", "texture": "Serrée et lisse", "aromas": "Fruits noirs frais, résine, pierre froide" },
+        "balancedManagement": { "description": "L'altitude domptée : le sol riche compense la dureté du climat, et une main de maître permet un vin tendu, aromatique, d'une grande distinction.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Droiture et tanins fins", "aromas": "Myrtille, herbes de montagne, roche" },
+        "minimalIntervention": { "description": "Le goût de la roche et du vent : un vin d'une pureté absolue, où l'altitude et l'argile livrent une partition froide, tannique et profondément terrienne.", "acidity": "Électrique", "alcohol": "Léger", "texture": "Austère et vibrante", "aromas": "Petits fruits acides, lichen, terre" },
+        "patientAging": { "description": "La sagesse des sommets : la tension extrême de ce terroir est lissée par le temps en fût, révélant une élégance et une finesse tannique inouïes.", "acidity": "Tendue et patinée", "alcohol": "Modéré", "texture": "Crémeuse et ferme", "aromas": "Fruits à l'eau-de-vie, sapin, épices douces" },
+        "yieldFocused": { "description": "Un vin clair et vif : la montagne dicte sa loi avec une forte acidité, tandis que la production élevée empêche l'argile de donner sa pleine puissance.", "acidity": "Très vive", "alcohol": "Léger", "texture": "Aqueuse", "aromas": "Baies rouges amères, herbes fraîches" }
+      },
+      "mediterranean": {
+        "intensiveControl": { "description": "La chaleur corsetée : l'argile et le soleil créent une matière opulente, que le vigneron refroidit et polit pour un vin riche mais sans aucune lourdeur.", "acidity": "Douce", "alcohol": "Généreux", "texture": "Veloutée et dense", "aromas": "Confiture de mûre, romarin, cacao" },
+        "balancedManagement": { "description": "L'archétype du Sud : la chaleur méditerranéenne gorge le fruit, tandis que l'argile profonde garde les racines au frais pour un vin charnu et équilibré.", "acidity": "Douce", "alcohol": "Généreux", "texture": "Ample et charnue", "aromas": "Olive noire, thym, framboise très mûre" },
+        "minimalIntervention": { "description": "Le sang de la terre : un vin sauvage, chaleureux, presque indiscipliné, où l'argile et la garrigue explosent en bouche dans une matière pulpeuse.", "acidity": "Basse", "alcohol": "Très chaleureux", "texture": "Épaisse et libre", "aromas": "Garrigue, fruits noirs écrasés, tapenade" },
+        "patientAging": { "description": "L'aristocratie solaire : des années de patience en cave transforment la puissance brute de ce terroir en une caresse tannique d'une complexité infinie.", "acidity": "Souple", "alcohol": "Puissant", "texture": "Soyeuse et opulente", "aromas": "Figue sèche, cuir, épices orientales" },
+        "yieldFocused": { "description": "Un rouge de comptoir : le soleil méditerranéen mûrit le raisin à profusion, offrant un vin très rond, très facile, taillé pour les soirées d'été.", "acidity": "Basse", "alcohol": "Modéré à généreux", "texture": "Ronde et glissante", "aromas": "Fruits rouges cuits, épices simples" }
+      },
+      "hotAndDry": {
+        "intensiveControl": { "description": "Un monstre sous contrôle : la chaleur extrême sur sol argileux produit un jus très lourd, que seule la technique moderne parvient à garder frais et buvable.", "acidity": "Corrigée", "alcohol": "Très généreux", "texture": "Dense et très polie", "aromas": "Fruits noirs confits, vanille, bois chauffé" },
+        "balancedManagement": { "description": "La force tranquille : l'argile, qui retient l'eau, sauve la vigne de la canicule, offrant un vin naturellement puissant, capiteux, mais structuré.", "acidity": "Douce", "alcohol": "Généreux et puissant", "texture": "Charnue et riche", "aromas": "Prune noire, figue chaude, chocolat" },
+        "minimalIntervention": { "description": "Le feu liquide : un vin sans concession, extrêmement dense, tannique et alcoolisé, témoin brut d'un soleil de plomb sur une terre riche.", "acidity": "Très basse", "alcohol": "Brûlant", "texture": "Pâteuse et astringente", "aromas": "Fruits cuits au four, terre aride, goudron" },
+        "patientAging": { "description": "La digestion de la puissance : l'élevage au long cours est obligatoire ici pour fondre la masse tannique et alcoolique en un grand vin de garde suave.", "acidity": "Fondue", "alcohol": "Généreux et puissant", "texture": "Lourde et soyeuse", "aromas": "Fruits macérés, havane, moka" },
+        "yieldFocused": { "description": "Un paradoxe salvateur : pousser les rendements sous cette chaleur permet de diluer la lourdeur du vin, le rendant étonnamment gouleyant et aimable.", "acidity": "Basse", "alcohol": "Généreux", "texture": "Souple et ronde", "aromas": "Confiture de fruits, épices douces" }
+      }
+    },
+    "schist": {
+      "coolOceanic": {
+        "intensiveControl": { "description": "Un vin taillé au scalpel : le sol de schiste et le climat froid océanique offrent une lame minérale que le vigneron polit pour une précision aromatique absolue.", "acidity": "Marquée et tranchante", "alcohol": "Léger", "texture": "Serrée et polie", "aromas": "Zeste vert, silex frotté, fumée nette" },
+        "balancedManagement": { "description": "La tension élégante : l'énergie de l'océan et la dureté du schiste se rencontrent. Une gestion habile permet au fruit de s'exprimer sur une trame stricte.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Minérale et tendue", "aromas": "Pomme verte, embrun, silex, fumée fine" },
+        "minimalIntervention": { "description": "Un jus de roche : sans artifice, l'alliance du schiste et du froid donne un vin austère, presque salin, fait pour les amateurs de vins électriques.", "acidity": "Électrique", "alcohol": "Léger", "texture": "Anguleuse et pure", "aromas": "Pierre à fusil, citron vert, iode" },
+        "patientAging": { "description": "L'assouplissement de la pierre : l'acidité redoutable de ce terroir se patine merveilleusement avec le temps, dévoilant un grand vin profond et fumé.", "acidity": "Vive mais enrobée", "alcohol": "Léger à modéré", "texture": "Crémeuse sur tension", "aromas": "Fruits confits, fumée douce, miel minéral" },
+        "yieldFocused": { "description": "Un vin d'apéro incisif : la vigne très chargée produit un jus dilué où seule l'acidité océanique et une pointe de schiste subsistent. Très désaltérant.", "acidity": "Mordante", "alcohol": "Léger", "texture": "Fluide", "aromas": "Pamplemousse, note caillouteuse" }
+      },
+      "oceanic": {
+        "intensiveControl": { "description": "Le terroir maîtrisé : la douceur de l'océan tempère le caractère abrupt du schiste, et la technique donne un vin très propre, droit et très aromatique.", "acidity": "Équilibrée et fraîche", "alcohol": "Modéré", "texture": "Lisse et verticale", "aromas": "Fleurs blanches, agrumes, pointe fumée" },
+        "balancedManagement": { "description": "Une très belle harmonie : le climat océanique apporte la chair qui manque souvent au schiste, offrant un vin très digeste, tendu et minéral.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Charpente minérale fine", "aromas": "Poire, fleurs, pierre à fusil, baies rouges" },
+        "minimalIntervention": { "description": "Le goût du vrai : la porosité du schiste face aux pluies océaniques livre un vin vibrant, texturé, aux arômes sauvages de pierre mouillée et de fruit pur.", "acidity": "Équilibrée et vive", "alcohol": "Modéré", "texture": "Sèche et vibrante", "aromas": "Petits fruits croquants, herbes, silex" },
+        "patientAging": { "description": "L'évolution noble : élevé patiemment, ce vin perd le côté strict du schiste pour révéler une matière riche, complexe et subtilement toastée.", "acidity": "Équilibrée et longue", "alcohol": "Modéré", "texture": "Soyeuse et profonde", "aromas": "Amande grillée, pierre, fruits mûrs" },
+        "yieldFocused": { "description": "Léger et plaisant : la douceur océanique et le haut rendement lissent totalement l'impact du sol. Un vin gouleyant, sans prétention minérale.", "acidity": "Souple", "alcohol": "Modéré", "texture": "Légère et fuyante", "aromas": "Fruits blancs ou rouges simples, frais" }
+      },
+      "temperate": {
+        "intensiveControl": { "description": "L'excellence classique : le schiste donne la profondeur, le climat idéal la maturité, et le contrôle parfait en fait un vin de compétition, structuré et net.", "acidity": "Équilibrée", "alcohol": "Modéré à généreux", "texture": "Dense et précise", "aromas": "Fruits noirs mûrs, boisé fin, minéralité" },
+        "balancedManagement": { "description": "La quintessence du terroir : le schiste draine parfaitement les pluies de ce climat tempéré, offrant un vin riche, profond, avec une tension sous-jacente.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Serrée mais charnue", "aromas": "Fruits à noyau, pomme mûre, fumée subtile" },
+        "minimalIntervention": { "description": "Un vin libre et droit : le climat idéal permet au vigneron de laisser faire la nature. Le schiste s'y exprime avec une droiture et une énergie folle.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Vibrante et pure", "aromas": "Cerise, pêche de vigne, pierre chaude" },
+        "patientAging": { "description": "Un grand classique de garde : la trame minérale du schiste est enrobée par des années de cave, révélant un vin tempéré majestueux et très long.", "acidity": "Fondue", "alcohol": "Modéré", "texture": "Patinée et ample", "aromas": "Fruits cuits, épices douces, silex chaud" },
+        "yieldFocused": { "description": "Un vin de tous les jours : le climat tempéré sauve les meubles d'un rendement élevé, donnant un vin aimable où la rudesse du schiste disparaît.", "acidity": "Souple", "alcohol": "Modéré", "texture": "Facile et ronde", "aromas": "Fruits mûrs, pointe d'épice" }
+      },
+      "dryContinental": {
+        "intensiveControl": { "description": "Un vin de haute volée : le climat contrasté et la roche schisteuse forgent une matière ferme et acide, polie à la perfection par l'intervention en cave.", "acidity": "Marquée et ferme", "alcohol": "Modéré", "texture": "Serrée et lisse", "aromas": "Cerise noire, réglisse, fumée intense" },
+        "balancedManagement": { "description": "Une belle nervosité : la chaleur mûrit le fruit, le froid nocturne et le schiste cadenassent l'acidité. Un vin de grande tenue, salivant et complexe.", "acidity": "Marquée et vive", "alcohol": "Modéré", "texture": "Charpente minérale serrée", "aromas": "Zeste de citron vert, silex, cerise rouge" },
+        "minimalIntervention": { "description": "Un vin radical : les nuits glaciales, les jours secs et la roche nue enfantent un jus sauvage, aux tanins fermes et à l'acidité presque agressive.", "acidity": "Tranchante", "alcohol": "Modéré", "texture": "Rugueuse et stricte", "aromas": "Fruits acides, pierre à fusil, herbes froides" },
+        "patientAging": { "description": "L'assagissement du roc : l'élevage de plusieurs années est indispensable pour civiliser la sévérité du schiste sous ce climat continental sec.", "acidity": "Vive mais intégrée", "alcohol": "Modéré à élevé", "texture": "Ferme et soyeuse", "aromas": "Cuir, mûre sauvage, minéralité fumée" },
+        "yieldFocused": { "description": "Un vin sur la tension : le rendement allège la structure tannique, laissant l'acidité continentale dicter sa loi pour un vin très (trop ?) rafraîchissant.", "acidity": "Agressive", "alcohol": "Léger", "texture": "Aqueuse et stricte", "aromas": "Agrumes verts, notes herbacées" }
+      },
+      "dryMountain": {
+        "intensiveControl": { "description": "Une prouesse technique : l'aridité de l'altitude sur sol pauvre de schiste est compensée en cave pour livrer un vin d'une élégance froide et sublime.", "acidity": "Très marquée", "alcohol": "Léger à modéré", "texture": "Droite et polie", "aromas": "Fleurs d'altitude, agrumes, pierre froide" },
+        "balancedManagement": { "description": "La tension des cimes : le schiste sec de montagne livre un jus d'une fraîcheur inouïe. Le travail du vigneron lui apporte la chair nécessaire.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Verticale et minérale", "aromas": "Pêche blanche, herbes de montagne, fumée" },
+        "minimalIntervention": { "description": "Une expérience extrême : l'altitude, la sécheresse et le schiste nu donnent un vin électrique, à la texture de pierre et aux arômes très sauvages.", "acidity": "Électrique", "alcohol": "Léger", "texture": "Crayeuse et acérée", "aromas": "Lichen, citron vert sauvage, silex frotté" },
+        "patientAging": { "description": "Un trésor d'altitude : la rudesse extrême de la montagne et de la roche est métamorphosée par le fût en une matière délicate, florale et très longue.", "acidity": "Tendue et patinée", "alcohol": "Modéré", "texture": "Crémeuse et saline", "aromas": "Miel sec, herbes aromatiques, fumée douce" },
+        "yieldFocused": { "description": "Un vin léger et piquant : la vigne poussée à produire en altitude donne un jus très peu concentré, vif comme de l'eau de roche, presque acerbe.", "acidity": "Très vive", "alcohol": "Très léger", "texture": "Fluide", "aromas": "Citron, herbes fraîches, caillou" }
+      },
+      "mediterranean": {
+        "intensiveControl": { "description": "Un exercice d'équilibriste : la technique permet de tirer un vin élégant et frais malgré le soleil écrasant qui tape sur les schistes bouillants.", "acidity": "Douce", "alcohol": "Généreux", "texture": "Dense et très lisse", "aromas": "Fruits noirs mûrs, cacao, touche minérale" },
+        "balancedManagement": { "description": "Un grand vin solaire : le schiste retient la chaleur du Sud pour des raisins ultra-mûrs, mais sa nature minérale apporte une finale étonnamment fraîche.", "acidity": "Douce", "alcohol": "Généreux et chaleureux", "texture": "Ample et charpentée", "aromas": "Garrigue, olive noire, framboise mûre, fumée" },
+        "minimalIntervention": { "description": "L'âme de la garrigue : le soleil torride sur le schiste noir livre un vin dense, épicé et libre, avec des notes de pierre chaude et de fruits sauvages.", "acidity": "Basse", "alcohol": "Très chaleureux", "texture": "Épaisse et granuleuse", "aromas": "Thym, confiture de mûre, pierre brûlante" },
+        "patientAging": { "description": "L'élégance du Sud : le temps adoucit la puissance alcoolique de ce terroir chaud, et le schiste révèle alors des notes de tabac et de cuir magnifiques.", "acidity": "Souple", "alcohol": "Puissant", "texture": "Veloutée et profonde", "aromas": "Fruits séchés, épices douces, goudron fin" },
+        "yieldFocused": { "description": "Un vin de terrasse : le soleil fait le travail, les rendements diluent la minéralité du schiste, et on obtient un rouge facile, chaud et très rond.", "acidity": "Basse", "alcohol": "Modéré à généreux", "texture": "Ronde et légère", "aromas": "Fruits rouges très mûrs, épices simples" }
+      },
+      "hotAndDry": {
+        "intensiveControl": { "description": "La technique au secours de la chaleur : sur ce schiste brûlant, le vigneron contrôle tout (température, acidité) pour éviter un vin cuit et lourd.", "acidity": "Corrigée", "alcohol": "Très généreux", "texture": "Lisse et chaleureuse", "aromas": "Cerise noire, vanille, bois torréfié" },
+        "balancedManagement": { "description": "Une puissance minérale : le climat torride donne un vin massif, mais la faille schisteuse permet aux racines de trouver une humidité salvatrice.", "acidity": "Douce", "alcohol": "Puissant", "texture": "Charnue et stricte", "aromas": "Prune noire, figue, épices, pierre à fusil" },
+        "minimalIntervention": { "description": "Le vin de l'extrême : chaleur caniculaire et roc nu enfantent un monstre de puissance, capiteux, confituré, avec des tanins souvent massifs.", "acidity": "Très basse", "alcohol": "Brûlant", "texture": "Pâteuse et accrocheuse", "aromas": "Goudron, fruits cuits, herbes brûlées" },
+        "patientAging": { "description": "Un vin de garde hors norme : seul un très long repos permet de fondre l'alcool, les tanins du schiste et la richesse de ce climat aride.", "acidity": "Fondue", "alcohol": "Puissant", "texture": "Soyeuse et opulente", "aromas": "Moka, tabac, fruits macérés, silex chaud" },
+        "yieldFocused": { "description": "Un compromis abordable : forcer le rendement permet d'obtenir un jus moins dense et moins alcoolisé sous cette chaleur, donnant un vin aimable.", "acidity": "Basse", "alcohol": "Généreux", "texture": "Souple", "aromas": "Confiture de fruits, pointe d'épice" }
+      }
+    },
+    "granite": {
+      "coolOceanic": {
+        "intensiveControl": { "description": "La précision granitique : le froid et la roche créent une grande droiture, polie à l'extrême par le vigneron pour un vin éclatant, net et très droit.", "acidity": "Marquée et tonique", "alcohol": "Léger à modéré", "texture": "Lisse et verticale", "aromas": "Agrumes, poivre blanc, fleurs fraîches" },
+        "balancedManagement": { "description": "L'équilibre vertical : le granite apporte un grain unique, le climat froid assure la tension, et l'homme trouve le juste milieu pour un vin très élégant.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Grain fin et tendu", "aromas": "Pomme verte, brise marine, fruits rouges" },
+        "minimalIntervention": { "description": "La vibration de la roche : le granite froid s'exprime dans sa forme la plus brute, offrant une mâche granuleuse et une acidité presque électrique.", "acidity": "Tranchante", "alcohol": "Léger", "texture": "Granuleuse et vibrante", "aromas": "Poivre noir, zeste sauvage, pierre froide" },
+        "patientAging": { "description": "L'élégance du temps : la vivacité de l'océan et la dureté du granite se fondent après un long élevage, créant une texture presque poudrée.", "acidity": "Vive mais fondue", "alcohol": "Léger à modéré", "texture": "Poudrée et soyeuse", "aromas": "Amande, fleurs séchées, poivre fin" },
+        "yieldFocused": { "description": "Un vin de soif floral : les rendements allègent la structure du granite, laissant l'acidité fraîche dominer dans un jus léger et très facile.", "acidity": "Très vive", "alcohol": "Léger", "texture": "Fluide", "aromas": "Citron, baies rouges simples" }
+      },
+      "oceanic": {
+        "intensiveControl": { "description": "Un vin irréprochable : le climat océanique doux et le sol granitique sont magnifiés en cave pour livrer un jus floral, net, aux tanins très soyeux.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Soyeuse et précise", "aromas": "Pivoine, fruits rouges mûrs, épices douces" },
+        "balancedManagement": { "description": "Le charme du granite : la douceur du climat permet d'arrondir la nature stricte de la roche, livrant un vin croquant, floral et d'une grande buvabilité.", "acidity": "Équilibrée et fraîche", "alcohol": "Modéré", "texture": "Grain granitique fin", "aromas": "Poire, violette, fruits rouges croquants" },
+        "minimalIntervention": { "description": "Le vin vivant : une belle liberté laissée à la nature. Le granite apporte de la chair et du poivre, le climat de la rondeur, avec un petit côté sauvage.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Charnue et granuleuse", "aromas": "Fraise des bois, poivre noir, terre" },
+        "patientAging": { "description": "Un grand vin de soie : le repos civilise le caractère épicé et granuleux du sol, offrant une profondeur aromatique et une élégance rares.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Veloutée et longue", "aromas": "Fruits confits, poivre gris, sous-bois" },
+        "yieldFocused": { "description": "Le vin de copains : très productif, la vigne donne un jus léger où l'on perd l'empreinte de la roche, pour un résultat gouleyant et immédiat.", "acidity": "Souple", "alcohol": "Léger à modéré", "texture": "Légère et glissante", "aromas": "Petits fruits rouges, bonbon anglais" }
+      },
+      "temperate": {
+        "intensiveControl": { "description": "L'archétype du vin parfait : le climat idéal gorge les baies, le granite apporte l'élégance, et la technique livre un vin puissant, structuré et sans faille.", "acidity": "Équilibrée", "alcohol": "Généreux", "texture": "Dense et polie", "aromas": "Fruits noirs, violette, bois fondu" },
+        "balancedManagement": { "description": "Une harmonie magistrale : le soleil tempéré et le grain du granite créent un vin où la chair des fruits répond parfaitement à une structure florale.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Ample et granuleuse", "aromas": "Pêche, pomme mûre, poivre léger, pivoine" },
+        "minimalIntervention": { "description": "Le jus de la terre : sans contrainte, les raisins offrent un vin expressif, vibrant, où la chaleur tempérée exalte les notes poivrées du sol.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Texturée et libre", "aromas": "Cerise noire, poivre blanc, notes terriennes" },
+        "patientAging": { "description": "La noblesse du terroir : l'élevage au long cours transforme le grain du granite en un velours absolu, sur des notes évoluées et très complexes.", "acidity": "Fondue", "alcohol": "Modéré à généreux", "texture": "Soyeuse et ample", "aromas": "Cuir, épices fines, fruits séchés, truffe" },
+        "yieldFocused": { "description": "Un vin de tous les jours : le rendement important gomme la force du terroir. Il reste un vin souple, fruité, très facile d'accès.", "acidity": "Souple", "alcohol": "Modéré", "texture": "Légère", "aromas": "Fruits mûrs simples, petite pointe florale" }
+      },
+      "dryContinental": {
+        "intensiveControl": { "description": "La rigueur domptée : les chocs thermiques sur le granite rendent les tanins fermes, mais la vinification moderne lisse le tout pour un vin très classe.", "acidity": "Ferme et marquée", "alcohol": "Modéré à élevé", "texture": "Serrée et soyeuse", "aromas": "Cassis, graphite, poivre noir" },
+        "balancedManagement": { "description": "Le contraste des saisons : le froid nocturne tend le vin, la chaleur l'enrichit. Sur le granite, cela donne une matière épicée, racée et verticale.", "acidity": "Marquée et tonique", "alcohol": "Modéré", "texture": "Grain granitique affirmé", "aromas": "Zeste de citron, cerise noire, silex" },
+        "minimalIntervention": { "description": "Un vin sans concession : sec, rude, le climat continental s'exprime frontalement sur la roche. Un vin de poigne, tannique et profondément minéral.", "acidity": "Tranchante", "alcohol": "Modéré", "texture": "Rugueuse et franche", "aromas": "Baies acides, poivre cru, herbes sèches" },
+        "patientAging": { "description": "Un vin taillé pour l'hiver : le temps fond la rigueur de l'acidité continentale et des tanins du granite, offrant une sève chaude et très longue.", "acidity": "Vive mais intégrée", "alcohol": "Élevé", "texture": "Puissante et patinée", "aromas": "Fruits confits, fumée, épices précieuses" },
+        "yieldFocused": { "description": "La dilution du froid : pousser la vigne permet d'obtenir un jus léger, vif, où l'acidité domine largement un fruit qui manque un peu de chair.", "acidity": "Agressive", "alcohol": "Léger", "texture": "Fluide", "aromas": "Cerise griotte, notes végétales" }
+      },
+      "dryMountain": {
+        "intensiveControl": { "description": "Le sommet du raffinement : l'air rare et la roche nue sont façonnés en un vin d'une élégance folle, droit, sans aucune rugosité.", "acidity": "Très marquée", "alcohol": "Léger à modéré", "texture": "Cristalline et lisse", "aromas": "Fleurs blanches, myrtille, roche froide" },
+        "balancedManagement": { "description": "Le vertige des hauteurs : l'aridité montagnarde concentre le raisin, le granite le structure. Une gestion douce offre un vin électrique et parfumé.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Verticale et granuleuse", "aromas": "Herbes de montagne, pêche blanche, poivre" },
+        "minimalIntervention": { "description": "L'appel de la nature sauvage : un vin pur, presque austère, où l'acidité mordante de la montagne s'allie au grain dur du sol granitique.", "acidity": "Électrique", "alcohol": "Léger", "texture": "Sèche et vibrante", "aromas": "Agrumes verts, lichen, poivre gris" },
+        "patientAging": { "description": "La récompense de la patience : le temps sublime la droiture de ce terroir de montagne, offrant un vin gras, tendu, à la finale vertigineuse.", "acidity": "Tendue et patinée", "alcohol": "Modéré", "texture": "Crémeuse et fine", "aromas": "Miel, cire, fleurs séchées, silex" },
+        "yieldFocused": { "description": "Un vin désaltérant : la charge des vignes annule la concentration montagnarde, laissant un jus très vif, aqueux, parfait pour étancher la soif.", "acidity": "Très vive", "alcohol": "Très léger", "texture": "Aqueuse", "aromas": "Pamplemousse, herbe coupée" }
+      },
+      "mediterranean": {
+        "intensiveControl": { "description": "Une prouesse fraîche : la chaleur du Sud est compensée par la technique, offrant un rouge (ou un blanc) ample, séducteur, mais très structuré.", "acidity": "Douce", "alcohol": "Généreux", "texture": "Dense et polie", "aromas": "Fruits noirs mûrs, violette, moka" },
+        "balancedManagement": { "description": "Le Sud éclatant : la chaleur embaume les arômes de garrigue, tandis que le granite sous-jacent garde une fraîcheur poivrée très désirable.", "acidity": "Douce", "alcohol": "Généreux et chaleureux", "texture": "Ample et granuleuse", "aromas": "Garrigue, framboise mûre, poivre noir" },
+        "minimalIntervention": { "description": "La fougue solaire : une matière opulente, sauvage, gorgée d'épices et de fruits très mûrs, laissée libre par une vinification très peu interventionniste.", "acidity": "Basse", "alcohol": "Très chaleureux", "texture": "Épaisse et libre", "aromas": "Confiture de figue, thym, épices fortes" },
+        "patientAging": { "description": "L'élégance sudiste : la puissance de l'alcool et du soleil est magnifiquement domptée par l'élevage, offrant un vin noble aux tanins de velours.", "acidity": "Souple", "alcohol": "Puissant", "texture": "Veloutée et profonde", "aromas": "Tabac blond, cuir, tapenade, fruits rôtis" },
+        "yieldFocused": { "description": "Le canon de l'été : les forts rendements allègent ce soleil de plomb, donnant un vin chaud, très rond, gouleyant mais sans minéralité.", "acidity": "Basse", "alcohol": "Modéré à généreux", "texture": "Ronde et souple", "aromas": "Fruits rouges cuits, épices douces" }
+      },
+      "hotAndDry": {
+        "intensiveControl": { "description": "La survie par la technique : sur ce granite cuit par le soleil, le vigneron intervient massivement pour garder de l'acidité et éviter la confiture.", "acidity": "Corrigée", "alcohol": "Très généreux", "texture": "Lisse et épaisse", "aromas": "Cassis très mûr, vanille, toasté" },
+        "balancedManagement": { "description": "Une force colossale : le sol de roche peine à garder l'eau sous ce soleil de feu. Le vin est un concentré de puissance, d'alcool et de fruits noirs.", "acidity": "Douce", "alcohol": "Puissant", "texture": "Charnue et alcooleuse", "aromas": "Prune noire, poivre, fruits à l'eau de vie" },
+        "minimalIntervention": { "description": "L'explosion torride : un vin sans concession, presque brûlant, où le fruit sur-mûri écrase totalement la finesse habituelle de la roche granitique.", "acidity": "Très basse", "alcohol": "Brûlant", "texture": "Pâteuse", "aromas": "Goudron, pruneau, herbes brûlées" },
+        "patientAging": { "description": "Un grand vin fortifié : seul le temps peut assagir cette masse de chaleur et d'alcool, révélant après des années un profil suave et majestueux.", "acidity": "Fondue", "alcohol": "Puissant", "texture": "Soyeuse et lourde", "aromas": "Cacao, havane, fruits macérés, épices" },
+        "yieldFocused": { "description": "Un sauvetage par le volume : forcer la vigne à produire permet de diluer la canicule, obtenant un vin abordable, fruité, mais peu profond.", "acidity": "Basse", "alcohol": "Généreux", "texture": "Souple", "aromas": "Confiture de baies, notes chaudes simples" }
+      }
+    },
+ "volcanic": {
+      "coolOceanic": {
+        "intensiveControl": { "description": "La lame de fond : le sol volcanique et le froid océanique créent une acidité redoutable, que le vigneron cisèle pour un vin d'une précision aromatique absolue.", "acidity": "Marquée et tranchante", "alcohol": "Léger", "texture": "Serrée et polie", "aromas": "Zeste, silex frotté, cendre froide" },
+        "balancedManagement": { "description": "Une tension vibrante : l'énergie de l'océan réveille le caractère fumé de la roche. Un vin élancé, droit, avec une finale profondément saline.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Minérale et tendue", "aromas": "Pomme verte, embrun, pierre à fusil" },
+        "minimalIntervention": { "description": "Le souffle du cratère : sans artifice, l'alliance de la cendre et du froid donne un vin austère, électrique, fait pour les puristes des terroirs extrêmes.", "acidity": "Électrique", "alcohol": "Léger", "texture": "Anguleuse et pure", "aromas": "Soufre, citron vert sauvage, iode" },
+        "patientAging": { "description": "L'assouplissement de la pierre : l'acidité foudroyante de ce terroir se patine avec le temps, dévoilant un grand vin profond, complexe et subtilement fumé.", "acidity": "Vive mais enrobée", "alcohol": "Léger à modéré", "texture": "Crémeuse sur tension", "aromas": "Fruits confits, fumée douce, miel minéral" },
+        "yieldFocused": { "description": "Un vin d'apéro incisif : la vigne très chargée produit un jus dilué où seule l'acidité océanique et une petite amertume cendreuse subsistent.", "acidity": "Mordante", "alcohol": "Léger", "texture": "Fluide", "aromas": "Pamplemousse, note caillouteuse" }
+      },
+      "oceanic": {
+        "intensiveControl": { "description": "Le terroir maîtrisé : la douceur de l'océan tempère le caractère abrupt du sol volcanique, offrant un vin très propre, droit et séducteur.", "acidity": "Équilibrée et fraîche", "alcohol": "Modéré", "texture": "Lisse et verticale", "aromas": "Fleurs blanches, agrumes, pointe fumée" },
+        "balancedManagement": { "description": "Une très belle harmonie : le climat océanique apporte la chair qui enrobe la minéralité volcanique. Un vin très digeste, tendu et parfumé.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Charpente minérale fine", "aromas": "Poire, fleurs, pierre à fusil, baies rouges" },
+        "minimalIntervention": { "description": "Le goût de l'origine : la porosité de la roche face aux pluies livre un vin vibrant, texturé, aux arômes sauvages de pierre mouillée et de fruit pur.", "acidity": "Équilibrée et vive", "alcohol": "Modéré", "texture": "Sèche et vibrante", "aromas": "Petits fruits croquants, herbes, silex" },
+        "patientAging": { "description": "L'évolution noble : élevé patiemment, ce vin perd son côté strict pour révéler une matière riche, complexe et délicatement toastée.", "acidity": "Équilibrée et longue", "alcohol": "Modéré", "texture": "Soyeuse et profonde", "aromas": "Amande grillée, pierre de lave, fruits mûrs" },
+        "yieldFocused": { "description": "Léger et plaisant : la douceur océanique et le haut rendement lissent totalement l'impact du sol. Un vin gouleyant, sans prétention minérale.", "acidity": "Souple", "alcohol": "Modéré", "texture": "Légère et fuyante", "aromas": "Fruits blancs ou rouges simples, frais" }
+      },
+      "temperate": {
+        "intensiveControl": { "description": "L'excellence classique : le sol de lave donne la profondeur, le climat idéal la maturité. Le contrôle parfait en fait un vin de compétition, très structuré.", "acidity": "Équilibrée", "alcohol": "Modéré à généreux", "texture": "Dense et précise", "aromas": "Fruits noirs mûrs, boisé fin, minéralité" },
+        "balancedManagement": { "description": "La quintessence du terroir : le basalte draine parfaitement les pluies de ce climat tempéré, offrant un vin riche, profond, avec une tension sous-jacente.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Serrée mais charnue", "aromas": "Fruits à noyau, pomme mûre, fumée subtile" },
+        "minimalIntervention": { "description": "Un vin libre et droit : le climat idéal permet de laisser faire la nature. Le caractère volcanique s'y exprime avec une droiture et une énergie folle.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Vibrante et pure", "aromas": "Cerise, pêche de vigne, pierre chaude" },
+        "patientAging": { "description": "Un grand classique de garde : la trame minérale est magnifiquement enrobée par des années de cave, révélant un vin majestueux et très long en bouche.", "acidity": "Fondue", "alcohol": "Modéré", "texture": "Patinée et ample", "aromas": "Fruits cuits, épices douces, silex chaud" },
+        "yieldFocused": { "description": "Un vin de tous les jours : le climat tempéré sauve les meubles d'un rendement élevé, donnant un vin aimable où la complexité volcanique disparaît.", "acidity": "Souple", "alcohol": "Modéré", "texture": "Facile et ronde", "aromas": "Fruits mûrs, pointe d'épice" }
+      },
+      "dryContinental": {
+        "intensiveControl": { "description": "L'architecture du vin : les forts contrastes thermiques et la roche sombre forgent une matière ferme, polie à la perfection par l'intervention en cave.", "acidity": "Marquée et ferme", "alcohol": "Modéré à élevé", "texture": "Serrée et lisse", "aromas": "Cerise noire, réglisse, fumée intense" },
+        "balancedManagement": { "description": "Une belle nervosité : la chaleur mûrit le fruit, le froid nocturne et le basalte cadenassent l'acidité. Un vin de grande tenue, salivant et complexe.", "acidity": "Marquée et vive", "alcohol": "Modéré", "texture": "Charpente minérale serrée", "aromas": "Zeste de citron vert, cendre, cerise rouge" },
+        "minimalIntervention": { "description": "Un vin radical : les nuits glaciales et la roche noire enfantent un jus sauvage, aux tanins fermes et à l'acidité presque agressive en jeunesse.", "acidity": "Tranchante", "alcohol": "Modéré", "texture": "Rugueuse et stricte", "aromas": "Fruits acides, poudre à canon, herbes froides" },
+        "patientAging": { "description": "L'assagissement du roc : l'élevage prolongé est indispensable pour civiliser la sévérité de la roche sous ce climat continental sec et rigoureux.", "acidity": "Vive mais intégrée", "alcohol": "Modéré à élevé", "texture": "Ferme et soyeuse", "aromas": "Cuir, mûre sauvage, minéralité fumée" },
+        "yieldFocused": { "description": "Un vin sur la tension : le rendement allège la structure tannique, laissant l'acidité continentale dicter sa loi pour un vin très rafraîchissant.", "acidity": "Agressive", "alcohol": "Léger", "texture": "Aqueuse et stricte", "aromas": "Agrumes verts, notes herbacées" }
+      },
+      "dryMountain": {
+        "intensiveControl": { "description": "Une prouesse technique : l'aridité de l'altitude sur sol volcanique pauvre est compensée en cave pour livrer un vin d'une élégance froide et sublime.", "acidity": "Très marquée", "alcohol": "Léger à modéré", "texture": "Droite et polie", "aromas": "Fleurs d'altitude, agrumes, pierre froide" },
+        "balancedManagement": { "description": "La tension des cratères : le sol de lave en altitude livre un jus d'une fraîcheur inouïe. Le travail du vigneron lui apporte l'enrobage nécessaire.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Verticale et minérale", "aromas": "Pêche blanche, herbes de montagne, fumée" },
+        "minimalIntervention": { "description": "Une expérience extrême : l'altitude, la sécheresse et la roche nue donnent un vin électrique, à la texture de pierre ponce et aux arômes très sauvages.", "acidity": "Électrique", "alcohol": "Léger", "texture": "Crayeuse et acérée", "aromas": "Lichen, citron vert sauvage, soufre léger" },
+        "patientAging": { "description": "Un trésor d'altitude : la rudesse extrême de la montagne et du volcan est métamorphosée par le fût en une matière délicate, florale et très longue.", "acidity": "Tendue et patinée", "alcohol": "Modéré", "texture": "Crémeuse et saline", "aromas": "Miel sec, herbes aromatiques, cendre douce" },
+        "yieldFocused": { "description": "Un vin léger et piquant : la vigne poussée à produire en altitude donne un jus très peu concentré, vif comme de l'eau de roche, presque acerbe.", "acidity": "Très vive", "alcohol": "Très léger", "texture": "Fluide", "aromas": "Citron, herbes fraîches, caillou" }
+      },
+      "mediterranean": {
+        "intensiveControl": { "description": "Un exercice d'équilibriste : la technique permet de tirer un vin élégant et frais malgré le soleil écrasant qui tape sur les roches noires bouillantes.", "acidity": "Douce", "alcohol": "Généreux", "texture": "Dense et très lisse", "aromas": "Fruits noirs mûrs, cacao, touche minérale" },
+        "balancedManagement": { "description": "Un grand vin solaire : la lave retient la chaleur du Sud pour des raisins ultra-mûrs, mais sa nature minérale apporte une finale étonnamment sapide.", "acidity": "Douce", "alcohol": "Généreux et chaleureux", "texture": "Ample et charpentée", "aromas": "Garrigue, olive noire, framboise mûre, fumée" },
+        "minimalIntervention": { "description": "L'âme du volcan du Sud : le soleil torride sur la cendre livre un vin dense, épicé et libre, avec des notes de pierre chaude et de fruits sauvages.", "acidity": "Basse", "alcohol": "Très chaleureux", "texture": "Épaisse et granuleuse", "aromas": "Thym, confiture de mûre, pierre brûlante" },
+        "patientAging": { "description": "L'élégance sudiste : le temps adoucit la puissance alcoolique de ce terroir chaud, et le sol volcanique révèle des notes de tabac et de cuir magnifiques.", "acidity": "Souple", "alcohol": "Puissant", "texture": "Veloutée et profonde", "aromas": "Fruits séchés, épices douces, goudron fin" },
+        "yieldFocused": { "description": "Un vin de terrasse : le soleil fait le travail, les rendements diluent la minéralité de la roche, et on obtient un rouge facile, chaud et très rond.", "acidity": "Basse", "alcohol": "Modéré à généreux", "texture": "Ronde et légère", "aromas": "Fruits rouges très mûrs, épices simples" }
+      },
+      "hotAndDry": {
+        "intensiveControl": { "description": "La technique au secours de la chaleur : sur cette lave brûlante, le vigneron intervient massivement pour garder de l'acidité et éviter un vin trop lourd.", "acidity": "Corrigée", "alcohol": "Très généreux", "texture": "Lisse et chaleureuse", "aromas": "Cerise noire, vanille, bois torréfié" },
+        "balancedManagement": { "description": "Une puissance tellurique : le climat torride donne un vin massif, mais la porosité de la roche permet aux racines de trouver une humidité salvatrice.", "acidity": "Douce", "alcohol": "Puissant", "texture": "Charnue et stricte", "aromas": "Prune noire, figue, épices, pierre à fusil" },
+        "minimalIntervention": { "description": "Le vin de l'extrême : chaleur caniculaire et roche sombre enfantent un monstre de puissance, capiteux, confituré, aux tanins souvent massifs.", "acidity": "Très basse", "alcohol": "Brûlant", "texture": "Pâteuse et accrocheuse", "aromas": "Goudron, fruits cuits, herbes brûlées" },
+        "patientAging": { "description": "Un vin de garde hors norme : seul un très long repos permet de fondre l'alcool, les tanins minéraux et la richesse absolue de ce climat aride.", "acidity": "Fondue", "alcohol": "Puissant", "texture": "Soyeuse et opulente", "aromas": "Moka, tabac, fruits macérés, silex chaud" },
+        "yieldFocused": { "description": "Un compromis abordable : forcer le rendement permet d'obtenir un jus moins dense et moins alcoolisé sous cette chaleur, donnant un vin aimable.", "acidity": "Basse", "alcohol": "Généreux", "texture": "Souple", "aromas": "Confiture de fruits, pointe d'épice" }
+      }
+    },
+    "redClay": {
+      "coolOceanic": {
+        "intensiveControl": { "description": "La poigne de fer : le froid océanique tend le vin à l'extrême, tandis que l'argile rouge (ferrifère) structure les tanins. Un vin strict et précis.", "acidity": "Marquée et vive", "alcohol": "Modéré", "texture": "Serrée et ferme", "aromas": "Fruits noirs, mine de crayon, menthol" },
+        "balancedManagement": { "description": "Une rusticité élégante : l'argile rouge riche en fer apporte une mâche sanguine, joliment équilibrée par la fraîcheur et la vivacité du climat océanique.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Tanins charnus et frais", "aromas": "Cerise rouge, terre humide, fer" },
+        "minimalIntervention": { "description": "Le vin terrien par excellence : un jus vibrant, presque animal, où l'acidité tranchante du froid réveille les notes métalliques et sanguines de la terre rouge.", "acidity": "Tranchante", "alcohol": "Léger", "texture": "Rugueuse et franche", "aromas": "Petits fruits acides, sang, sous-bois" },
+        "patientAging": { "description": "L'assagissement de la terre : l'élevage prolongé polit l'acidité océanique et arrondit les tanins puissants de l'argile rouge pour une grande complexité.", "acidity": "Fondue", "alcohol": "Modéré", "texture": "Veloutée et sanguine", "aromas": "Cuir, truffe, fruits noirs confits" },
+        "yieldFocused": { "description": "Un vin fluide et vif : le haut rendement empêche l'argile rouge de donner sa puissance, laissant un vin très léger dominé par l'acidité du climat frais.", "acidity": "Mordante", "alcohol": "Léger", "texture": "Fluide", "aromas": "Herbes fraîches, cerise acide" }
+      },
+      "oceanic": {
+        "intensiveControl": { "description": "Le classicisme structuré : la douceur océanique et la puissance de la terre rouge sont sculptées avec précision pour un vin élégant, lisse et profond.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Dense et polie", "aromas": "Mûre, épices douces, pointe boisée" },
+        "balancedManagement": { "description": "L'équilibre des forces : l'argile rouge donne de la carrure et des tanins, tandis que la douceur de l'océan préserve un fruité éclatant et digeste.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Charnue et souple", "aromas": "Cerise noire, violette, touche sanguine" },
+        "minimalIntervention": { "description": "L'expression libre : un vin qui a du corps et de l'âme, où l'argile ferrugineuse s'exprime par une belle mâche terrienne sous un climat clément.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Vivante et terrienne", "aromas": "Fraise des bois, terre battue, poivre" },
+        "patientAging": { "description": "Un grand vin de garde : la structure tannique naturelle de l'argile rouge est magnifiée par le temps, offrant une complexité et une patine remarquables.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Soyeuse et profonde", "aromas": "Cuir de Russie, pruneau, tabac brun" },
+        "yieldFocused": { "description": "Un vin de soif terrien : le rendement allège considérablement la matière, donnant un rouge facile, gouleyant, avec juste une pointe de caractère.", "acidity": "Souple", "alcohol": "Modéré", "texture": "Légère et glissante", "aromas": "Fruits rouges simples, poire" }
+      },
+      "temperate": {
+        "intensiveControl": { "description": "Un profil opulent : le climat idéal et le sol très riche sont sur-travaillés pour offrir un vin charpenté, concentré, très séducteur et technique.", "acidity": "Modérée", "alcohol": "Généreux", "texture": "Lourde et veloutée", "aromas": "Fruits noirs très mûrs, vanille, moka" },
+        "balancedManagement": { "description": "L'archétype du grand rouge : le climat tempéré mûrit parfaitement le fruit, et l'argile rouge apporte la profondeur et les tanins pour un équilibre parfait.", "acidity": "Équilibrée", "alcohol": "Modéré à généreux", "texture": "Ample et charnue", "aromas": "Cerise noire, épices, légère minéralité" },
+        "minimalIntervention": { "description": "La générosité sauvage : la nature clémente et la terre fertile s'expriment librement, offrant une mâche pulpeuse, presque sanguine, et des arômes intenses.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Pulpeuse et libre", "aromas": "Fruits à noyau, sang, terre chaude" },
+        "patientAging": { "description": "La consécration de la terre : ce climat béni permet à l'argile de livrer des tanins nobles qui, après un long élevage, touchent au velours absolu.", "acidity": "Fondue", "alcohol": "Généreux", "texture": "Soyeuse et ample", "aromas": "Cigare, fruits séchés, épices précieuses" },
+        "yieldFocused": { "description": "Un vin aimable et quotidien : le rendement dilue la puissance naturelle de l'argile rouge, donnant un jus facile, rond et très agréable sur la jeunesse.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Souple et légère", "aromas": "Fruits mûrs simples, note florale" }
+      },
+      "dryContinental": {
+        "intensiveControl": { "description": "L'architecture du vin : les contrastes thermiques intenses et la force de l'argile rouge sont sculptés pour créer un vin très concentré et précis.", "acidity": "Ferme", "alcohol": "Modéré à élevé", "texture": "Dense et accrocheuse", "aromas": "Cassis, fer, poivre noir, réglisse" },
+        "balancedManagement": { "description": "Le choc des éléments : le froid nocturne tend le vin, la chaleur diurne et la terre rouge le nourrissent. Le résultat est charpenté et très profond.", "acidity": "Marquée et vive", "alcohol": "Modéré", "texture": "Tanins fermes et sanguins", "aromas": "Cerise burlat, pierre chaude, viande" },
+        "minimalIntervention": { "description": "Une rusticité noble : le terroir rude et le sol lourd s'expriment sans filtre, offrant un vin terrien, avec une poigne tannique impressionnante.", "acidity": "Tranchante", "alcohol": "Modéré", "texture": "Rugueuse et franche", "aromas": "Mûre sauvage, terre aride, herbes sèches" },
+        "patientAging": { "description": "Le domptage du continent : l'élevage prolongé est vital pour assouplir la structure massive apportée par le climat sec et l'argile rouge ferrugineuse.", "acidity": "Vive mais intégrée", "alcohol": "Élevé", "texture": "Soyeuse et puissante", "aromas": "Fruits noirs confits, cuir, tapenade" },
+        "yieldFocused": { "description": "Un équilibre précaire : le haut rendement évite d'extraire trop de tanins durs, livrant un vin plus léger, désaltérant, mais qui manque de chair.", "acidity": "Vive", "alcohol": "Léger", "texture": "Fluide", "aromas": "Cerise rouge, notes végétales" }
+      },
+      "dryMountain": {
+        "intensiveControl": { "description": "Une prouesse d'altitude : la dureté du climat montagnard sur argile rouge est domptée par la technique, offrant un vin concentré, éclatant et tendu.", "acidity": "Très marquée", "alcohol": "Modéré", "texture": "Serrée et lisse", "aromas": "Fruits noirs frais, résine, fer froid" },
+        "balancedManagement": { "description": "L'altitude structurée : la terre rouge compense la dureté de l'air sec, et une gestion mesurée permet un vin tendu, sanguin, d'une grande distinction.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Droiture et tanins fins", "aromas": "Myrtille, herbes de montagne, roche" },
+        "minimalIntervention": { "description": "Le goût de la roche et du vent : un vin d'une pureté absolue, où l'altitude et l'argile livrent une partition froide, très tannique et austère.", "acidity": "Électrique", "alcohol": "Léger", "texture": "Austère et vibrante", "aromas": "Petits fruits acides, sang, terre" },
+        "patientAging": { "description": "La sagesse des sommets : la tension extrême de ce terroir est lissée par le temps en fût, révélant une élégance et une finesse tannique inouïes.", "acidity": "Tendue et patinée", "alcohol": "Modéré", "texture": "Crémeuse et ferme", "aromas": "Fruits à l'eau-de-vie, sapin, épices douces" },
+        "yieldFocused": { "description": "Un vin clair et vif : la montagne dicte sa loi avec une forte acidité, tandis que la production élevée empêche l'argile rouge de donner sa puissance.", "acidity": "Très vive", "alcohol": "Léger", "texture": "Aqueuse", "aromas": "Baies rouges amères, herbes fraîches" }
+      },
+      "mediterranean": {
+        "intensiveControl": { "description": "L'association reine : la célèbre Terra Rossa sous le soleil méditerranéen donne une matière opulente, que le vigneron polit pour éviter toute lourdeur.", "acidity": "Douce", "alcohol": "Généreux", "texture": "Veloutée et dense", "aromas": "Confiture de mûre, romarin, cacao" },
+        "balancedManagement": { "description": "L'archétype du grand Sud : la chaleur gorge le fruit, tandis que l'argile rouge préserve l'humidité aux racines. Un vin charnu, sanguin et parfait.", "acidity": "Douce", "alcohol": "Généreux", "texture": "Ample et charnue", "aromas": "Olive noire, thym, framboise très mûre" },
+        "minimalIntervention": { "description": "Le sang de la garrigue : un vin sauvage, chaleureux, indiscipliné, où l'argile rouge et les herbes du Sud explosent en bouche dans une matière pulpeuse.", "acidity": "Basse", "alcohol": "Très chaleureux", "texture": "Épaisse et libre", "aromas": "Garrigue, fruits noirs écrasés, viande" },
+        "patientAging": { "description": "L'aristocratie solaire : des années de patience en cave transforment la puissance brute de ce terroir (terre rouge et soleil) en une caresse absolue.", "acidity": "Souple", "alcohol": "Puissant", "texture": "Soyeuse et opulente", "aromas": "Figue sèche, cuir, épices orientales" },
+        "yieldFocused": { "description": "Un rouge de comptoir : le soleil mûrit le raisin à profusion, et le fort rendement donne un vin très rond, très facile, taillé pour les apéritifs.", "acidity": "Basse", "alcohol": "Modéré à généreux", "texture": "Ronde et glissante", "aromas": "Fruits rouges cuits, épices simples" }
+      },
+      "hotAndDry": {
+        "intensiveControl": { "description": "Un monstre sous contrôle : la chaleur extrême sur terre rouge produit un jus très lourd, que la technique moderne parvient à garder frais et structuré.", "acidity": "Corrigée", "alcohol": "Très généreux", "texture": "Dense et très polie", "aromas": "Fruits noirs confits, vanille, bois chauffé" },
+        "balancedManagement": { "description": "La force tranquille : l'argile rouge, qui retient l'eau, sauve la vigne de la canicule, offrant un vin naturellement puissant, capiteux, mais structuré.", "acidity": "Douce", "alcohol": "Généreux et puissant", "texture": "Charnue et riche", "aromas": "Prune noire, figue chaude, chocolat" },
+        "minimalIntervention": { "description": "Le feu liquide : un vin sans concession, extrêmement dense, tannique et alcoolisé, témoin brut d'un soleil de plomb sur une terre riche en fer.", "acidity": "Très basse", "alcohol": "Brûlant", "texture": "Pâteuse et astringente", "aromas": "Fruits cuits au four, terre aride, goudron" },
+        "patientAging": { "description": "La digestion de la puissance : l'élevage au long cours est obligatoire ici pour fondre la masse tannique et alcoolique en un grand vin de garde suave.", "acidity": "Fondue", "alcohol": "Généreux et puissant", "texture": "Lourde et soyeuse", "aromas": "Fruits macérés, havane, moka" },
+        "yieldFocused": { "description": "Un paradoxe salvateur : pousser les rendements sous cette chaleur permet de diluer la lourdeur du vin, le rendant étonnamment gouleyant et aimable.", "acidity": "Basse", "alcohol": "Généreux", "texture": "Souple et ronde", "aromas": "Confiture de fruits, épices douces" }
+      }
+    },
+    "pebbles": {
+      "coolOceanic": {
+        "intensiveControl": { "description": "Une curiosité froide : les galets peinent à réchauffer ce climat froid. Le vigneron doit extraire avec précaution pour obtenir un vin svelte et précis.", "acidity": "Marquée", "alcohol": "Léger", "texture": "Serrée et lisse", "aromas": "Fruits rouges croquants, poivre, végétal noble" },
+        "balancedManagement": { "description": "Un équilibre sur le fil : le sol de galets apporte du gras, mais le froid océanique impose sa fraîcheur. Un vin poivré, croquant et atypique.", "acidity": "Marquée et vive", "alcohol": "Léger à modéré", "texture": "Fluide et épicée", "aromas": "Groseille, poivre gris, embrun" },
+        "minimalIntervention": { "description": "L'expression la plus crue : sans intervention, la fraîcheur océanique domine les galets, livrant un vin rustique, herbacé, avec une acidité mordante.", "acidity": "Tranchante", "alcohol": "Léger", "texture": "Sèche et rustique", "aromas": "Baies acides, rafles, poivre cru" },
+        "patientAging": { "description": "La rondeur par le temps : l'acidité naturelle de ce climat froid sur galets s'arrondit après un long passage en fût, offrant une belle patine épicée.", "acidity": "Vive mais fondue", "alcohol": "Léger à modéré", "texture": "Souple et fondue", "aromas": "Épices douces, sous-bois, cerise" },
+        "yieldFocused": { "description": "Un vin aqueux : la vigne surproduit dans un climat froid sur un sol pauvre. Le résultat est très dilué, acide, manquant cruellement de maturité.", "acidity": "Mordante", "alcohol": "Très léger", "texture": "Aqueuse", "aromas": "Végétal, fruits verts" }
+      },
+      "oceanic": {
+        "intensiveControl": { "description": "La maîtrise de la chaleur : les galets emmagasinent le soleil modéré de l'océan, et la technique en fait un vin très propre, structuré et épicé.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Polie et dense", "aromas": "Cerise noire, vanille, poivre" },
+        "balancedManagement": { "description": "L'élégance naturelle : la douceur de l'océan est réchauffée par les galets rayonnants, donnant un vin harmonieux, chaleureux mais toujours frais.", "acidity": "Équilibrée", "alcohol": "Modéré à généreux", "texture": "Ronde et veloutée", "aromas": "Fraise écrasée, épices, pointe saline" },
+        "minimalIntervention": { "description": "Un vin vibrant et libre : l'inertie thermique des galets permet une belle maturité sous climat océanique, livrant un jus sauvage, juteux et très poivré.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Charnue et vivante", "aromas": "Fruits rouges sauvages, poivre noir, terre" },
+        "patientAging": { "description": "Une belle évolution : l'élevage adoucit la structure apportée par les galets roulés, offrant un vin patiné, complexe et prêt à braver les années.", "acidity": "Fondue", "alcohol": "Modéré", "texture": "Soyeuse", "aromas": "Cuir, fruits rôtis, sous-bois" },
+        "yieldFocused": { "description": "Un rouge de copains : la forte production annule l'effet concentrateur des galets. On obtient un vin de soif simple, léger et très fruité.", "acidity": "Souple", "alcohol": "Léger à modéré", "texture": "Légère et glissante", "aromas": "Petits fruits rouges, bonbon" }
+      },
+      "temperate": {
+        "intensiveControl": { "description": "Un grand standard : le climat parfait et la réverbération des galets offrent une maturité sublime, encadrée par une vinification moderne et luxueuse.", "acidity": "Modérée", "alcohol": "Généreux", "texture": "Lourde et veloutée", "aromas": "Mûre, moka, bois précieux" },
+        "balancedManagement": { "description": "La générosité absolue : la chaleur restituée par les galets la nuit assure des raisins riches, donnant un vin ample, charnu et profondément épicé.", "acidity": "Équilibrée", "alcohol": "Généreux", "texture": "Ample et chaude", "aromas": "Cerise noire, garrigue, poivre gris" },
+        "minimalIntervention": { "description": "Le fruit dans toute sa splendeur : une maturité poussée par les galets chauds, laissée libre, qui donne un vin explosif, texturé et follement aromatique.", "acidity": "Basse", "alcohol": "Généreux", "texture": "Pulpeuse et libre", "aromas": "Confiture de fraise, épices fortes" },
+        "patientAging": { "description": "Un seigneur de la cave : les tanins puissants nés sur ces galets se transforment en soie après des années de patience, livrant un vin majestueux.", "acidity": "Fondue", "alcohol": "Généreux", "texture": "Soyeuse et opulente", "aromas": "Cigare, fruits séchés, épices douces" },
+        "yieldFocused": { "description": "Un vin souple et joyeux : le rendement important limite la concentration des sucres, offrant un vin très aimable, rond et facile à boire.", "acidity": "Souple", "alcohol": "Modéré", "texture": "Ronde", "aromas": "Fruits mûrs, petite note épicée" }
+      },
+      "dryContinental": {
+        "intensiveControl": { "description": "Le domptage des extrêmes : la rudesse continentale et la chaleur des galets créent une matière dense et ferme, que le vigneron lisse au millimètre.", "acidity": "Ferme", "alcohol": "Élevé", "texture": "Serrée et concentrée", "aromas": "Cassis, poivre noir, réglisse" },
+        "balancedManagement": { "description": "Le choc thermique : les galets chauffent le jour et protègent du froid la nuit. Le vin est un monstre de structure, d'épices et de fruits noirs croquants.", "acidity": "Marquée", "alcohol": "Élevé", "texture": "Ferme et chaleureuse", "aromas": "Cerise burlat, pierre chaude, épices" },
+        "minimalIntervention": { "description": "La brutalité magnifique : sécheresse, froid nocturne et pierres brûlantes donnent un vin sauvage, d'une grande puissance alcoolique et tannique.", "acidity": "Tranchante", "alcohol": "Élevé", "texture": "Rugueuse et franche", "aromas": "Fruits noirs acides, herbes sèches, poivre" },
+        "patientAging": { "description": "L'apaisement par le temps : l'élevage au long cours est le seul moyen d'amadouer la puissance colossale de ce terroir sec, pierreux et contrasté.", "acidity": "Intégrée", "alcohol": "Élevé", "texture": "Puissante et patinée", "aromas": "Fruits noirs confits, cuir, fumée" },
+        "yieldFocused": { "description": "La dilution salvatrice : la charge de la vigne allège la matière, évitant au vin d'être trop lourd ou trop dur. Un vin franc et rafraîchissant.", "acidity": "Vive", "alcohol": "Modéré", "texture": "Fluide", "aromas": "Cerise rouge, note végétale" }
+      },
+      "dryMountain": {
+        "intensiveControl": { "description": "Une viticulture héroïque : les galets captent le moindre rayon de soleil montagnard, permettant une maturité inespérée, sculptée en un vin élégant.", "acidity": "Très marquée", "alcohol": "Modéré", "texture": "Lisse et verticale", "aromas": "Myrtille, résine, poivre blanc" },
+        "balancedManagement": { "description": "La chaleur des sommets : l'incroyable rayonnement des galets sauve la vigne du froid montagnard, livrant un vin tendu, poivré, d'une fraîcheur éclatante.", "acidity": "Marquée et vive", "alcohol": "Modéré", "texture": "Droite et finement tannique", "aromas": "Herbes de montagne, fruits rouges, pierre" },
+        "minimalIntervention": { "description": "Un vin de rocaille : l'altitude et les pierres nues s'expriment sans retenue, offrant une mâche austère, électrique et profondément épicée.", "acidity": "Électrique", "alcohol": "Léger à modéré", "texture": "Austère et vibrante", "aromas": "Petits fruits acides, lichen, poivre cru" },
+        "patientAging": { "description": "La noblesse de l'altitude : la tension extrême de la montagne est réchauffée par les galets puis patinée par le bois, pour une finale vertigineuse.", "acidity": "Tendue et patinée", "alcohol": "Modéré", "texture": "Crémeuse et ferme", "aromas": "Fruits à l'eau-de-vie, sapin, épices douces" },
+        "yieldFocused": { "description": "Un vin clair et acerbe : l'altitude dicte sa loi et les galets ne suffisent plus à mûrir une vigne trop chargée. Un jus très vif, presque vert.", "acidity": "Très vive", "alcohol": "Léger", "texture": "Aqueuse", "aromas": "Baies amères, herbes fraîches" }
+      },
+      "mediterranean": {
+        "intensiveControl": { "description": "L'archétype des grands crus du Sud : le mythique terroir de galets roulés est travaillé avec un soin extrême pour allier puissance solaire et grande finesse.", "acidity": "Douce", "alcohol": "Généreux", "texture": "Veloutée et très dense", "aromas": "Confiture de mûre, garrigue, moka" },
+        "balancedManagement": { "description": "Le roi du Sud : les galets emmagasinent le soleil brûlant pour le rendre la nuit. Résultat : un vin d'une opulence, d'une chaleur et d'une ampleur folles.", "acidity": "Douce", "alcohol": "Très généreux", "texture": "Ample et opulente", "aromas": "Kirsch, tapenade, thym, épices fortes" },
+        "minimalIntervention": { "description": "La fougue méridionale : un vin sans filtre, massif, où la chaleur des pierres et l'herbe de la garrigue explosent dans une bouche riche et indisciplinée.", "acidity": "Basse", "alcohol": "Brûlant", "texture": "Épaisse et libre", "aromas": "Fruits rôtis, viande, herbes sèches" },
+        "patientAging": { "description": "Le grand vin de méditation : la puissance phénoménale des galets sous le soleil du Sud exige des années de cave pour se transformer en velours absolu.", "acidity": "Souple", "alcohol": "Puissant", "texture": "Soyeuse et magistrale", "aromas": "Figue sèche, cuir, truffe, épices orientales" },
+        "yieldFocused": { "description": "Un vin de soleil décomplexé : la générosité des galets permet de produire beaucoup tout en gardant un vin très rond, chaleureux et facile à boire.", "acidity": "Basse", "alcohol": "Modéré à généreux", "texture": "Ronde et glissante", "aromas": "Fruits rouges cuits, épices simples" }
+      },
+      "hotAndDry": {
+        "intensiveControl": { "description": "Le sauvetage technique : face à la fournaise des galets bouillants, le vigneron contrôle drastiquement l'extraction pour éviter un vin cuit et imbuvable.", "acidity": "Corrigée", "alcohol": "Très généreux", "texture": "Dense et très polie", "aromas": "Fruits noirs confits, vanille, bois chauffé" },
+        "balancedManagement": { "description": "La chaleur monumentale : un climat caniculaire et des pierres qui rayonnent la nuit. Un vin massif, presque liquoreux, réservé aux amateurs de puissance.", "acidity": "Très douce", "alcohol": "Très puissant", "texture": "Lourde et riche", "aromas": "Pruneau, figue rôtie, chocolat noir" },
+        "minimalIntervention": { "description": "Le vin de braise : une expérience extrême. Les galets brûlants sur-mûrissent les raisins, livrant un vin noir, pâteux, aux arômes de goudron et de fruits cuits.", "acidity": "Quasi absente", "alcohol": "Brûlant", "texture": "Pâteuse et astringente", "aromas": "Fruits cuits au four, terre aride, goudron" },
+        "patientAging": { "description": "L'élixir du désert : seul un très long repos peut amadouer cette masse de sucre, d'alcool et de chaleur, la transformant en un vin de type Porto.", "acidity": "Fondue", "alcohol": "Très puissant", "texture": "Lourde et soyeuse", "aromas": "Fruits macérés, havane, moka, kirsch" },
+        "yieldFocused": { "description": "Un rendement nécessaire : forcer la vigne à produire est ici la seule façon de diluer la chaleur accablante des galets, donnant un vin chaleureux mais buvable.", "acidity": "Basse", "alcohol": "Généreux", "texture": "Souple et ronde", "aromas": "Confiture de fruits, épices douces" }
+      }
+    },
+    "sandsAndSilts": {
+      "coolOceanic": {
+        "intensiveControl": { "description": "Une dentelle ciselée : le sable offre une matière légère, le froid une forte acidité, et la technique sculpte un vin blanc ou rouge pâle d'une pureté de cristal.", "acidity": "Marquée et tranchante", "alcohol": "Léger", "texture": "Fluide et polie", "aromas": "Agrumes, fleurs blanches, groseille" },
+        "balancedManagement": { "description": "L'élégance aérienne : sans argile pour alourdir, le sol sableux et le climat frais livrent un vin d'une immense finesse, croquant, digeste et floral.", "acidity": "Marquée et vive", "alcohol": "Léger", "texture": "Aérienne et fine", "aromas": "Fraise des bois, zeste, embrun" },
+        "minimalIntervention": { "description": "L'expression nue : un vin diaphane, presque fragile, où le sable et l'océan s'expriment sans aucun maquillage. Très acide, très pur, très libre.", "acidity": "Électrique", "alcohol": "Très léger", "texture": "Aqueuse et vibrante", "aromas": "Baies acides, herbes fraîches, sel" },
+        "patientAging": { "description": "Une fausse bonne idée : la matière trop légère du sable et du climat froid risque d'être écrasée et asséchée par un élevage prolongé en fût.", "acidity": "Vive et asséchante", "alcohol": "Léger", "texture": "Boisée sur fluide", "aromas": "Planche de bois, vanille, petit fruit masqué" },
+        "yieldFocused": { "description": "De l'eau colorée : la vigne poussée à bout sur un sol pauvre en sable sous un climat froid donne un jus sans aucun corps, vert et acide.", "acidity": "Mordante", "alcohol": "Très léger", "texture": "Aqueuse", "aromas": "Végétal, fruits verts" }
+      },
+      "oceanic": {
+        "intensiveControl": { "description": "Le charme moderne : la souplesse du sable et la clémence de l'océan sont travaillées pour offrir un vin tendre, très parfumé, sans aucun tanin accrocheur.", "acidity": "Équilibrée", "alcohol": "Léger à modéré", "texture": "Lisse et fine", "aromas": "Fruits rouges écrasés, rose, épices douces" },
+        "balancedManagement": { "description": "Le vin de velours : un terroir qui privilégie le parfum à la puissance. Le résultat est un vin soyeux, très aromatique, parfait pour une consommation sur le fruit.", "acidity": "Équilibrée et fraîche", "alcohol": "Modéré", "texture": "Souple et fondante", "aromas": "Cerise, framboise, pivoine" },
+        "minimalIntervention": { "description": "Un jus de fruit pur : la nature douce de l'océan et la légèreté du sable enfantent un vin naturel joyeux, vivant, qui se boit avec une facilité déconcertante.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Légère et vibrante", "aromas": "Fruits rouges sauvages, poivre blanc" },
+        "patientAging": { "description": "Un vieillissement délicat : le vin manque un peu de chair pour supporter de longues années, mais un élevage doux lui confère des notes fumées très élégantes.", "acidity": "Fondue", "alcohol": "Modéré", "texture": "Soyeuse et fine", "aromas": "Fraise confite, sous-bois, bois de rose" },
+        "yieldFocused": { "description": "Le petit rouge (ou blanc) de comptoir : très productif, le sable donne ici un vin extrêmement gouleyant, sans prétention, à boire frais entre amis.", "acidity": "Souple", "alcohol": "Léger à modéré", "texture": "Très fluide", "aromas": "Bonbon anglais, petits fruits" }
+      },
+      "temperate": {
+        "intensiveControl": { "description": "La séduction absolue : le climat parfait compense la légèreté du sable. La technique crée un vin au toucher de bouche velouté, intensément fruité.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Lisse et caressante", "aromas": "Pêche, cerise noire, vanille légère" },
+        "balancedManagement": { "description": "La quintessence de la finesse : le sol sableux empêche toute lourdeur, tandis que le soleil tempéré assure la maturité. Un vin floral, long et d'une grande classe.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Soyeuse et ample", "aromas": "Violette, fruits à noyau, poivre fin" },
+        "minimalIntervention": { "description": "L'éclat aromatique : un vin sans barrière, où la chaleur douce et le sol filtrant libèrent des parfums exubérants de fruits mûrs et de fleurs, avec une mâche fine.", "acidity": "Équilibrée", "alcohol": "Modéré", "texture": "Pulpeuse et légère", "aromas": "Fruits d'été, rose, herbes aromatiques" },
+        "patientAging": { "description": "Une patine bourguignonne : l'élevage patient sublime la délicatesse naturelle du sable, offrant un vin très évolué, d'une grande douceur tactile.", "acidity": "Fondue", "alcohol": "Modéré", "texture": "Veloutée et diaphane", "aromas": "Pot-pourri, truffe légère, fruits cuits" },
+        "yieldFocused": { "description": "Un vin de pique-nique : la générosité du climat tempéré permet de forts rendements sur sable, donnant un jus très aimable, rond et joyeusement simple.", "acidity": "Souple", "alcohol": "Modéré", "texture": "Ronde et glissante", "aromas": "Fruits mûrs simples" }
+      },
+      "dryContinental": {
+        "intensiveControl": { "description": "La tension florale : les nuits glaciales du continent fixent les arômes, le sable affine les tanins. Un vin très précis, parfumé et à l'acidité tranchante.", "acidity": "Ferme et marquée", "alcohol": "Modéré", "texture": "Serrée et fine", "aromas": "Fleurs blanches, cassis, poivre gris" },
+        "balancedManagement": { "description": "Un contraste saisissant : la sécheresse continentale concentre le fruit, mais le sable garde le vin aérien. Une bouche nerveuse, très aromatique et élégante.", "acidity": "Marquée", "alcohol": "Modéré", "texture": "Droiture et finesse", "aromas": "Cerise rouge, violette, silex" },
+        "minimalIntervention": { "description": "La rigueur du climat : sans intervention, la morsure du froid continental s'exprime vivement sur ce sol léger, livrant un vin franc, acide et très digeste.", "acidity": "Tranchante", "alcohol": "Léger à modéré", "texture": "Sèche et vibrante", "aromas": "Baies acides, notes herbacées sèches" },
+        "patientAging": { "description": "L'affinage nécessaire : le fût vient calmer la nervosité de ce climat extrême, habillant la délicatesse du sable de belles notes toastées et épicées.", "acidity": "Intégrée", "alcohol": "Modéré", "texture": "Ferme et soyeuse", "aromas": "Fruits séchés, fumée, bois précieux" },
+        "yieldFocused": { "description": "L'acidité au premier plan : le manque de chair dû au fort rendement exacerbe la tension continentale, donnant un vin très vif, presque maigre.", "acidity": "Agressive", "alcohol": "Léger", "texture": "Aqueuse", "aromas": "Agrumes verts, végétal" }
+      },
+      "dryMountain": {
+        "intensiveControl": { "description": "La pureté des cimes : le froid montagnard et le sable pauvre donnent un jus cristallin, que la technique protège de toute oxydation pour un vin étincelant.", "acidity": "Très marquée", "alcohol": "Léger", "texture": "Cristalline et lisse", "aromas": "Fleurs d'altitude, citron, roche" },
+        "balancedManagement": { "description": "Le funambule : un vin d'une légèreté et d'une acidité extrêmes, tenu en équilibre par le savoir-faire du vigneron. Très désaltérant et parfumé.", "acidity": "Marquée et vive", "alcohol": "Léger", "texture": "Verticale et aérienne", "aromas": "Pêche blanche, herbes de montagne, poivre" },
+        "minimalIntervention": { "description": "L'eau de roche : une expérience radicale. Le sol filtrant et l'air glacial livrent un vin nu, électrique, à la limite de l'astringence, pour amateurs avertis.", "acidity": "Électrique", "alcohol": "Très léger", "texture": "Austère et vibrante", "aromas": "Petits fruits acides, lichen, air froid" },
+        "patientAging": { "description": "Une délicatesse boisée : le temps en fût apporte un peu de gras et de sucrosité à ce vin montagnard naturellement très acide et diaphane.", "acidity": "Tendue et patinée", "alcohol": "Léger", "texture": "Crémeuse sur tension", "aromas": "Miel sec, cire, fleurs blanches" },
+        "yieldFocused": { "description": "Un vin vert et acide : la vigne ne peut pas mûrir une grosse charge en altitude sur du sable. Le résultat est un jus très végétal et mordant.", "acidity": "Très vive et verte", "alcohol": "Très léger", "texture": "Aqueuse", "aromas": "Herbe coupée, citron vert" }
+      },
+      "mediterranean": {
+        "intensiveControl": { "description": "L'illusion de la fraîcheur : le soleil de plomb est compensé par le sol de sable (qui donne des vins clairs) et une technique moderne pour un rouge étonnamment frais.", "acidity": "Corrigée", "alcohol": "Modéré à généreux", "texture": "Lisse et fine", "aromas": "Fraise mûre, épices douces, réglisse" },
+        "balancedManagement": { "description": "L'élégance du Sud : contrairement aux sols lourds, le sable ne retient pas la chaleur. Le vin méditerranéen est ici incroyablement souple, clair et aromatique.", "acidity": "Douce", "alcohol": "Généreux", "texture": "Souple et soyeuse", "aromas": "Garrigue, framboise, poivre fin" },
+        "minimalIntervention": { "description": "Le vin de sable : un rouge très pâle (ou un rosé), chaleureux mais sans aucun tanin agressif, parfumé aux herbes du Sud et aux fraises écrasées.", "acidity": "Basse", "alcohol": "Chaleureux", "texture": "Légère et libre", "aromas": "Fraise des bois, thym, terre chaude" },
+        "patientAging": { "description": "Une évolution rapide : le vin sur sable s'oxyde et évolue plus vite. L'élevage dévoile très tôt de superbes notes d'automne, de cuir et d'épices douces.", "acidity": "Souple", "alcohol": "Généreux", "texture": "Veloutée et fondue", "aromas": "Feuilles mortes, cuir, fruits cuits" },
+        "yieldFocused": { "description": "Le rosé de plage idéal : les forts rendements sur sable sous le soleil donnent des vins très pâles, peu alcoolisés et parfaits pour se rafraîchir l'été.", "acidity": "Basse", "alcohol": "Modéré", "texture": "Très fluide", "aromas": "Fruits rouges simples, bonbon" }
+      },
+      "hotAndDry": {
+        "intensiveControl": { "description": "Le miracle technique : sur ce sable brûlant sans eau, le vigneron doit tout contrôler pour éviter que le vin ne devienne une confiture plate et molle.", "acidity": "Corrigée", "alcohol": "Généreux", "texture": "Lisse", "aromas": "Fruits très mûrs, vanille" },
+        "balancedManagement": { "description": "La chaleur sans la lourdeur : la canicule gorge les raisins de sucre, mais le sable empêche l'extraction de tanins durs. Un vin très rond, chaud et épicé.", "acidity": "Très douce", "alcohol": "Très puissant", "texture": "Ronde et alcooleuse", "aromas": "Pruneau, figue, épices chaudes" },
+        "minimalIntervention": { "description": "Le soleil en bouteille : un vin cuit, lourd, manquant dramatiquement d'acidité en raison de la chaleur extrême et du sol filtrant qui n'a retenu aucune eau.", "acidity": "Quasi absente", "alcohol": "Brûlant", "texture": "Molle et chaude", "aromas": "Fruits cuits au four, herbes brûlées" },
+        "patientAging": { "description": "L'oxydation noble : l'élevage long sur cette matière riche en alcool et pauvre en tanins donne un vin de style oxydatif, proche d'un vieux Banyuls ou Porto.", "acidity": "Fondue", "alcohol": "Très puissant", "texture": "Soyeuse et sucrée", "aromas": "Noix, rancio, moka, kirsch" },
+        "yieldFocused": { "description": "Un vin plat et dilué : forcer le rendement sous ce climat aride sur du sable donne un vin qui a le goût du soleil, mais aucune structure pour le soutenir.", "acidity": "Basse", "alcohol": "Modéré à élevé", "texture": "Fluide et molle", "aromas": "Confiture de fruits diluée" }
+      }
+    },
+  "automat": {
+    "title": "Tentez votre chance !",
+    "win": "Gagnant",
+    "loss": "Perdant",
+    "jackpot": "Jackpot",
+    "button": "tourner"
+  }
+}
+}
