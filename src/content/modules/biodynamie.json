@@ -1,0 +1,192 @@
+{
+    "start": {
+        "title": "Biodynamie, entre ciel et terre",
+        "info": "Comprendre cette approche unique de la vigne et du vin.",
+        "button": "Commencer"
+    },
+    "slide_1": {
+        "title": "Les principes",
+        "didYouKnow": "C’est un type d’agriculture qui cherche à stimuler la vitalité naturelle plutôt qu’à compenser les carences.",
+        "items": [
+            {
+                "id": "1",
+                "content": "La biodynamie est née en 1924 avec les conférences de Rudolf Steiner."
+            },
+            {
+                "id": "2",
+                "content": "Elle considère la vigne comme un <strong>organisme vivant</strong>, relié au sol, à l’air, à l’eau, à la lumière… et même aux rythmes cosmiques."
+            },
+            {
+                "id": "3",
+                "content": "Elle utilise des <strong>préparations spécifiques :</strong><ul><li>500 (bouse de corne enterrée en hiver) → nourrit la vie du sol</li><li>501 (silice de corne) → renforce la feuille et la photosynthèse</li></ul>"
+            }
+        ]
+    },
+    "slide_2": {
+        "title": "Dans les vignes",
+        "didYouKnow": "Ici, la vigne n’est pas simplement cultivée, elle est accompagnée comme un être vivant.",
+        "items": [
+            {
+                "id": 1,
+                "content": "Aucun herbicide ni produit synthétique"
+            },
+            {
+                "id": 2,
+                "content": "Compost enrichi de plantes médicinales (achillée, ortie, camomille…)"
+            },
+            {
+                "id": 3,
+                "content": "Travail manuel ou avec des chevaux dans certains domaines"
+            },
+            {
+                "id": 4,
+                "content": "Observation quotidienne : jusqu’à 20 passages par an pour soigner les vignes."
+            }
+        ]
+    },
+    "slide_3": {
+        "title": "Dans la cave",
+        "didYouKnow": "Le rôle du vigneron : accompagner sans contraindre, laisser le vin “parler” de son terroir",
+        "items": [
+            {
+                "id": 1,
+                "text": "Aucune levure sélectionnée : seules les levures naturelles présentes sur les raisins guident la fermentation.",
+                "type": false
+            },
+            {
+                "id": 2,
+                "text": "Aucun additif, sauf un peu de soufre si nécessaire",
+                "type": false
+            },
+            {
+                "id": 3,
+                "text": "Récipients respirants (bois, amphore, grès) pour laisser le vin évoluer",
+                "type": true
+            }
+        ]
+    },
+    "slide_4": {
+        "title": "Les avantages",
+        "didYouKnow": "Certains passionnés les décrivent comme “plus vivants”.",
+        "items": [
+            {
+                "id": 1,
+                "text": "Une plus grande biodiversité des sols"
+            },
+            {
+                "id": 2,
+                "text": "Des vignes souvent plus résistantes aux maladies"
+            },
+            {
+                "id": 3,
+                "text": "Des raisins équilibrés, moins besoin de corrections en cave"
+            },
+            {
+                "id": 4,
+                "text": "Des vins réputés pour leur pureté et leur intensité aromatique"
+            }
+        ]
+    },
+    "slide_5": {
+        "title": "Les défis",
+        "didYouKnow": "Cette voie exige courage, patience et grande constance",
+        "items": [
+            {
+                "id": 1,
+                "title": "Rendements très faibles",
+                "content": "<ul><li><strong>Conventionnel </strong> <span><strong>55</strong> hl/ha </span> <div><img/><img/><img/></div></li><li><strong>Biologique </strong> <span><strong>40</strong> hl/ha</span> <div><img/><img/></div></li><li><strong>Biodynamie </strong> <span><strong>25</strong> hl/ha </span> <div><img/></div></li></ul><sub>*1 hl = 133 bouteilles de 75cl</sub>"
+            },
+            {
+                "id": 2,
+                "title": "Risques élevés",
+                "content": " lors des années difficiles (gel, pluie, maladies)"
+            },
+            {
+                "id": 3,
+                "title": "Vin fragile",
+                "content": "si la vinification n’est pas parfaitement maîtrisée"
+            },
+            {
+                "id": 4,
+                "title": "Très laborieux,",
+                "content": "nécessitant<br/> beaucoup de temps dans le vignoble"
+            }
+        ]
+    },
+    "slide_6": {
+        "title": "Le prix de la rareté",
+        "left": [
+            {
+                "id": 1,
+                "content": "Peu de vin produit = une valeur plus élevée par bouteille."
+            },
+            {
+                "id": 2,
+                "content": "Certains domaines ne produisent que quelques milliers de bouteilles par an."
+            },
+            {
+                "id": 3,
+                "content": "Par exemple, Richard Leroy (Anjou) : 2,7 ha → env. 6 000 bouteilles par an. Ses vins se vendent aujourd’hui plusieurs centaines d’euros la bouteille."
+            }
+        ],
+        "right": [
+            {
+                "id": 1,
+                "content": "<strong>Pour le vigneron,</strong> c’est un pari économique risqué mais assumé"
+            },
+            {
+                "id": 2,
+                "content": "<strong>Pour l’amateur de vin,</strong> c’est l’accès à un vin rare et unique"
+            }
+        ]
+    },
+    "slide_7": {
+        "title": "Un chemin parmi d’autres",
+        "items": [
+            {
+                "id": 1,
+                "content": "La biodynamie n’est ni une recette miracle ni une imposture."
+            },
+            {
+                "id": 2,
+                "content": "Elle repose sur une philosophie exigeante — parfois critiquée, souvent admirée."
+            },
+            {
+                "id": 3,
+                "content": "Certains grands domaines l’ont adoptée, tandis que d’autres préfèrent la viticulture biologique ou durable."
+            },
+            {
+                "id": 4,
+                "content": "La comprendre, c’est mieux saisir pourquoi certains vins sont différents… et pourquoi ils sont rares."
+            }
+        ]
+    },
+    "slide_8": {
+        "title": "Conclusion",
+        "info": "La biodynamie fascine car elle pousse la rigueur à l’extrême :",
+        "items": [
+            {
+                "id": 1,
+                "text": "Plus de soin"
+            },
+            {
+                "id": 2,
+                "text": "Moins de vin"
+            },
+            {
+                "id": 3,
+                "text": "Des bouteilles rares et chères"
+            }
+        ],
+        "bottom": [
+            {
+                "id": 1,
+                "content": "C’est à la fois une philosophie agricole et un pari économique."
+            },
+            {
+                "id": 2,
+                "content": "Il appartient aux amateurs de vin de décider si cette voie mérite une place dans leur verre."
+            }
+        ]
+    }
+}
