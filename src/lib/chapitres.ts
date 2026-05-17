@@ -82,8 +82,8 @@ export const CHAPITRES: Chapitre[] = [
         slug: "phylloxera",
         title: "Le cousin d'Amérique",
         sourceModule: 6,
-        status: "coming-soon",
-        teaser: "L'histoire du puceron qui a failli tuer le vin français.",
+        status: "available",
+        teaser: "Un puceron, 70 % du vignoble mort, un sauvetage venu d'Amérique.",
       },
       {
         slug: "bio-conventionnel",
