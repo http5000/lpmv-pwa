@@ -1,0 +1,378 @@
+{
+  "navigation": {
+    "start": "Accueil",
+    "slide_1": "Cépages",
+    "slide_2": "Assemblage",
+    "slide_3": "Types & Millésimes",
+    "slide_4": "Chef de Cave",
+    "slide_5": "Méthode",
+    "game": "Jeu : Vinifiez !"
+  },
+  "start": {
+    "title": "Assemblez votre propre Champagne",
+    "firstName": "Entrez votre prénom",
+    "birthYear": "Votre année de naissance",
+    "info": "Bonjour {{firstName}}.<br/> Voulez-vous comprendre les secrets des bulles ou créer votre cuvée tout de suite ?",
+    "discoverBtn": "Découvrir le Champagne",
+    "gameBtn": "Jouer au Chef de Cave"
+  },
+  "slide_1": {
+    "title": "Les 3 Cépages Rois",
+    "subtitle": "Le Champagne repose principalement sur trois variétés de raisin.",
+    "mainItems": {
+      "1": {
+        "label": "Pinot Noir",
+        "details": "Raisin noir à jus blanc (38% du vignoble)",
+        "subitems": [
+          { "icon": 1, "text": "Apporte la structure" },
+          { "icon": 2, "text": "Donne de la puissance" },
+          { "icon": 3, "text": "Notes de fruits rouges" }
+        ]
+      },
+      "2": {
+        "label": "Meunier",
+        "details": "Raisin noir à jus blanc (32% du vignoble)",
+        "subitems": [
+          { "icon": 4, "text": "Apporte la souplesse" },
+          { "icon": 5, "text": "Caractère fruité et rond" },
+          { "icon": 6, "text": "Évolue plus rapidement" }
+        ]
+      },
+      "3": {
+        "label": "Chardonnay",
+        "details": "Raisin blanc (30% du vignoble)",
+        "subitems": [
+          { "icon": 7, "text": "Apporte la finesse" },
+          { "icon": 8, "text": "Grande fraîcheur florale" },
+          { "icon": 9, "text": "Potentiel de longue garde" }
+        ]
+      }
+    },
+    "bottomTitle": "Les cépages rares & oubliés",
+    "bottomSubtitle": "Ils représentent moins de 0,3% de la Champagne mais sont autorisés :",
+    "bottomItems": {
+      "1": "Pinot Blanc",
+      "2": "Arbane",
+      "3": "Petit Meslier",
+      "4": "Pinot Gris"
+    },
+    "bottomInfo": "Note : Depuis 2025, le cépage Chardonnay Rosé est autorisé et le Voltis (résistant) est en expérimentation officielle."
+  },
+  "slide_2": {
+    "title": "L'Art de l'Assemblage",
+    "subtitle": "Le secret du Champagne réside dans le mariage de vins tranquilles (sans bulles) différents.",
+    "top": {
+      "title": "Une équation à trois inconnues :",
+      "items": {
+        "1": "Les Cépages",
+        "2": "Les Terroirs (Crus)",
+        "3": "Les Années (Millésimes)"
+      }
+    },
+    "center": {
+      "title": "Chaque village a sa signature :",
+      "items": {
+        "1": { "name": "Damery", "type": "Meunier fruité" },
+        "2": { "name": "Aÿ", "type": "Pinot Noir puissant" },
+        "3": { "name": "Avize", "type": "Chardonnay minéral" }
+      }
+    },
+    "bottom": {
+      "title": "Le trésor des caves : les Vins de Réserve",
+      "items": {
+        "1": {
+          "label": "Constance",
+          "text": "Ils permettent de recréer le goût signature de la Maison chaque année, peu importe la météo."
+        },
+        "2": {
+          "label": "Complexité",
+          "text": "Conservés plusieurs années, ils apportent des arômes profonds de fruits secs, d'épices ou de miel."
+        },
+        "3": {
+          "label": "Sécurité",
+          "text": "Ils servent de filet de sécurité pour équilibrer la qualité si la récolte de l'année est difficile."
+        }
+      }
+    }
+  },
+  "slide_3": {
+    "title": "Les Familles de Champagne",
+    "top": {
+      "title": "Qu'est-ce qu'un Millésime ?",
+      "info": "La plupart des Champagnes sont des assemblages de plusieurs années. Un <strong>Millésime</strong> est l'expression d'une seule année exceptionnelle.",
+      "items": {
+        "1": {
+          "label": "Veuve Clicquot 1810",
+          "text": "Le tout premier Champagne millésimé officiellement recensé dans l'histoire."
+        },
+        "2": {
+          "label": "Dom Pérignon 1961",
+          "text": "Un millésime de légende, devenu une icône mondiale du luxe."
+        }
+      }
+    },
+    "bottom": {
+      "title": "Savoir lire l'étiquette",
+      "items": {
+        "1": {
+          "label": "Brut Sans Année (BSA)",
+          "info": "90% de la production. Assemblage de l'année en cours + vins de réserve. Le style constant de la marque."
+        },
+        "2": {
+          "label": "Millésimé",
+          "info": "Issu d'une seule année grandiose. Vieilli au minimum 3 ans, c'est un vin de caractère unique."
+        },
+        "3": {
+          "label": "Blanc de Blancs",
+          "info": "100% raisins blancs (Chardonnay). Vins fins, élégants et vifs."
+        },
+        "4": {
+          "label": "Blanc de Noirs",
+          "info": "100% raisins noirs (Pinot Noir / Meunier). Vins structurés, vineux et puissants."
+        },
+        "5": {
+          "label": "Rosé",
+          "info": "Obtenu par macération ou par assemblage avec du vin rouge de Champagne (une exception française !)."
+        }
+      }
+    }
+  },
+  "slide_4": {
+    "title": "Le Chef de Cave : Gardien du Temple",
+    "top": {
+      "title": "Sa mission sacrée",
+      "content": "<ul><li>Déguster des centaines de vins clairs (tranquilles) chaque hiver.</li><li>Imaginer l'assemblage final qui deviendra le Champagne dans quelques années.</li><li>Garantir que le goût reste fidèle au « Style Maison » année après année.</li></ul>"
+    },
+    "center": {
+      "title": "La touche finale : Le Dosage",
+      "info": "Juste avant de boucher définitivement la bouteille, on ajoute une touche de liqueur (sucre). C'est ce qui détermine le style : du plus sec au plus doux.",
+      "content": ""
+    },
+    "bottom": {
+      "title": "L'échelle du sucre",
+      "labels": {
+        "label": "Mention",
+        "sugar": "Sucre (g/L)",
+        "taste": "Sensation"
+      },
+      "items": [
+        { "label": "Brut Nature", "sugar": "0-3", "taste": "Tranchant, pur, minéral" },
+        { "label": "Extra Brut", "sugar": "0-6", "taste": "Très sec, précis" },
+        { "label": "Brut", "sugar": "0-12", "taste": "L'équilibre classique" },
+        { "label": "Extra Dry", "sugar": "12-17", "taste": "Tendre, suave" },
+        { "label": "Sec", "sugar": "17-32", "taste": "Rond, gourmand" },
+        { "label": "Demi-sec", "sugar": "32-50", "taste": "Doux (pour le dessert)" }
+      ]
+    }
+  },
+  "slide_5": {
+    "title": "La Méthode Champenoise",
+    "items": {
+      "1": {
+        "label": "1. Assemblage",
+        "content": "On mélange les vins tranquilles pour créer la cuvée."
+      },
+      "2": {
+        "label": "2. Tirage",
+        "content": "Mise en bouteille avec ajout de levures et de sucre. La <strong>seconde fermentation</strong> commence : le gaz carbonique reste piégé dans la bouteille. Les bulles naissent !"
+      },
+      "3": {
+        "label": "3. Sur lattes",
+        "content": "Repos en cave (min. 15 mois). Les levures meurent et forment un dépôt qui nourrit le vin, apportant des arômes de <strong>brioche et de pain grillé</strong>."
+      },
+      "4": {
+        "label": "4. Remuage & Dégorgement",
+        "content": "On incline la bouteille pour faire glisser le dépôt dans le goulot. On gèle le col, et la pression <strong>expulse le glaçon de dépôt</strong>."
+      },
+      "5": {
+        "label": "5. Dosage",
+        "content": "On comble le vide avec la liqueur d'expédition (plus ou moins sucrée) et on pose le bouchon de liège définitif."
+      }
+    }
+  },
+  "game": {
+    "navigation": {
+      "step_1": "Assemblage",
+      "step_2": "Fermentation",
+      "step_3": "Dosage",
+      "step_4": "Mon Champagne"
+    },
+    "step_1": {
+      "title": "Composez votre Cuvée",
+      "info": "Vous êtes le Chef de Cave. Remplissez votre bouteille avec 6 doses de vin.",
+      "button": "Lancer le tirage (Fermentation)",
+      "rules": {
+        "1": "Choisissez parmi les cépages et les crus.",
+        "2": "Vous pouvez prendre plusieurs fois le même vin.",
+        "3": "Attention : <strong>Maximum 1 dose de Vin Rouge</strong> (pour faire du Rosé) par bouteille !",
+        "4": "Votre objectif : créer un style qui vous ressemble."
+      },
+      "groups": {
+        "1": {
+          "name": "Chardonnay (Blancs)",
+          "items": {
+            "1": { "name": "Avize Grand Cru", "year": "2024" },
+            "2": { "name": "Le Mesnil-sur-Oger", "year": "2024" },
+            "3": { "name": "Cramant", "year": "2023" },
+            "4": { "name": "Vertus", "year": "2022" },
+            "5": { "name": "Bergères-lès-Vertus", "year": "2022" },
+            "6": { "name": "Chouilly", "year": "{{customBirthYear}}" }
+          }
+        },
+        "2": {
+          "name": "Pinot Noir (Blancs)",
+          "items": {
+            "1": { "name": "Aÿ Grand Cru", "year": "2024" },
+            "2": { "name": "Verzenay", "year": "2024" },
+            "3": { "name": "Mailly-Champagne", "year": "2023" },
+            "4": { "name": "Verzy", "year": "2023" },
+            "5": { "name": "Louvois", "year": "2022" },
+            "6": { "name": "Sillery", "year": "{{customBirthYear}}" }
+          }
+        },
+        "3": {
+          "name": "Meunier (Blancs)",
+          "items": {
+            "1": { "name": "Damery", "year": "2024" },
+            "2": { "name": "Venteuil", "year": "2024" },
+            "3": { "name": "Châtillon-sur-Marne", "year": "2023" },
+            "4": { "name": "Cuisles", "year": "2022" },
+            "5": { "name": "Mareuil-le-Port", "year": "2022" },
+            "6": { "name": "Passy-sur-Marne", "year": "{{customBirthYear}}" }
+          }
+        },
+        "4": {
+          "name": "Vins Rouges (Pour Rosé)",
+          "items": {
+            "1": { "name": "Bouzy Rouge", "year": "2024" },
+            "2": { "name": "Ambonnay Rouge", "year": "2024" }
+          }
+        }
+      }
+    },
+    "step_2": {
+      "title": "La Magie du Temps",
+      "button": "Passer au dégorgement",
+      "phase": {
+        "1": {
+          "time": "Mise en bouteille",
+          "info": {
+            "label": "Prise de mousse",
+            "content": "Les levures mangent le sucre et créent les bulles. La pression monte à 6 bars !"
+          }
+        },
+        "2": {
+          "time": "15 mois plus tard...",
+          "info": {
+            "label": "Maturation sur lies",
+            "content": "Le vin se nourrit des levures. Il gagne en gras et développe des arômes de brioche."
+          }
+        },
+        "3": {
+          "time": "Le Remuage",
+          "info": {
+            "label": "Tête en bas",
+            "content": "On tourne les bouteilles pour faire descendre le dépôt dans le goulot."
+          }
+        },
+        "4": {
+          "time": "Le Dégorgement",
+          "info": {
+            "label": "Expulsion",
+            "content": "Le col est gelé. Pschitt ! Le glaçon de dépôt est éjecté. Le vin est limpide."
+          }
+        }
+      }
+    },
+    "step_3": {
+      "title": "La Touche Finale : Le Dosage",
+      "info": "Quel style de vin voulez-vous obtenir ?",
+      "labels": { "sugar": "Sucre ajouté", "taste": "Style" },
+      "items": {
+        "1": { "name": "Brut Nature", "sugar": "0 g/L", "taste": "Pur, minéral, sans fard" },
+        "2": { "name": "Extra Brut", "sugar": "4 g/L", "taste": "Très sec, précis" },
+        "3": { "name": "Brut", "sugar": "8 g/L", "taste": "Le classique équilibré" },
+        "4": { "name": "Sec", "sugar": "20 g/L", "taste": "Rond et gourmand" },
+        "5": { "name": "Demi-Sec", "sugar": "35 g/L", "taste": "Doux (pour les desserts)" }
+      },
+      "button": "Boucher ma bouteille"
+    },
+    "step_4": {
+      "title": "Votre Cuvée est prête !",
+      "info": "Félicitations {{firstName}}, voici votre création unique.",
+      "bottomInfo": "Voulez-vous garder un souvenir de votre cuvée ?",
+      "viewBtn": "Voir mon étiquette",
+      "sendBtn": "Recevoir par email",
+      "finishBtn": "Retour à l'accueil",
+      "pdf": {
+        "title": "Certificat de création - Maison {{firstName}}",
+        "nameLabel": "Nom de la cuvée :",
+        "nameText": "Cuvée Prestige {{firstName}}",
+        "typeLabel": "Type :",
+        "tasteLabel": "Profil de dégustation :",
+        "bottomItems": [
+          "Cuvée confidentielle",
+          "À déguster avec passion",
+          "L'abus d'alcool est dangereux pour la santé"
+        ]
+      },
+      "results": {
+        "1": {
+          "type": "Blanc de Blancs {{detailedName}}",
+          "tasteProfile": [
+            "Élégance pure",
+            "Notes d'agrumes, de fleurs blanches et de craie",
+            "Une grande fraîcheur minérale"
+          ],
+          "foodPairing": [
+            "Idéal avec des huîtres, un carpaccio de Saint-Jacques ou du caviar."
+          ]
+        },
+        "2": {
+          "type": "Blanc de Noirs {{detailedName}}",
+          "tasteProfile": [
+            "Puissance et caractère",
+            "Notes de fruits rouges, de pomme mûre et d'épices",
+            "Une bouche ample et vineuse"
+          ],
+          "foodPairing": [
+            "Parfait avec une volaille rôtie, des champignons ou un vieux Comté."
+          ]
+        },
+        "3": {
+          "type": "Rosé {{detailedName}}",
+          "tasteProfile": [
+            "Gourmandise fruitée",
+            "Explosion de fraise, framboise et cerise",
+            "Bouche charnue et tendre"
+          ],
+          "foodPairing": [
+            "Sublime sur un saumon, un dessert aux fruits rouges ou des plats épicés."
+          ]
+        },
+        "4": {
+          "type": "Assemblage Traditionnel {{detailedName}}",
+          "tasteProfile": [
+            "L'Harmonie parfaite",
+            "Équilibre entre la fraîcheur des blancs et la rondeur des noirs",
+            "Notes de fruits blancs et de brioche chaude"
+          ],
+          "foodPairing": [
+            "Le roi de l'apéritif, à l'aise aussi sur tout un repas."
+          ]
+        }
+      },
+      "emailModal": {
+        "title": "Envoyez-vous votre cuvée",
+        "info": "Recevez la fiche technique et l'étiquette de votre Champagne.",
+        "placeholder": "votre@email.com",
+        "cancel": "Non merci",
+        "confirm": "Envoyer le souvenir"
+      }
+    },
+    "step_5": {
+      "emailSended": "C'est envoyé à {{email}} ! Surveillez votre boîte mail (et vos spams).",
+      "finish": "Merci d'avoir joué au Chef de Cave !"
+    }
+  }
+}

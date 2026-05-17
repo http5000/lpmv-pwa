@@ -166,9 +166,9 @@ export const CHAPITRES: Chapitre[] = [
       {
         slug: "champagne",
         title: "Assemble ton Champagne",
-        sourceModule: 12,
-        status: "coming-soon",
-        teaser: "Pinot, Meunier, Chardonnay — sois le chef de cave d'un jour.",
+        sourceModule: 13,
+        status: "available",
+        teaser: "Pinot, Meunier, Chardonnay : entre dans la cave du chef de cave.",
       },
     ],
   },
