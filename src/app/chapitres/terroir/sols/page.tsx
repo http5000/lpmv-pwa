@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { getSolsContent } from "@/lib/content/sols";
@@ -43,31 +44,30 @@ export default function SolsPage() {
           Touche un sol pour en sentir l&rsquo;influence.
         </p>
 
-        {/* Grille des sols */}
+        {/* Grille des sols — photos détourées sur fond crème */}
         <ul className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
           {sols.map((sol) => (
             <li key={sol.id}>
               <Link
                 href={`/chapitres/terroir/sols/${sol.slug}`}
-                className="group flex aspect-square flex-col items-stretch overflow-hidden rounded-xl border border-cream-dark bg-cream-light transition-all hover:border-or active:scale-[0.98]"
+                className="group flex aspect-square flex-col items-stretch overflow-hidden rounded-xl border border-cream-dark bg-cream-light transition-all hover:border-or hover:shadow-md active:scale-[0.98]"
               >
-                {/* Tampon de couleur (placeholder photo réelle plus tard) */}
-                <div
-                  className="relative flex-1"
-                  style={{
-                    background: `radial-gradient(circle at 35% 35%, ${sol.color}E6, ${sol.color} 55%, ${sol.color}AA)`,
-                  }}
-                  role="img"
-                  aria-label={sol.swatch}
-                >
+                <div className="relative flex flex-1 items-center justify-center p-3">
                   <span
                     aria-hidden="true"
-                    className="absolute right-2 top-2 rounded-full bg-cream-light/90 px-1.5 py-0.5 font-serif text-[10px] text-champetre"
+                    className="absolute right-2 top-2 rounded-full bg-cream-light/95 px-1.5 py-0.5 font-serif text-[10px] text-champetre"
                   >
                     {sol.id}
                   </span>
+                  <Image
+                    src={sol.image}
+                    alt={sol.alt}
+                    width={200}
+                    height={200}
+                    className="h-full w-auto object-contain drop-shadow-sm transition-transform group-hover:scale-105"
+                  />
                 </div>
-                <div className="px-2.5 py-2">
+                <div className="border-t border-cream-dark/50 bg-cream px-2.5 py-2 text-center">
                   <p className="font-serif text-sm leading-tight text-aubergine group-hover:text-or">
                     {sol.shortTitle}
                   </p>

@@ -12,7 +12,7 @@ export function BrandMark({
 }: {
   href?: string;
   size?: "sm" | "md" | "lg";
-  variant?: "aubergine" | "or" | "ghost";
+  variant?: "aubergine" | "or";
 }) {
   return (
     <Link

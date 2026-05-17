@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
@@ -26,18 +27,25 @@ export async function generateMetadata({
 }
 
 function Section({
+  iconSrc,
   label,
   children,
 }: {
+  iconSrc: string;
   label: string;
   children: React.ReactNode;
 }) {
   return (
-    <section className="border-t border-cream-dark py-4">
-      <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
-        {label}
-      </h2>
-      <div className="mt-2 text-sm leading-relaxed text-aubergine">{children}</div>
+    <section className="border-t border-cream-dark py-5">
+      <div className="flex items-center gap-2">
+        <Image src={iconSrc} alt="" width={28} height={28} className="h-7 w-7" />
+        <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+          {label}
+        </h2>
+      </div>
+      <div className="mt-2 pl-9 text-sm leading-relaxed text-aubergine">
+        {children}
+      </div>
     </section>
   );
 }
@@ -65,7 +73,7 @@ export default async function SolPage({
   const { sol: slug } = await params;
   const sol = getSolBySlug(slug);
   if (!sol) notFound();
-  const { labels, sols } = getSolsContent();
+  const { labels, icons, sols } = getSolsContent();
 
   // Navigation entre sols (suivant/précédent dans l'ordre du JSON)
   const index = sols.findIndex((s) => s.slug === slug);
@@ -82,50 +90,77 @@ export default async function SolPage({
         ]}
       />
       <main className="mx-auto w-full max-w-screen-sm flex-1 pb-16">
-        {/* Hero — tampon visuel + titre */}
+        {/* Hero — image détourée du sol sur fond doux */}
         <div
-          className="relative aspect-[3/2] w-full"
+          className="relative flex aspect-[4/3] w-full items-center justify-center px-6"
           style={{
-            background: `radial-gradient(circle at 30% 30%, ${sol.color}F0, ${sol.color} 50%, ${sol.color}99 100%)`,
+            background: `radial-gradient(circle at 50% 40%, ${sol.color}1A, transparent 70%)`,
           }}
-          role="img"
-          aria-label={sol.swatch}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-cream/85" />
-          <div className="absolute bottom-0 left-0 right-0 p-5">
-            <span className="rounded-full bg-cream-light/95 px-3 py-1 font-serif text-[10px] uppercase tracking-[0.3em] text-or">
-              Sol n°{sol.id}
-            </span>
-            <h1 className="mt-3 font-serif text-4xl leading-tight text-aubergine">
-              {sol.title}
-            </h1>
-          </div>
+          <Image
+            src={sol.imageFull}
+            alt={sol.alt}
+            width={500}
+            height={400}
+            priority
+            className="max-h-full w-auto object-contain drop-shadow-lg"
+          />
         </div>
 
-        <article className="px-5 pt-5">
+        <div className="px-5 pt-6">
+          <span className="rounded-full bg-aubergine/[0.08] px-3 py-1 font-serif text-[10px] uppercase tracking-[0.3em] text-aubergine">
+            Sol n°{sol.id}
+          </span>
+          <h1 className="mt-3 font-serif text-4xl leading-tight text-aubergine">
+            {sol.title}
+          </h1>
+        </div>
+
+        <article className="px-5 pt-4">
           {/* Identité du sol */}
-          <Section label={labels.origin}>{sol.origin}</Section>
-          <Section label={labels.texture}>{sol.texture}</Section>
-          <Section label={labels.areas}>{sol.areas}</Section>
-          <Section label={labels.climate}>{sol.climate}</Section>
-          <Section label={labels.grape_varieties}>{sol.grape_varieties}</Section>
+          <Section iconSrc={icons.origin} label={labels.origin}>
+            {sol.origin}
+          </Section>
+          <Section iconSrc={icons.texture} label={labels.texture}>
+            {sol.texture}
+          </Section>
+          <Section iconSrc={icons.areas} label={labels.areas}>
+            {sol.areas}
+          </Section>
+          <Section iconSrc={icons.climate} label={labels.climate}>
+            {sol.climate}
+          </Section>
+          <Section iconSrc={icons.grape_varieties} label={labels.grape_varieties}>
+            {sol.grape_varieties}
+          </Section>
 
           {/* Le profil de vin (mise en valeur) */}
           <section className="my-6 rounded-2xl bg-aubergine/[0.06] p-5">
-            <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
-              {labels.profile}
-            </h2>
+            <div className="flex items-center gap-2">
+              <Image
+                src={icons.profile}
+                alt=""
+                width={32}
+                height={32}
+                className="h-8 w-8"
+              />
+              <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+                {labels.profile}
+              </h2>
+            </div>
             <div className="mt-3 text-sm leading-relaxed text-aubergine">
               <List items={sol.profile} />
             </div>
           </section>
 
-          <Section label={labels.appellations}>{sol.appellations}</Section>
+          <Section iconSrc={icons.appellations} label={labels.appellations}>
+            {sol.appellations}
+          </Section>
 
-          <Section label={labels.advantages}>
+          <Section iconSrc={icons.advantages} label={labels.advantages}>
             <List items={sol.advantages} />
           </Section>
-          <Section label={labels.constraints}>
+          <Section iconSrc={icons.constraints} label={labels.constraints}>
             <List items={sol.constraints} />
           </Section>
         </article>
@@ -138,14 +173,23 @@ export default async function SolPage({
           {prev ? (
             <Link
               href={`/chapitres/terroir/sols/${prev.slug}`}
-              className="flex flex-1 flex-col rounded-xl border border-cream-dark bg-cream-light p-3 transition-all hover:border-or active:scale-[0.99]"
+              className="flex flex-1 items-center gap-3 rounded-xl border border-cream-dark bg-cream-light p-3 transition-all hover:border-or active:scale-[0.99]"
             >
-              <span className="text-[10px] uppercase tracking-wider text-champetre">
-                ← Précédent
-              </span>
-              <span className="font-serif text-sm text-aubergine">
-                {prev.shortTitle}
-              </span>
+              <Image
+                src={prev.image}
+                alt=""
+                width={40}
+                height={40}
+                className="h-10 w-10 shrink-0 object-contain"
+              />
+              <div className="flex min-w-0 flex-col">
+                <span className="text-[10px] uppercase tracking-wider text-champetre">
+                  ← Précédent
+                </span>
+                <span className="truncate font-serif text-sm text-aubergine">
+                  {prev.shortTitle}
+                </span>
+              </div>
             </Link>
           ) : (
             <div className="flex-1" />
@@ -153,14 +197,23 @@ export default async function SolPage({
           {next ? (
             <Link
               href={`/chapitres/terroir/sols/${next.slug}`}
-              className="flex flex-1 flex-col items-end rounded-xl border border-cream-dark bg-cream-light p-3 text-right transition-all hover:border-or active:scale-[0.99]"
+              className="flex flex-1 items-center justify-end gap-3 rounded-xl border border-cream-dark bg-cream-light p-3 text-right transition-all hover:border-or active:scale-[0.99]"
             >
-              <span className="text-[10px] uppercase tracking-wider text-champetre">
-                Suivant →
-              </span>
-              <span className="font-serif text-sm text-aubergine">
-                {next.shortTitle}
-              </span>
+              <div className="flex min-w-0 flex-col">
+                <span className="text-[10px] uppercase tracking-wider text-champetre">
+                  Suivant →
+                </span>
+                <span className="truncate font-serif text-sm text-aubergine">
+                  {next.shortTitle}
+                </span>
+              </div>
+              <Image
+                src={next.image}
+                alt=""
+                width={40}
+                height={40}
+                className="h-10 w-10 shrink-0 object-contain"
+              />
             </Link>
           ) : (
             <div className="flex-1" />
