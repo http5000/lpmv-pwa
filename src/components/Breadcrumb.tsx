@@ -8,18 +8,18 @@ type Crumb = { label: string; href?: string };
  */
 export function Breadcrumb({ items }: { items: Crumb[] }) {
   return (
-    <nav aria-label="Fil d'Ariane" className="text-xs text-olive-soft">
+    <nav aria-label="Fil d'Ariane" className="text-xs text-aubergine-soft">
       <ol className="flex flex-wrap items-center gap-1.5">
         {items.map((item, idx) => {
           const isLast = idx === items.length - 1;
           return (
             <li key={`${item.label}-${idx}`} className="flex items-center gap-1.5">
               {item.href && !isLast ? (
-                <Link href={item.href} className="hover:text-burgundy hover:underline">
+                <Link href={item.href} className="hover:text-or hover:underline">
                   {item.label}
                 </Link>
               ) : (
-                <span aria-current={isLast ? "page" : undefined} className="text-olive">
+                <span aria-current={isLast ? "page" : undefined} className="text-aubergine">
                   {item.label}
                 </span>
               )}

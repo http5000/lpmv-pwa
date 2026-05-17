@@ -33,11 +33,11 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section className="border-t border-parchment-dark py-4">
-      <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-burgundy">
+    <section className="border-t border-cream-dark py-4">
+      <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
         {label}
       </h2>
-      <div className="mt-2 text-sm leading-relaxed text-olive">{children}</div>
+      <div className="mt-2 text-sm leading-relaxed text-aubergine">{children}</div>
     </section>
   );
 }
@@ -47,7 +47,7 @@ function List({ items }: { items: string[] }) {
     <ul className="space-y-1.5">
       {items.map((it, i) => (
         <li key={i} className="flex gap-2">
-          <span aria-hidden="true" className="text-burgundy">
+          <span aria-hidden="true" className="text-or">
             •
           </span>
           <span>{it}</span>
@@ -91,12 +91,12 @@ export default async function SolPage({
           role="img"
           aria-label={sol.swatch}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-parchment/85" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-cream/85" />
           <div className="absolute bottom-0 left-0 right-0 p-5">
-            <span className="rounded-full bg-parchment-light/95 px-3 py-1 font-serif text-[10px] uppercase tracking-[0.3em] text-burgundy">
+            <span className="rounded-full bg-cream-light/95 px-3 py-1 font-serif text-[10px] uppercase tracking-[0.3em] text-or">
               Sol n°{sol.id}
             </span>
-            <h1 className="mt-3 font-serif text-4xl leading-tight text-olive">
+            <h1 className="mt-3 font-serif text-4xl leading-tight text-aubergine">
               {sol.title}
             </h1>
           </div>
@@ -111,11 +111,11 @@ export default async function SolPage({
           <Section label={labels.grape_varieties}>{sol.grape_varieties}</Section>
 
           {/* Le profil de vin (mise en valeur) */}
-          <section className="my-6 rounded-2xl bg-burgundy/[0.06] p-5">
-            <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-burgundy">
+          <section className="my-6 rounded-2xl bg-aubergine/[0.06] p-5">
+            <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
               {labels.profile}
             </h2>
-            <div className="mt-3 text-sm leading-relaxed text-olive">
+            <div className="mt-3 text-sm leading-relaxed text-aubergine">
               <List items={sol.profile} />
             </div>
           </section>
@@ -138,12 +138,12 @@ export default async function SolPage({
           {prev ? (
             <Link
               href={`/chapitres/terroir/sols/${prev.slug}`}
-              className="flex flex-1 flex-col rounded-xl border border-parchment-dark bg-parchment-light p-3 transition-all hover:border-burgundy active:scale-[0.99]"
+              className="flex flex-1 flex-col rounded-xl border border-cream-dark bg-cream-light p-3 transition-all hover:border-or active:scale-[0.99]"
             >
-              <span className="text-[10px] uppercase tracking-wider text-earth-soft">
+              <span className="text-[10px] uppercase tracking-wider text-champetre">
                 ← Précédent
               </span>
-              <span className="font-serif text-sm text-olive">
+              <span className="font-serif text-sm text-aubergine">
                 {prev.shortTitle}
               </span>
             </Link>
@@ -153,12 +153,12 @@ export default async function SolPage({
           {next ? (
             <Link
               href={`/chapitres/terroir/sols/${next.slug}`}
-              className="flex flex-1 flex-col items-end rounded-xl border border-parchment-dark bg-parchment-light p-3 text-right transition-all hover:border-burgundy active:scale-[0.99]"
+              className="flex flex-1 flex-col items-end rounded-xl border border-cream-dark bg-cream-light p-3 text-right transition-all hover:border-or active:scale-[0.99]"
             >
-              <span className="text-[10px] uppercase tracking-wider text-earth-soft">
+              <span className="text-[10px] uppercase tracking-wider text-champetre">
                 Suivant →
               </span>
-              <span className="font-serif text-sm text-olive">
+              <span className="font-serif text-sm text-aubergine">
                 {next.shortTitle}
               </span>
             </Link>
@@ -170,7 +170,7 @@ export default async function SolPage({
         <div className="mt-10 text-center">
           <Link
             href="/chapitres/terroir/sols"
-            className="text-sm text-olive-soft underline-offset-4 hover:text-burgundy hover:underline"
+            className="text-sm text-aubergine-soft underline-offset-4 hover:text-or hover:underline"
           >
             ← Tous les sols
           </Link>

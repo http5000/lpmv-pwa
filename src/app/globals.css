@@ -1,52 +1,66 @@
 @import "tailwindcss";
 
 /* ============================================================
-   LPMV — Charte (issue des bornes du musée, voir Figma)
-   À affiner avec la designer du musée. Voir memory/design_lpmv_charte.md
+   LPMV — Charte graphique officielle (mai 2026)
+   Reçue du user le 2026-05-18, voir memory/design_lpmv_charte.md
    ============================================================ */
+
 :root {
-  /* Fonds */
-  --color-parchment: #f5efe0;
-  --color-parchment-light: #faf6ec;
-  --color-parchment-dark: #ece5d0;
+  /* === Couleurs primaires de marque === */
+  --color-aubergine: #310e31;       /* Violet aubergine — couleur signature */
+  --color-or: #ca9a2f;              /* Or moutarde — accent principal */
+  --color-or-olive: #bb9531;        /* Or olive — accent secondaire */
+  --color-champetre: #c6a15b;       /* Or champêtre — soft accent */
+  --color-sable: #cb9966;           /* Sable doré — accent chaud */
 
-  /* Texte principal — vert olive profond */
-  --color-olive: #4a5d3a;
-  --color-olive-soft: #6b7d5a;
+  /* === Variations utilitaires === */
+  --color-aubergine-soft: #6b4a6b;  /* Aubergine éclairci pour texte secondaire */
+  --color-aubergine-deep: #1d061d;  /* Aubergine assombri pour hover/focus */
 
-  /* Accents — bordeaux/rouge vin */
-  --color-burgundy: #7a1f2b;
-  --color-burgundy-light: #a6404f;
+  /* === Fonds (calés pour pairer avec l'aubergine) === */
+  --color-cream: #faf6ec;           /* Fond principal — crème très clair */
+  --color-cream-light: #fdfaf2;     /* Cartes / sections claires */
+  --color-cream-dark: #efe9d8;      /* Bordures / séparateurs */
 
-  /* Neutres terreux */
-  --color-earth: #6b4f3a;
-  --color-earth-soft: #a08a72;
-
-  /* Sémantique de base */
-  --background: var(--color-parchment);
-  --foreground: var(--color-olive);
+  /* === Sémantique de base === */
+  --background: var(--color-cream);
+  --foreground: var(--color-aubergine);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-parchment: var(--color-parchment);
-  --color-parchment-light: var(--color-parchment-light);
-  --color-parchment-dark: var(--color-parchment-dark);
-  --color-olive: var(--color-olive);
-  --color-olive-soft: var(--color-olive-soft);
-  --color-burgundy: var(--color-burgundy);
-  --color-burgundy-light: var(--color-burgundy-light);
-  --color-earth: var(--color-earth);
-  --color-earth-soft: var(--color-earth-soft);
+
+  /* Brand */
+  --color-aubergine: var(--color-aubergine);
+  --color-aubergine-soft: var(--color-aubergine-soft);
+  --color-aubergine-deep: var(--color-aubergine-deep);
+  --color-or: var(--color-or);
+  --color-or-olive: var(--color-or-olive);
+  --color-champetre: var(--color-champetre);
+  --color-sable: var(--color-sable);
+
+  /* Fonds */
+  --color-cream: var(--color-cream);
+  --color-cream-light: var(--color-cream-light);
+  --color-cream-dark: var(--color-cream-dark);
+
+  /* Fonts */
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
 }
 
-/* Pas de mode sombre par défaut — la chaleur parchemin est la signature. */
+/* Pas de mode sombre par défaut — l'identité est cream + aubergine. */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  /* Légère texture (TODO : tester avec un grain crème) */
+}
+
+/* Sélection de texte aux couleurs de marque */
+::selection {
+  background: var(--color-or);
+  color: var(--color-aubergine);
 }

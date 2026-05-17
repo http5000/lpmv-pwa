@@ -49,25 +49,25 @@ export default async function ChapitrePage({
           <span className="text-4xl" aria-hidden="true">
             {chapitre.emoji}
           </span>
-          <p className="mt-3 font-serif text-[10px] uppercase tracking-[0.3em] text-burgundy">
+          <p className="mt-3 font-serif text-[10px] uppercase tracking-[0.3em] text-or">
             Chapitre
           </p>
-          <h1 className="mt-1 font-serif text-3xl leading-tight text-olive">
+          <h1 className="mt-1 font-serif text-3xl leading-tight text-aubergine">
             {chapitre.title}
           </h1>
-          <p className="mt-2 text-sm text-olive-soft">{chapitre.subtitle}</p>
+          <p className="mt-2 text-sm text-aubergine-soft">{chapitre.subtitle}</p>
 
           {/* Voix du mentor */}
-          <blockquote className="mt-5 border-l-2 border-burgundy pl-3 text-sm italic text-olive-soft">
+          <blockquote className="mt-5 border-l-2 border-or pl-3 text-sm italic text-aubergine-soft">
             &ldquo;{chapitre.mentorIntro}&rdquo;
-            <footer className="mt-1 text-xs not-italic text-earth-soft">
+            <footer className="mt-1 text-xs not-italic text-champetre">
               — Le Mentor
             </footer>
           </blockquote>
         </div>
 
         {/* Modules */}
-        <h2 className="mt-8 font-serif text-xl text-olive">
+        <h2 className="mt-8 font-serif text-xl text-aubergine">
           {chapitre.modules.length} étape
           {chapitre.modules.length > 1 ? "s" : ""}
         </h2>
@@ -75,35 +75,30 @@ export default async function ChapitrePage({
           {chapitre.modules.map((mod, idx) => {
             const isAvailable = mod.status === "available";
             const inner = (
-              <>
-                <div className="flex items-baseline gap-3">
-                  <span className="font-serif text-lg text-earth-soft">
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <div className="min-w-0 flex-1">
-                    <h3
-                      className={`font-serif text-lg leading-tight ${
-                        isAvailable ? "text-olive" : "text-olive-soft"
-                      }`}
-                    >
-                      {mod.title}
-                    </h3>
-                    <p className="mt-1 text-sm text-olive-soft">{mod.teaser}</p>
-                  </div>
-                  {isAvailable ? (
-                    <span
-                      aria-hidden="true"
-                      className="self-center text-burgundy"
-                    >
-                      →
-                    </span>
-                  ) : (
-                    <span className="self-center rounded-full bg-parchment-dark px-2.5 py-0.5 text-[10px] uppercase tracking-wider text-earth-soft">
-                      Bientôt
-                    </span>
-                  )}
+              <div className="flex items-baseline gap-3">
+                <span className="font-serif text-lg text-champetre">
+                  {String(idx + 1).padStart(2, "0")}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <h3
+                    className={`font-serif text-lg leading-tight ${
+                      isAvailable ? "text-aubergine" : "text-aubergine-soft"
+                    }`}
+                  >
+                    {mod.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-aubergine-soft">{mod.teaser}</p>
                 </div>
-              </>
+                {isAvailable ? (
+                  <span aria-hidden="true" className="self-center text-or">
+                    →
+                  </span>
+                ) : (
+                  <span className="self-center rounded-full bg-cream-dark px-2.5 py-0.5 text-[10px] uppercase tracking-wider text-champetre">
+                    Bientôt
+                  </span>
+                )}
+              </div>
             );
 
             return (
@@ -111,12 +106,12 @@ export default async function ChapitrePage({
                 {isAvailable ? (
                   <Link
                     href={`/chapitres/${chapitre.slug}/${mod.slug}`}
-                    className="group block rounded-xl border border-parchment-dark bg-parchment-light p-4 transition-all hover:border-burgundy hover:shadow-sm active:scale-[0.99]"
+                    className="group block rounded-xl border border-cream-dark bg-cream-light p-4 transition-all hover:border-or hover:shadow-sm active:scale-[0.99]"
                   >
                     {inner}
                   </Link>
                 ) : (
-                  <div className="block rounded-xl border border-dashed border-parchment-dark bg-parchment-light/50 p-4">
+                  <div className="block rounded-xl border border-dashed border-cream-dark bg-cream-light/50 p-4">
                     {inner}
                   </div>
                 )}
@@ -128,7 +123,7 @@ export default async function ChapitrePage({
         <div className="mt-12 text-center">
           <Link
             href="/chapitres"
-            className="text-sm text-olive-soft underline-offset-4 hover:text-burgundy hover:underline"
+            className="text-sm text-aubergine-soft underline-offset-4 hover:text-or hover:underline"
           >
             ← Tous les chapitres
           </Link>

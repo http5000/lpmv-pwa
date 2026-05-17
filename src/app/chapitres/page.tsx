@@ -15,13 +15,13 @@ export default function ChapitresPage() {
     <>
       <AppHeader crumbs={[{ label: "Les chapitres" }]} />
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
-        <p className="font-serif text-xs uppercase tracking-[0.3em] text-burgundy">
+        <p className="font-serif text-xs uppercase tracking-[0.3em] text-or">
           Le parcours
         </p>
-        <h1 className="mt-2 font-serif text-3xl leading-tight text-olive">
+        <h1 className="mt-2 font-serif text-3xl leading-tight text-aubergine">
           Cinq chapitres pour comprendre un verre
         </h1>
-        <p className="mt-3 text-sm text-olive-soft">
+        <p className="mt-3 text-sm text-aubergine-soft">
           Le chemin suggéré va du sol jusqu&rsquo;à ta gorgée. Mais tu peux
           piocher où tu veux, quand tu veux.
         </p>
@@ -36,27 +36,24 @@ export default function ChapitresPage() {
               <li key={chapitre.slug}>
                 <Link
                   href={`/chapitres/${chapitre.slug}`}
-                  className="group block rounded-2xl border border-parchment-dark bg-parchment-light p-5 transition-all hover:border-burgundy hover:shadow-sm active:scale-[0.99]"
+                  className="group block rounded-2xl border border-cream-dark bg-cream-light p-5 transition-all hover:border-or hover:shadow-sm active:scale-[0.99]"
                   style={{ borderLeftWidth: 4, borderLeftColor: chapitre.accent }}
                 >
                   <div className="flex items-start gap-4">
-                    <span
-                      className="text-3xl"
-                      aria-hidden="true"
-                    >
+                    <span className="text-3xl" aria-hidden="true">
                       {chapitre.emoji}
                     </span>
                     <div className="min-w-0 flex-1">
-                      <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-earth-soft">
+                      <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-champetre">
                         Chapitre {idx + 1}
                       </p>
-                      <h2 className="mt-1 font-serif text-xl text-olive group-hover:text-burgundy">
+                      <h2 className="mt-1 font-serif text-xl text-aubergine group-hover:text-or">
                         {chapitre.title}
                       </h2>
-                      <p className="mt-1 text-sm text-olive-soft">
+                      <p className="mt-1 text-sm text-aubergine-soft">
                         {chapitre.subtitle}
                       </p>
-                      <p className="mt-3 text-xs text-earth-soft">
+                      <p className="mt-3 text-xs text-champetre">
                         {available} / {moduleCount} module
                         {moduleCount > 1 ? "s" : ""} disponible
                         {available > 1 ? "s" : ""}
@@ -64,7 +61,7 @@ export default function ChapitresPage() {
                     </div>
                     <span
                       aria-hidden="true"
-                      className="self-center text-olive-soft transition-transform group-hover:translate-x-1"
+                      className="self-center text-aubergine-soft transition-transform group-hover:translate-x-1"
                     >
                       →
                     </span>

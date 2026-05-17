@@ -1,16 +1,26 @@
 import Link from "next/link";
+import { Logo } from "./Logo";
 
-export function BrandMark({ href = "/" }: { href?: string }) {
+/**
+ * BrandMark = le logo cliquable qui ramène à l'accueil.
+ * Wrap juste le composant Logo officiel dans un lien.
+ */
+export function BrandMark({
+  href = "/",
+  size = "sm",
+  variant = "aubergine",
+}: {
+  href?: string;
+  size?: "sm" | "md" | "lg";
+  variant?: "aubergine" | "or" | "ghost";
+}) {
   return (
     <Link
       href={href}
-      className="inline-flex flex-col items-start gap-0.5 transition-opacity hover:opacity-70"
+      className="inline-flex transition-opacity hover:opacity-80"
       aria-label="Retour à l'accueil — Le Petit Musée du Vin"
     >
-      <span className="font-serif text-[10px] uppercase tracking-[0.3em] text-burgundy">
-        Le Petit Musée
-      </span>
-      <span className="font-serif text-sm leading-none text-olive">du Vin</span>
+      <Logo size={size} variant={variant} />
     </Link>
   );
 }
