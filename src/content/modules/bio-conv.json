@@ -1,0 +1,75 @@
+{
+    "title": "Bio vs Conventionnel : Brisons les idées reçues !",
+    "info": "<p>Nous avons préparé un petit quiz pour vous.</p><p>Faites glisser chaque affirmation <br/> et découvrez la vraie histoire des vignobles.</p>",
+    "swipeLabel": "Faites glisser l’affirmation",
+    "rules": {
+        "left": {
+            "label": "Faux",
+            "info": "Glissez vers la gauche si l’affirmation est fausse"
+        },
+        "right": {
+            "label": "Vrai",
+            "info": "Glissez vers la droite si l’affirmation est vraie"
+        }
+    },
+    "startBtn": "Commencer le quiz",
+    "buttonNext": "Suivant",
+    "buttonGoHome": "Accueil",
+    "finishTitles": {
+        "0-3": "Pas mal !",
+        "4-6": "Bien joué !",
+        "7-8": "Fantastique !"
+    },
+    "scoreText": "Votre score total est de {{score}} !",
+    "finishText": "<p>Bio ne veut pas dire « sans traitement », et conventionnel ne veut pas dire « sans soin ».</p><p>Chaque vigneron cherche un équilibre : <strong>protéger la vigne, respecter la nature et vivre de son travail.</strong></p><p><strong>Comprendre leurs choix</strong>, c’est apprécier encore plus leur vin.</p>",
+    "items": [
+        {
+            "question": "En viticulture biologique, les vignes ne sont jamais traitées.",
+            "answer": "Les vignobles bio utilisent du cuivre, du soufre et des tisanes de plantes. Pas de produits chimiques de synthèse, mais les vignes restent protégées.",
+            "correct": false,
+            "id": "1"
+        },
+        {
+            "question": "Les vignobles conventionnels pulvérisent des pesticides tout le temps.",
+            "answer": "De nombreux vignerons conventionnels réduisent les pulvérisations au minimum, parfois moins que les bios, grâce à un suivi précis et à des outils modernes.",
+            "correct": false,
+            "id": "2"
+        },
+        {
+            "question": "Les rendements sont généralement plus faibles en bio qu’en conventionnel.",
+            "answer": "Les maladies et les aléas climatiques affectent davantage les vignobles bio, entraînant des récoltes plus faibles et moins stables.",
+            "correct": true,
+            "id": "3"
+        },
+        {
+            "question": "Le vin biologique ne contient jamais de soufre.",
+            "answer": "Le soufre est autorisé en vinification bio, mais en plus petites quantités. Il aide à stabiliser le vin.",
+            "correct": false,
+            "id": "4"
+        },
+        {
+            "question": "Tous les vignerons veulent réduire les pulvérisations, qu’ils soient bio ou non.",
+            "answer": "La plupart des vignerons souhaitent protéger leurs vignes tout en respectant la nature. Le dilemme est économique et pratique, non idéologique.",
+            "correct": true,
+            "id": "5"
+        },
+        {
+            "question": "Les vignobles conventionnels utilisent toujours des désherbants chimiques.",
+            "answer": "De nombreux domaines conventionnels utilisent le désherbage mécanique ou les engrais verts. L’image du « tout chimique » est dépassée.",
+            "correct": false,
+            "id": "6"
+        },
+        {
+            "question": "L’agriculture biologique demande plus de travail manuel.",
+            "answer": "Sans herbicides ni traitements systématiques, les vignerons doivent surveiller, désherber et traiter plus souvent. Cela demande plus de main-d’œuvre, de temps et de carburant.",
+            "correct": true,
+            "id": "7"
+        },
+        {
+            "question": "Bio ou conventionnel, un vigneron est avant tout passionné par la vigne.",
+            "answer": "Sans herbicides ni traitements systématiques, les vignerons doivent surveiller, désherber et traiter plus souvent. Cela demande plus de main-d’œuvre, de temps et de carburant.",
+            "correct": true,
+            "id": "8"
+        }
+    ]
+}
