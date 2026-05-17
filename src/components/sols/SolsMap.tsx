@@ -52,8 +52,9 @@ export function SolsMap({ sols, labels }: Props) {
 
   return (
     <>
-      {/* Conteneur carte — ratio 4:5 pour bien occuper l'écran portrait */}
-      <div className="relative mx-auto aspect-[4/5] w-full max-w-md">
+      {/* Conteneur carte — CARRÉ pour matcher le viewBox 100x100 du SVG France.
+          Les positions des sols (en %) tombent ainsi exactement sur leur région. */}
+      <div className="relative mx-auto aspect-square w-full max-w-[420px]">
         <FranceSilhouette className="absolute inset-0 h-full w-full" />
 
         {sols.map((sol) => {
@@ -67,43 +68,38 @@ export function SolsMap({ sols, labels }: Props) {
               onClick={() => setSelectedId(sol.id)}
               className="absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer focus:outline-none"
               style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
-              initial={{ opacity: 0, scale: 0.5 }}
+              initial={{ opacity: 0, scale: 0.4 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
-                delay: Number(sol.id) * 0.06,
+                delay: Number(sol.id) * 0.07,
                 type: "spring",
-                stiffness: 300,
-                damping: 20,
+                stiffness: 280,
+                damping: 18,
               }}
-              whileHover={{ scale: 1.12, zIndex: 5 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.15, zIndex: 5 }}
+              whileTap={{ scale: 0.92 }}
               aria-label={`${sol.shortTitle} — ${pos.region}`}
               aria-pressed={isActive}
             >
               <span
-                className={`relative block rounded-full transition-shadow ${
+                className={`relative flex h-11 w-11 items-center justify-center rounded-full bg-cream-light p-1 shadow-md transition-all sm:h-12 sm:w-12 ${
                   isActive
                     ? "ring-2 ring-or ring-offset-2 ring-offset-cream"
-                    : "shadow-md"
+                    : ""
                 }`}
               >
                 <Image
                   src={sol.image}
                   alt=""
-                  width={64}
-                  height={64}
-                  className="h-14 w-14 object-contain drop-shadow"
+                  width={48}
+                  height={48}
+                  className="h-full w-full object-contain"
                 />
               </span>
             </motion.button>
           );
         })}
       </div>
-
-      {/* Légende mobile */}
-      <p className="mx-auto mt-3 max-w-xs text-center text-xs italic text-aubergine-soft">
-        Touche un sol pour découvrir sa personnalité.
-      </p>
 
       {/* Bottom sheet */}
       <AnimatePresence>

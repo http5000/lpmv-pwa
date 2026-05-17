@@ -29,23 +29,56 @@ export default function SolsPage() {
           {title}
         </h1>
 
-        {/* Le saviez-vous (intro pliable) */}
-        <details className="mt-5 rounded-xl bg-cream-light p-4 open:bg-cream-dark/40">
-          <summary className="cursor-pointer list-none font-serif text-sm text-or">
-            ✦ Le saviez-vous&nbsp;? <span className="text-aubergine-soft underline-offset-4">Lire</span>
-          </summary>
-          <div
-            className="prose prose-sm mt-3 max-w-none text-sm leading-relaxed text-aubergine [&_h2]:mt-0 [&_h2]:font-serif [&_h2]:text-base [&_h2]:text-aubergine [&_li]:my-0.5 [&_p]:my-2 [&_strong]:text-or"
-            dangerouslySetInnerHTML={{ __html: didYouKnow }}
-          />
-        </details>
+        {/* Intro lead — TOUJOURS visible (pas dans details collapsed) */}
+        <section
+          aria-labelledby="intro-sol-title"
+          className="mt-5 rounded-2xl bg-aubergine/[0.05] p-5"
+        >
+          <h2
+            id="intro-sol-title"
+            className="font-serif text-lg leading-snug text-aubergine"
+          >
+            Le sol, première signature du vin
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-aubergine">
+            Toutes les terres ne sont pas adaptées à la vigne. Là où elle peut
+            pousser, <strong className="text-or">le sol joue un rôle décisif</strong>
+            {" : "}il influence la vigueur de la plante, sa résistance, la vitesse
+            de maturation des raisins et les arômes qui se développeront.
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-aubergine-soft">
+            Un même cépage exprimera une personnalité complètement différente
+            s&rsquo;il pousse sur du granit, de la craie ou des cendres
+            volcaniques.
+          </p>
+          <p className="mt-3 font-serif text-sm italic text-or">
+            Avec le climat et le travail du vigneron, le sol est l&rsquo;un des
+            trois piliers du terroir.
+          </p>
+
+          {/* Repli pour lire la version intégrale du contenu borne */}
+          <details className="mt-4 border-t border-aubergine/15 pt-3">
+            <summary className="cursor-pointer text-xs font-medium text-aubergine-soft underline-offset-4 hover:text-or hover:underline">
+              Lire la version complète du musée
+            </summary>
+            <div
+              className="prose prose-sm mt-3 max-w-none text-sm leading-relaxed text-aubergine [&_h2]:hidden [&_li]:my-0.5 [&_p]:my-2 [&_strong]:text-or"
+              dangerouslySetInnerHTML={{ __html: didYouKnow }}
+            />
+          </details>
+        </section>
+
+        {/* Consigne tactile */}
+        <p className="mt-7 text-center font-serif text-base italic text-aubergine-soft">
+          Touche un sol pour découvrir sa personnalité.
+        </p>
 
         {/* Carte de France interactive */}
-        <section className="mt-6">
+        <section className="mt-3">
           <SolsMap sols={sols} labels={labels} />
         </section>
 
-        {/* Vue liste de secours (toujours utile pour parcourir séquentiellement) */}
+        {/* Vue liste de secours */}
         <details className="mt-10 rounded-xl border border-cream-dark bg-cream-light p-4">
           <summary className="cursor-pointer list-none font-serif text-sm text-or">
             Voir la liste complète des 8 sols
