@@ -1,0 +1,696 @@
+{
+  "navigation": {
+    "start": "Résumé",
+    "slide_1": "Éraflage",
+    "slide_2": "Extraction du style",
+    "slide_3": "Levures",
+    "slide_4": "Ajustements possibles",
+    "slide_5": "Élevage",
+    "slide_6": "Assemblage",
+    "slide_7": "Mise en bouteille & Finition"
+  },
+  "start": {
+    "title": "Les choix du vigneron",
+    "button": "Découvrir"
+  },
+  "step_1": {
+    "touchRule": "Touchez chaque étape pour en savoir plus",
+    "title": "Chaque choix façonne le vin",
+    "subtitle": {
+      "first": "Une fois les raisins rentrés au chai, le vigneron entame",
+      "firstBold": "une délicate danse de décisions",
+      "second": "qui scelleront chacune",
+      "secondBold": "le destin du vin.",
+      "third": "Entrez dans les coulisses de la création."
+    },
+    "destemming": "Éraflage",
+    "extractingStyle": "Extraction du style",
+    "yeats": "Levures",
+    "possibleAdjustements": "Ajustements possibles",
+    "bottlingAndFinishing": "Mise en bouteille & Finition",
+    "blending": "Assemblage",
+    "aging": "Élevage",
+    "button": "Commencer l’expérience"
+  },
+  "step_2": {
+    "title": "Éraflage: Avec ou sans rafles ?",
+    "subtitle": {
+      "text": "Le vigneron peut choisir de garder ou retirer les rafles (les petites parties vertes qui tiennent les baies). L’action de retirer les rafles s’appelle",
+      "bold": "l’éraflage."
+    },
+    "sections": {
+      "howItWorks": "Comment ça marche",
+      "typicalResult": "Résultat typique"
+    },
+    "tabs": {
+      "first": {
+        "tabName": "Éraflé",
+        "imageTitle": "Raisin SANS rafles",
+        "howItWorks": {
+          "1": "L'absence de rafles (l'éraflage) donne <strong> un vin plus souple et rond,</strong> qui met en valeur l'éclat du fruit pur sans amertume végétale.",
+          "2": "C'est la méthode idéale pour élaborer des cuvées très gourmandes ou des vins à boire sur la jeunesse.",
+          "3": "Elle évite également toute astringence végétale si les rafles manquaient de maturité lors de la vendange.",
+          "4": "<strong>En pratique :</strong> La très grande majorité des vins rouges mondiaux sont éraflés pour privilégier la finesse et le fruit."
+        },
+        "typicalResults": {
+          "1": "Couleur très éclatante",
+          "2": "Arômes intenses de fruits purs",
+          "3": "Bouche douce et gouleyante",
+          "4": "Tanins fondus et peu agressifs"
+        }
+      },
+      "second": {
+        "tabName": "Non éraflé",
+        "imageTitle": "Raisin AVEC rafles",
+        "howItWorks": {
+          "1": "Conserver la rafle entière apporte <strong>des tanins puissants, de la fraîcheur et une tension vibrante.</strong>",
+          "2": "Ce choix<strong> structure</strong> fortement le vin et décuple son <strong>potentiel de garde</strong> en cave.",
+          "3": "Exemple : En Bourgogne, de nombreux vignerons gardent la rafle entière pour complexifier et rafraîchir le Pinot Noir."
+        },
+        "typicalResults": {
+          "1": "Couleur légèrement moins profonde",
+          "2": "Arômes floraux et subtilement épicés",
+          "3": "Bouche très structurée et fraîche"
+        }
+      }
+    }
+  },
+  "step_3": {
+    "title": "Extraction du style",
+    "description": {
+      "first": "Une fois les raisins en cuve, le vigneron entre dans une phase cruciale :",
+      "firstBold": "maîtriser l’extraction",
+      "second": "des composés issus des peaux, des pépins et parfois des rafles.",
+      "third": "C'est ce qui détermine la",
+      "thirdBold": "couleur, la texture, la charpente tannique et l’intensité aromatique.",
+      "fourth": "Il agit à travers trois leviers principaux :"
+    },
+    "levels": {
+      "maceration": {
+        "title": "Macération",
+        "description": "Temps de contact entre le jus et les matières solides"
+      },
+      "fermentation": {
+        "title": "Fermentation",
+        "description": "Contrôle de la température"
+      },
+      "techniques": {
+        "title": "Techniques de chai",
+        "description": "Pigeage, remontage, délestage"
+      }
+    },
+    "panel": {
+      "title": "Simulez votre vinification",
+      "subtitle": {
+        "first": "Chaque technique est un choix stylistique majeur :",
+        "second": "une extraction poussée donne généralement un vin plus charpenté et complexe."
+      },
+      "maceration": {
+        "title": "Choisissez la durée de macération",
+        "variants": {
+          "short": {
+            "label": "Courte (3–5 jours)",
+            "description": {
+              "first": "Extraction légère des tanins, robe claire,",
+              "firstBold": "vin souple et porté sur le fruit.",
+              "second": "Méthode privilégiée pour",
+              "secondBold": "les rouges légers ou les rosés intenses."
+            }
+          },
+          "long": {
+            "label": "Longue (2–4 semaines)",
+            "description": {
+              "first": "Extraction en profondeur :",
+              "firstBold": "tanins puissants, robe intense, belle mâche.",
+              "second": "Une étape nécessaire pour les grands vins rouges de garde."
+            }
+          }
+        }
+      },
+      "fermentation": {
+        "title": "Choisissez la température de fermentation",
+        "variants": {
+          "low": {
+            "label": "Basse (14–18°C)",
+            "description": {
+              "first": "Privilégie et préserve",
+              "firstBold": "les arômes frais, floraux et le fruit primaire.",
+              "second": "Classique pour l'élaboration des blancs et des rosés."
+            }
+          },
+          "medium": {
+            "label": "Moyenne–élevée (25–30°C)",
+            "description": {
+              "first": "Favorise une extraction maximale de la matière et des tanins pour une robe dense. Typique des",
+              "firstBold": "rouges de garde."
+            }
+          }
+        }
+      },
+      "technique": {
+        "title": "Choisissez la technique d'extraction",
+        "variants": {
+          "pumping": {
+            "label": "Remontage",
+            "description": "Le jus est pompé au fond de la cuve puis réintroduit par le haut pour arroser le marc. Cela maximise l’extraction tout en assouplissant les tanins."
+          },
+          "punching": {
+            "label": "Pigeage",
+            "description": "Le chapeau de marc (les peaux en surface) est enfoncé dans le jus. C'est une extraction physique plus intense, donnant des tanins plus fermes."
+          },
+          "draining": {
+            "label": "Délestage",
+            "description": "Le jus est entièrement séparé des peaux dans une autre cuve, puis réinjecté par le haut. Apporte une belle oxygénation et un vin fondu."
+          }
+        }
+      },
+      "results": {
+        "title": "Résultats",
+        "examples": "Exemples de vins",
+        "clear": "Robe limpide",
+        "fruity": "Profil fruité",
+        "lightTannins": "Tanins soyeux",
+        "supple": "Très gouleyant",
+        "drunkYoung": "À savourer sur la jeunesse",
+        "explosiveFruit": "Corbeille de fruits",
+        "softTannins": "Tanins veloutés",
+        "gentleStructure": "Matière délicate",
+        "aromatic": "Nez expressif",
+        "lightWine": "Vin de soif",
+        "roundTannins": "Tanins patinés",
+        "smoothFinish": "Allonge suave",
+        "lightColor": "Robe translucide",
+        "lightRedDeep": "Rouge rubis éclatant",
+        "ripeFruit": "Fruits bien mûrs",
+        "suppleTexture": "Bouche onctueuse",
+        "youngRed": "Rouge de copains",
+        "blackFruitAromas": "Bouquet de fruits noirs",
+        "mediumStructure": "Demi-corps",
+        "fairlyConcentrated": "Belle concentration",
+        "shortMaceration": "Extraction douce",
+        "polishedTannins": "Tanins enrobés",
+        "balancedWine": "Bel équilibre",
+        "moderateTannins": "Tanins fondus",
+        "freshFruit": "Fruit croquant",
+        "complex": "Nez complexe",
+        "aromaticWine": "Profil très aromatique",
+        "elegantTannins": "Tanins fins",
+        "softenedTexture": "Texture veloutée",
+        "strongExtraction": "Extraction poussée",
+        "elegantWine": "Vin racé",
+        "agingPotential": "Taillé pour la garde",
+        "intenseColor": "Robe profonde",
+        "powerfulWine": "Vin de caractère",
+        "concentrated": "Matière dense",
+        "fullBodied": "Vin charpenté",
+        "firmTannins": "Tanins accrocheurs",
+        "richAndAmple": "Bouche généreuse",
+        "maximumExtraction": "Matière opulente",
+        "meltedTannins": "Tanins civilisés"
+      }
+    },
+    "button": "Simuler votre vinification"
+  },
+  "step_4": {
+    "title": "Levures: Indigènes ou sélectionnées ?",
+    "subtitle": {
+      "bold": "Les levures",
+      "first": "ont pour mission de transformer le sucre du raisin en alcool. Le vigneron peut travailler avec les levures",
+      "firstBold": "naturellement présentes sur la peau du raisin",
+      "second": "ou d'ensemencer avec des levures",
+      "secondBold": "sélectionnées",
+      "third": "en laboratoire."
+    },
+    "tabs": {
+      "first": "Levures indigènes",
+      "second": "Levures sélectionnées"
+    },
+    "description": {
+      "keyCharacteristics": "Signes particuliers",
+      "aroma": "Profil aromatique",
+      "complexity": "Complexité en bouche",
+      "consistency": "Régularité des cuvées",
+      "expression": "Reflet du terroir",
+      "indigenous": {
+        "aroma": "Souvent plus subtil et nuancé : notes de fleurs blanches, d'herbes aromatiques, de miel ou touches minérales.",
+        "complexity": "Offre une grande richesse grâce à la diversité naturelle des souches ; le vin se dévoile par strates successives.",
+        "consistency": "La fermentation est vivante et moins maîtrisable ; le profil peut évoluer sensiblement d’une cuve ou d’un millésime à l’autre.",
+        "expression": "Une expression très identitaire et ancrée dans le terroir, avec une part d'imprévu qui fait son charme."
+      },
+      "selected": {
+        "aroma": "Des arômes francs, éclatants et souvent axés sur le fruit pur (agrumes, pomme croquante) sans déviations sauvages.",
+        "complexity": "Un profil plus direct et lisible, très agréable et facile d’accès, mais parfois dénué de la magie de l'inattendu.",
+        "consistency": "Garantit une grande stabilité ; le vigneron s'assure que chaque lot présente le profil exact qu'il a souhaité.",
+        "expression": "Un vin propre, techniquement irréprochable et régulier, privilégiant le fruit au détriment de la complexité rustique."
+      }
+    },
+    "didYouKnow": {
+      "title": "Le saviez-vous ?",
+      "description": {
+        "first": "Le choix des levures influence considérablement",
+        "firstBold": "le bouquet final du vin",
+        "second": " (qu'il tire vers les agrumes, les fleurs ou les fruits exotiques) ainsi que",
+        "secondBold": "son gras et sa texture en bouche."
+      }
+    }
+  },
+  "step_5": {
+    "title": "Ajustements: Un coup de pouce à la nature",
+    "subtitle": {
+      "first": "Si le raisin donne le ton, le climat (canicule, pluie) peut parfois créer des déséquilibres. Le vigneron a alors le droit",
+      "firstBold": "d'ajuster",
+      "second": "le moût pour sauver la cuvée.",
+      "third": "Ces gestes, strictement encadrés par la loi, ont pour seul but de",
+      "thirdBold": "retrouver l’harmonie et le plaisir de dégustation."
+    },
+    "main": {
+      "acidification": {
+        "title": "Acidification / Désacidification",
+        "description": "Redonne de la tension ou de la rondeur au vin.",
+        "popup": {
+          "title": "L'équilibre de l'acidité",
+          "first": "Lors d'années de canicule, les raisins gorgés de soleil peuvent donner un jus lourd, manquant cruellement de peps.",
+          "second": "Le vigneron est alors autorisé à",
+          "secondBold": "ajouter de l’acide tartrique ou malique",
+          "secondLast": "(les acides naturels du raisin) pour redonner de la colonne vertébrale au vin.",
+          "third": "À l’inverse, suite à un été froid, le jus peut être trop mordant. On procède alors à une",
+          "thirdBold": "désacidification.",
+          "fourth": "Ces correctifs sont",
+          "fourthBold": "très surveillés,",
+          "fourthLast": "avec des grammages stricts à ne pas dépasser.",
+          "points": {
+            "title": "L'impact dans le verre",
+            "first": "Un vin initialement plat retrouve de la vivacité et une finale salivante.",
+            "second": "Cependant, si le vigneron a la main lourde, le vin paraîtra dissocié ou artificiel."
+          }
+        }
+      },
+      "chaptalization": {
+        "title": "Chaptalisation",
+        "description": "Un apport de sucre pour soutenir l'alcool.",
+        "popup": {
+          "title": "La Chaptalisation (L'aide au degré)",
+          "first": "Quand le soleil a fait défaut, les baies peinent à synthétiser le sucre. Sans lui, les levures produiront très peu d'alcool.",
+          "second": "Le vigneron peut intervenir en ajoutant du sucre de betterave ou de canne",
+          "secondBold": "directement dans la cuve avant la fermentation,",
+          "secondLast": "pour nourrir les levures et booster la fermentation.",
+          "third": "Attention : cela",
+          "thirdBold": "ne donne pas un vin sucré en bouche !",
+          "thirdLast": "Les levures vont intégralement le « manger » pour le transformer en degrés d'alcool.",
+          "fourth": "C'est une tradition dans les régions septentrionales, mais c'est",
+          "fourthBold": "formellement interdit",
+          "fourthLast": "dans le sud où le soleil fait naturellement le travail.",
+          "points": {
+            "title": "L'impact dans le verre",
+            "first": "Le vin gagne en corps et atteint un",
+            "firstBold": "degré alcoolique harmonieux",
+            "firstLast": "sans que le profil aromatique ne soit altéré."
+          }
+        }
+      },
+      "sulfite": {
+        "title": "L'usage des Sulfites",
+        "description": "Le bouclier protecteur du vin.",
+        "popup": {
+          "title": "L'ajout de sulfites (ou soufre)",
+          "points": {
+            "first": {
+              "title": "Le rôle du SO₂ est double :",
+              "firstBold": "il protège le vin de l’oxygène",
+              "first": "(qui le ferait brunir et madériser) et",
+              "secondBold": "il agit comme un antiseptique",
+              "second": "pour bloquer les bactéries indésirables."
+            },
+            "second": {
+              "title": "La philosophie du vigneron :",
+              "firstBold": "Certains l'utilisent comme un filet de sécurité à chaque étape",
+              "first": "(dès les vendanges, après fermentation, à la mise).",
+              "second": "D'autres choisissent de",
+              "secondBold": "le réduire drastiquement,",
+              "secondLast": "voire de s'en passer totalement",
+              "secondLastBold": "(c'est la mouvance des vins « nature »)."
+            },
+            "third": {
+              "title": "L'impact dans le verre",
+              "first": "C'est l'assurance vie de la bouteille. Néanmoins, un vin trop « sulfité » aura tendance à avoir",
+              "firstBold": "des arômes cadenassés",
+              "firstLast": "dans sa jeunesse ou à piquer très légèrement au nez."
+            }
+          }
+        }
+      }
+    },
+    "questions": {
+      "result": "Dans le verre",
+      "first": {
+        "title": "L'été a été caniculaire. Vos jus sont lourds et manquent de fraîcheur.",
+        "subtitle": "Quelle est votre décision ?",
+        "variants": {
+          "first": {
+            "label": "Laisser faire la nature",
+            "results": {
+              "flabby": "Bouche molle",
+              "heavy": "Sensation alcooleuse",
+              "stewed": "Notes de fruits cuits"
+            }
+          },
+          "second": {
+            "label": "Ajouter de l’acide tartrique",
+            "results": {
+              "liviery": "Regain d'énergie",
+              "citrus": "Trame étirée",
+              "crisp": "Finale désaltérante"
+            },
+            "tooltip": {
+              "title": "L'Acide tartrique",
+              "first": "C’est l'épine dorsale du raisin.",
+              "second": "C'est lui qui fait saliver et donne l'envie de reprendre une gorgée.",
+              "third": "Son ajout judicieux (et légal) sauve souvent les millésimes très chauds de la lourdeur."
+            }
+          },
+          "third": {
+            "label": "Désacidifier (inutile ici)",
+            "results": {
+              "rounder": "Vin plat",
+              "softer": "Manque de relief",
+              "mellow": "Équilibre rompu"
+            }
+          }
+        }
+      },
+      "second": {
+        "title": "Le millésime fut pluvieux. Le taux de sucre naturel annonce un vin à peine à 10° d'alcool.",
+        "subtitle": "Que faites-vous ?",
+        "variants": {
+          "first": {
+            "label": "Ne rien toucher",
+            "results": {
+              "light": "Bouche maigre",
+              "watery": "Sensation de dilution",
+              "juice": "Finale fuyante"
+            }
+          },
+          "second": {
+            "label": "Chaptaliser légèrement",
+            "results": {
+              "fuller": "Vin plus étoffé",
+              "warmth": "Sensation tactile plus ronde",
+              "level": "Un bon degré atteint"
+            }
+          },
+          "third": {
+            "label": "Utiliser du MCR",
+            "results": {
+              "fuller": "Gain de volume",
+              "warmth": "Matière enrobée",
+              "level": "Équilibre restauré",
+              "clean": "Pureté aromatique conservée"
+            },
+            "tooltip": {
+              "title": "Moût Concentré Rectifié (MCR)",
+              "description": "C'est du sucre de raisin pur, transformé en sirop neutre. Il permet de « doper » le potentiel alcoolique de la cuve sans introduire le moindre goût étranger."
+            }
+          }
+        }
+      },
+      "third": {
+        "title": "C'est l'heure de la mise en bouteille. Le vin partira à l'export.",
+        "subtitle": "Comment gérez-vous le soufre ?",
+        "variants": {
+          "first": {
+            "label": "Sans sulfites",
+            "results": {
+              "pure": "Fruit vibrant et libre",
+              "crunchy": "Gourmandise immédiate",
+              "oxidation": "Risque élevé d'oxydation"
+            }
+          },
+          "second": {
+            "label": "Une dose homéopathique",
+            "results": {
+              "stable": "Cuvée sécurisée",
+              "aromas": "Expression fidèle",
+              "balance": "Le meilleur compromis"
+            }
+          },
+          "third": {
+            "label": "La dose maximale",
+            "results": {
+              "preservations": "Bouteille indestructible",
+              "matchstick": "Nez réduit (allumette)",
+              "sharp": "Fermeture aromatique"
+            }
+          }
+        }
+      },
+      "button": "Valider l'Ajustement"
+    },
+    "button": "Ajuster l'équilibre"
+  },
+  "step_6": {
+    "title": "L'Élevage: Le repos qui forge le caractère",
+    "subtitle": {
+      "first": "La fermentation est finie. Place au temps long. Le vin va s'affiner, se patiner et respirer dans le contenant choisi par le vigneron.",
+      "second": "Jouez l'alchimiste : associez un contenant à une durée pour voir naître un style."
+    },
+    "vessels": {
+      "title": "Le choix du contenant",
+      "stainless": {
+        "title": "Cuve Inox",
+        "description": "Un coffre-fort neutre. Idéal pour emprisonner le fruit et la tension."
+      },
+      "concrete": {
+        "title": {
+          "first": "Cuve Béton",
+          "second": "(Classique ou en forme d’Œuf)"
+        },
+        "description": "Permet au vin de respirer très légèrement. Les tanins s'arrondissent sans goût de bois."
+      },
+      "oak": {
+        "title": "Fût de Chêne",
+        "description": "Le bois poreux apporte une oxygénation bénéfique et « parfume » le vin (vanille, torréfaction)."
+      },
+      "amphora": {
+        "title": "Amphore (Terre cuite)",
+        "description": "Un retour aux sources. Le vin respire abondamment, gardant un fruit éclatant et une trame minérale."
+      }
+    },
+    "aging": {
+      "title": "Le facteur Temps",
+      "short": {
+        "title": "Élevage court (quelques mois)",
+        "description": "La priorité est donnée à la nervosité et au fruit de la jeunesse."
+      },
+      "long": {
+        "title": "Élevage long (12 à 36 mois)",
+        "description": "Le vin gagne en patine, en complexité d'arômes et se prépare à vieillir en cave."
+      }
+    },
+    "result": {
+      "title": "Verdict de la cave",
+      "example": "On le retrouve par exemple dans :",
+      "stainless_no": {
+        "title": "Un jus explosif, au fruit presque insolent. C'est fait pour être débouché entre copains, sur le pouce.",
+        "example": "Les vins primeurs type Beaujolais Nouveau."
+      },
+      "stainless_short": {
+        "title": "La netteté incarnée. Le vin claque en bouche, vif, précis, taillé pour désaltérer.",
+        "example": "Les Muscadets tendus ou les rosés clairs de Provence."
+      },
+      "stainless_long": {
+        "title": "Le vin s'est posé, il a gagné en gras sans jamais se parer d'artifices aromatiques. Une valeur sûre.",
+        "example": "Les Chablis d'appellation village."
+      },
+      "concrete_no": {
+        "title": "Beaucoup de croquant et de jutosité, avec un toucher de bouche déjà velouté.",
+        "example": "Certaines cuvées printanières du Sud."
+      },
+      "concrete_short": {
+        "title": "La matière est souple, digeste. Le fruit est là, joyeux, avec des tanins qui glissent tout seuls.",
+        "example": "Les belles cuvées bistrot des Côtes-du-Rhône."
+      },
+      "concrete_long": {
+        "title": "Une matière ample, profonde, qui a pris le temps de s'étirer sans jamais être marquée par la barrique.",
+        "example": "Les grands Cahors ou certains jolis crus du Languedoc."
+      },
+      "oak_no": {
+        "title": "Une curiosité théorique. Un vin qui aurait juste eu le temps de sucer la planche sans s'y marier.",
+        "example": "En pratique, un tel vin n'existe pas sur le marché."
+      },
+      "oak_short": {
+        "title": "Une belle gourmandise où le fruit se mêle déjà à des touches séduisantes de pain grillé ou de coco.",
+        "example": "Des Chardonnays beurrés ou certains jeunes Rioja espagnols."
+      },
+      "oak_long": {
+        "title": "La cour des grands. Le vin est charpenté, noble, habillé par le chêne. Il demandera des années pour fondre ses tanins.",
+        "example": "Les seigneurs de Pauillac, Pomerol, Meursault ou les grands Barolos."
+      },
+      "amphora_no": {
+        "title": "Une expression brute de décoffrage, vibrante, très proche de ce que la nature a offert à la vendange.",
+        "example": "Des cuvées « nature » confidentielles ou géorgiennes."
+      },
+      "amphora_short": {
+        "title": "Un profil étonnamment droit, presque cristallin, où le terroir parle avant le fruit.",
+        "example": "Les nouvelles vagues de vins blancs macérés ou de rouges corses purs."
+      },
+      "amphora_long": {
+        "title": "Une texture fascinante, poudrée, presque tactile. Le vin offre une complexité tellurique, très éloignée des standards boisés.",
+        "example": "Les prestigieux vins orange élevés en Qvevri ou les ovnis d'Anjou."
+      }
+    }
+  },
+  "step_7": {
+    "title": "L'Assemblage: L'art de la symphonie",
+    "subtitle": {
+      "first": "Avant la mise, le vigneron devient compositeur. Il goûte chaque cuve pour créer l'œuvre finale.",
+      "second": "L'assemblage est l'art de marier des cépages ou des élevages complémentaires pour atteindre l'équilibre parfait."
+    },
+    "main": {
+      "varietes": {
+        "title": "Assembler plusieurs cépages",
+        "description": "L'un apporte le muscle, l'autre le parfum. Ensemble, ils sont meilleurs."
+      },
+      "aging": {
+        "title": "Assembler différents types d’élevage",
+        "description": "Marier du fruit (cuve) avec du caractère (barrique) pour la complexité."
+      }
+    },
+    "button": "Créez votre assemblage",
+    "blend": {
+      "title": "Créez votre assemblage",
+      "result": "Résultat",
+      "examples": "Exemples d’une appellation",
+      "grape": {
+        "title": "Choisissez vos cépages (2 ou 3)",
+        "variants": {
+          "grenache": "Grenache",
+          "syrah": "Syrah",
+          "mourvedre": "Mourvèdre",
+          "merlot": "Merlot",
+          "cabernetSauvignon": "Cabernet Sauvignon",
+          "chardonnay": "Chardonnay",
+          "sauvignonBlanc": "Sauvignon Blanc",
+          "semillon": "Sémillon"
+        }
+      },
+      "vessel": {
+        "title": "Choisissez un seul contenant",
+        "variants": {
+          "stainless": "Cuve en inox",
+          "concrete": "Cuve en béton",
+          "oak": "Fût de chêne",
+          "amphora": "Amphore ou œuf en argile/béton"
+        }
+      }
+    },
+    "button": "Mise en bouteille & Finition"
+  },
+  "step_8": {
+    "title": "Mise en bouteille & Finition: la dernière touche",
+    "subtitle": "Avant d'emprisonner le vin sous verre, le vigneron décide du collage, de la filtration, de l’ajout éventuel de sulfites et de la fermeture.",
+    "main": {
+      "fining": {
+        "title": "Le Collage",
+        "description": "L'art de clarifier le vin en douceur sans le dépouiller de son âme.",
+        "popup": {
+          "title": "Le Collage : clarifier sans altérer",
+          "descriptionFirst": "Cette technique sert à rendre le vin limpide en éliminant les particules en suspension (protéines, tanins en excès). Des agents naturels sont utilisés (blanc d’œuf, pois, bentonite). Après collage, le vin paraît plus clair et parfois plus rond.",
+          "descriptionSecond": "Certains vignerons font le choix de ne pas coller pour préserver la substance et le caractère naturel du vin, assumant un léger trouble visuel."
+        }
+      },
+      "filtration": {
+        "title": "La Filtration",
+        "description": "Le tamisage final pour stabiliser biologiquement le vin.",
+        "popup": {
+          "title": "La Filtration : Sécurité ou Liberté ?",
+          "descriptionFirst": "La filtration élimine les levures et bactéries dormantes pour éviter une refermentation en bouteille (le fameux vin qui « perle »). Une filtration trop stérile peut amputer le vin d'une partie de sa mâche.",
+          "descriptionSecond": "Le débat : Choisir la sécurité absolue, ou prendre un risque militant pour un vin « Non Filtré » plus vivant mais fragile."
+        }
+      },
+      "sulfites": {
+        "title": "Les Sulfites de mise",
+        "description": "L'ultime bouclier contre l'oxygène et le temps.",
+        "popup": {
+          "title": "Le Soufre à l'embouteillage",
+          "descriptionFirst": "La mise en bouteille est un traumatisme pour le vin (forte exposition à l'oxygène). Une petite dose de SO₂ à ce stade agit comme un antioxydant vital pour stabiliser le jus.",
+          "descriptionSecond": "Refuser ce dernier sulfitage offre un fruit pur et très libre, mais expose la bouteille à une déviation si elle voyage au chaud."
+        }
+      },
+      "closure": {
+        "title": "La Fermeture",
+        "description": "Le choix du gardien : liège respirant ou vis intraitable.",
+        "popup": {
+          "title": "Le Choix du Bouchon",
+          "points": {
+            "cork": {
+              "title": "Le Liège Naturel",
+              "description": "Le partenaire historique des vins de garde. Il permet une micro-oxygénation millimétrée, mais comporte un risque de goût de bouchon."
+            },
+            "synthetic": {
+              "title": "Le Bouchon Synthétique",
+              "description": "Le compromis moderne. Il imite le liège sans les défauts, mais sa fiabilité sur très longue garde reste discutée."
+            },
+            "screw": {
+              "title": "La Capsule à Vis",
+              "description": "L'étanchéité absolue. Idéale pour bloquer un vin sur la fraîcheur de sa jeunesse (blancs vifs, rosés)."
+            }
+          },
+          "description": "Ce choix dicte la façon dont le vin va interagir avec l'air au fil des années."
+        }
+      },
+      "label": {
+        "title": "L'Habillage",
+        "description": "L'étiquette, le manifeste qui raconte le vin avant même de le goûter.",
+        "popup": {
+          "title": "L'Étiquette : La signature du vigneron",
+          "descriptionFirst": "Au-delà de l’esthétique, l’étiquette exprime une philosophie, un style et un positionnement.",
+          "descriptionSecond": "Les mentions libres comme « Vin naturel », « Non filtré » ou « Levures indigènes » racontent l'engagement qui se cache sous le bouchon."
+        }
+      }
+    },
+    "tabs": {
+      "title": "Explorez trois philosophies de cave diamétralement opposées",
+      "fragileAndLivery": {
+        "title": "Le Puriste Vivant",
+        "subtitle": "La mouvance « Nature »",
+        "values": {
+          "first": "Ni collé, ni filtré (trouble assumé)",
+          "second": "0 mg de sulfites ajoutés",
+          "third": "Fermeture neutre ou liège naturel",
+          "fourth": "Étiquette artisane et décalée"
+        }
+      },
+      "stableAndClassic": {
+        "title": "Le Gardien du Temple",
+        "subtitle": "Le classicisme des Grands Crus",
+        "values": {
+          "first": "Collé au blanc d'œuf, filtré légèrement",
+          "second": "Sulfitage de sécurité classique",
+          "third": "Bouchon en liège de première qualité",
+          "fourth": "Étiquette Château traditionnelle"
+        }
+      },
+      "modernAndPractical": {
+        "title": "L'Orfèvre Moderne",
+        "subtitle": "La précision du Nouveau Monde",
+        "values": {
+          "first": "Collage végétal et filtration stérile",
+          "second": "Sulfitage millimétré en laboratoire",
+          "third": "Capsule à vis haut de gamme",
+          "fourth": "Design épuré et contemporain"
+        }
+      }
+    }
+  },
+  "finish": {
+    "title": "Félicitations !",
+    "subtitle": {
+      "first": {
+        "first": "Vous avez survécu à la cave. Vous comprenez désormais que chaque bouteille est le fruit de mille renoncements et décisions audacieuses.",
+        "second": "Espérons que ce ne soit pas de la piquette… "
+      },
+      "second": "Maintenant, place à l'épreuve de vérité : l'art de la Dégustation."
+    },
+    "button": "Passer au module Dégustation"
+  }
+}

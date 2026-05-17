@@ -160,8 +160,8 @@ export const CHAPITRES: Chapitre[] = [
         slug: "choix-du-vigneron",
         title: "Les choix du vigneron",
         sourceModule: 10,
-        status: "coming-soon",
-        teaser: "Éraflage ? Macération ? Temperature ? À toi de jouer.",
+        status: "available",
+        teaser: "7 décisions de cave qui sculptent ton vin.",
       },
       {
         slug: "champagne",
