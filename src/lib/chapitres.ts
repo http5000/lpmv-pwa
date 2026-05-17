@@ -75,8 +75,8 @@ export const CHAPITRES: Chapitre[] = [
         slug: "anatomie",
         title: "Anatomie d'un pied de vigne",
         sourceModule: 4,
-        status: "coming-soon",
-        teaser: "Racines, tronc, sarments, feuilles, grappes — la mécanique.",
+        status: "available",
+        teaser: "Du sol au fruit, suis la sève en 6 stations.",
       },
       {
         slug: "phylloxera",
