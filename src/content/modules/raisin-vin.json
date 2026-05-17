@@ -1,0 +1,215 @@
+{
+  "didYouKnow": "Le saviez-vous ?",
+  "start": {
+    "title": "Du raisin au vin",
+    "content": "<p>Rouge, blanc, rosé, orange : <strong>ce n’est pas la couleur du raisin qui fait la différence, mais le processus de vinification !</strong></p><p>Tous les vins naissent du même fruit : le raisin.</p><p>Selon la méthode choisie en cave, on obtient un rouge puissant, un blanc frais, un rosé délicat ou un vin orange ambré.</p><p>Explorez les schémas interactifs pour découvrir les secrets de chaque parcours.</p>",
+    "bottomTouchRule": "Explorez les schémas interactifs pour découvrir comment chaque type de vin est élaboré.",
+    "touchRule": "Touchez chaque étape pour en savoir plus"
+  },
+  "red": {
+    "label": "Vin rouge",
+    "items": {
+      "1": {
+        "title": "Vendange",
+        "text": "Raisins noirs récoltés à maturité, à la main ou à la machine.",
+        "details": "La vendange manuelle permet un tri rigoureux. La vendange mécanique est rapide et permet de récolter de nuit pour préserver la fraîcheur.",
+        "didYouKnow": "En Champagne, le « ban des vendanges » fixe encore aujourd'hui la date officielle du début de la récolte."
+      },
+      "2": {
+        "title": "Éraflage / Foulage",
+        "text": "On retire la rafle (tige verte) et on écrase légèrement les baies.",
+        "details": "Érafler donne un vin fruité et souple. Garder la grappe entière apporte de la structure et de la fraîcheur végétale.",
+        "didYouKnow": "Dans le Beaujolais, conserver la grappe entière pour la macération est une tradition séculaire."
+      },
+      "3": {
+        "title": "Macération",
+        "text": "Le moût (jus, peaux et pépins) repose ensemble pour extraire la couleur et les tanins.",
+        "details": "Elle dure de quelques jours pour un vin léger, à plusieurs semaines pour un grand vin de garde.",
+        "didYouKnow": "Le jus du raisin noir est blanc ! C'est uniquement le contact avec la peau noire qui donne sa couleur rouge au vin."
+      },
+      "4": {
+        "title": "Pigeages & Remontages",
+        "text": "On mélange le chapeau (les peaux qui flottent) avec le jus.",
+        "details": "Le pigeage consiste à enfoncer le chapeau. Le remontage consiste à l'arroser avec le jus pompé au fond de la cuve.",
+        "didYouKnow": "Traditionnellement, le pigeage se faisait pieds nus, directement dans la cuve !"
+      },
+      "5": {
+        "title": "Fermentation alcoolique",
+        "text": "Les levures transforment le sucre en alcool et en CO₂.",
+        "details": "Les levures indigènes (naturelles) offrent plus de typicité, tandis que les levures sélectionnées garantissent un profil plus contrôlé.",
+        "didYouKnow": "Le bouillonnement intense d’une cuve en pleine fermentation est appelé « le vin qui chante »."
+      },
+      "6": {
+        "title": "Fermentation Malolactique",
+        "text": "Des bactéries transforment l’acide malique en acide lactique.",
+        "details": "Cette étape est indispensable pour les rouges : elle adoucit l'acidité (comme une pomme verte qui deviendrait un yaourt) et stabilise le vin.",
+        "didYouKnow": "Le mot « Malo » vient du latin <em>malum</em> (pomme) et <em>lactis</em> (lait)."
+      },
+      "7": {
+        "title": "Élevage",
+        "text": "Le vin repose plusieurs mois pour s’assouplir et se complexifier.",
+        "details": "La cuve inox préserve l'éclat du fruit pur. Le fût de chêne apporte des notes toastées, vanillées et patine les tanins.",
+        "didYouKnow": "Certains prestigieux châteaux bordelais utilisent 100 % de barriques neuves chaque année pour un boisé luxueux."
+      },
+      "8": {
+        "title": "Mise en bouteille",
+        "text": "Le vin est clarifié, stabilisé et mis en flacon.",
+        "details": "Le collage et la filtration assurent la limpidité du vin. Une dose de sulfites le protège de l'oxydation pour le voyage.",
+        "didYouKnow": "Jusqu’au XIXe siècle, le vin voyageait et se vendait surtout en tonneaux ; l'usage de la bouteille est récent."
+      }
+    }
+  },
+  "white": {
+    "label": "Vin blanc",
+    "items": {
+      "1": {
+        "title": "Vendange",
+        "text": "Raisins blancs (ou noirs à jus blanc) récoltés à maturité.",
+        "details": "La fraîcheur aromatique est vitale. On vendange souvent à l'aube ou la nuit pour éviter l’oxydation des baies.",
+        "didYouKnow": "En Alsace ou dans la Vallée du Rhône, les pentes extrêmement abruptes imposent encore la vendange manuelle."
+      },
+      "2": {
+        "title": "Foulage",
+        "text": "Les raisins sont parfois légèrement écrasés pour faciliter l'extraction du jus.",
+        "details": "Contrairement au vin rouge, on ne cherche pas du tout à faire macérer les peaux avec le jus.",
+        "didYouKnow": "Pour les grands vins blancs, on préfère souvent presser la grappe entière : la rafle fait office de drain naturel."
+      },
+      "3": {
+        "title": "Pressurage direct",
+        "text": "Les raisins sont pressés immédiatement. Seul le jus clair est conservé.",
+        "details": "C'est la différence majeure avec le vin rouge : la séparation entre le jus et les peaux est immédiate.",
+        "didYouKnow": "En Champagne, on presse très délicatement des raisins noirs (Pinot Noir) pour obtenir un jus parfaitement blanc !"
+      },
+      "4": {
+        "title": "Débourbage",
+        "text": "On laisse le jus reposer au froid pour que les résidus solides tombent au fond.",
+        "details": "Le but est d'obtenir un jus parfaitement limpide avant le lancement de la fermentation alcoolique.",
+        "didYouKnow": "Cette clarification naturelle par la simple gravité peut prendre de 12 à 24 heures."
+      },
+      "5": {
+        "title": "Fermentation alcoolique",
+        "text": "Les levures transforment le sucre en alcool.",
+        "details": "Elle se déroule à basse température (12–16 °C) pour capturer et préserver les arômes délicats de fleurs et d'agrumes.",
+        "didYouKnow": "C'est à la fin de cette étape bouillonnante que le jus de raisin devient officiellement du vin."
+      },
+      "6": {
+        "title": "Malo (Optionnelle)",
+        "text": "Le vigneron décide de faire ou de bloquer cette seconde fermentation.",
+        "details": "Avec la malo, le vin s'arrondit et prend des notes beurrées. Bloquée, le vin conserve une tension et une acidité très vive.",
+        "didYouKnow": "À Chablis on garde l'acidité tranchante, tandis qu'à Meursault on recherche le gras beurré de la malo."
+      },
+      "7": {
+        "title": "Élevage",
+        "text": "Repos en cuve ou en barrique, souvent sur ses lies fines (levures mortes).",
+        "details": "L'élevage sur lies nourrit le vin, lui apportant du gras, du volume et de belles notes briochées.",
+        "didYouKnow": "Le « bâtonnage » est l'action de remuer ces lies au fond du fût avec un bâton pour accentuer la rondeur du vin."
+      },
+      "8": {
+        "title": "Mise en bouteille",
+        "text": "Dernière étape de clarification et de protection.",
+        "details": "La mise est rapide pour les blancs vifs à boire dans l'année, ou plus tardive pour les grands blancs de garde.",
+        "didYouKnow": "Un grand blanc de Bourgogne (comme un Montrachet) peut demander 10 à 15 ans de bouteille pour s'exprimer pleinement."
+      }
+    }
+  },
+  "rose": {
+    "label": "Vin rosé",
+    "items": {
+      "1": {
+        "title": "Vendange",
+        "text": "Raisins noirs récoltés de bonne heure pour conserver une vive acidité.",
+        "details": "Le choix des cépages (Grenache, Cinsault, Syrah) dicte la future couleur et le bouquet aromatique du rosé.",
+        "didYouKnow": "En Provence, on récolte massivement à l’aube pour que le raisin reste froid et préserve sa couleur pâle."
+      },
+      "2": {
+        "title": "Éraflage",
+        "text": "On retire systématiquement les rafles pour éviter d'extraire des tanins verts.",
+        "details": "La délicatesse est le maître-mot : la moindre rudesse végétale gâcherait le profil subtil du rosé.",
+        "didYouKnow": "L'éraflage est une étape cruciale pour garantir la couleur claire et la douceur des rosés modernes."
+      },
+      "3": {
+        "title": "La Méthode",
+        "text": "Le vigneron choisit entre pressurage direct et macération courte.",
+        "details": "Le pressurage direct donne un rosé diaphane. Une macération de quelques heures donne un rosé plus coloré et vineux.",
+        "didYouKnow": "Un rosé très foncé était autrefois considéré comme un défaut, c'est aujourd'hui un style gastronomique très recherché (ex: le Tavel)."
+      },
+      "4": {
+        "title": "Débourbage",
+        "text": "Le jus rosé est nettoyé de ses impuretés avant fermentation.",
+        "details": "Comme pour le vin blanc, l'objectif est de clarifier le moût par le froid pour garantir des arômes purs et nets.",
+        "didYouKnow": "Plus cette étape est stricte et maîtrisée, plus la robe du rosé sera brillante et cristalline."
+      },
+      "5": {
+        "title": "Fermentation alcoolique",
+        "text": "Le jus clair fermente à basse température, exactement comme un vin blanc.",
+        "details": "Une fermentation lente (14-18°C) permet de développer les arômes typiques de pamplemousse, pêche et bonbon anglais.",
+        "didYouKnow": "Le « rosé de saignée » est fabriqué en prélevant une partie du jus d'une cuve initialement destinée à faire du vin rouge."
+      },
+      "6": {
+        "title": "Élevage",
+        "text": "Un repos court, très majoritairement en cuve inox.",
+        "details": "Le but absolu est de figer la fraîcheur, l'acidité et le fruit primaire. L'utilisation du fût de chêne reste très marginale.",
+        "didYouKnow": "Contrairement au mythe du « rosé de l'année », certains grands rosés de gastronomie s'améliorent magnifiquement en cave."
+      },
+      "7": {
+        "title": "Mise en bouteille",
+        "text": "Une mise en bouteille très précoce, au cœur de l'hiver ou au printemps.",
+        "details": "Il est stabilisé, filtré, et prêt à être expédié pour être consommé lors des beaux jours qui suivent la vendange.",
+        "didYouKnow": "La région Provence exporte aujourd'hui plus de bouteilles de rosé que de rouge et de blanc réunis."
+      }
+    }
+  },
+  "orange": {
+    "label": "Vin orange",
+    "items": {
+      "1": {
+        "title": "Vendange",
+        "text": "Produit exclusivement à partir de raisins blancs (Chenin, Gewurztraminer, Muscat...).",
+        "details": "Il faut des raisins blancs à la peau parfaitement mûre, car celle-ci va macérer longuement avec le jus.",
+        "didYouKnow": "Les vins oranges ne sont pas une mode récente : ils sont nés il y a plus de 5 000 ans dans le Caucase (Géorgie)."
+      },
+      "2": {
+        "title": "Éraflage / Foulage",
+        "text": "Le vigneron choisit d'érafler ou de conserver la grappe entière.",
+        "details": "Conserver les rafles accentue la structure tannique de ce blanc atypique. L'éraflage donne un résultat plus approchable.",
+        "didYouKnow": "L'utilisation de la rafle entière pour les vins oranges donne de fascinantes notes de thé noir et d'herbes sèches."
+      },
+      "3": {
+        "title": "Macération pelliculaire",
+        "text": "Le jus blanc macère avec ses propres peaux pendant des jours, voire des mois.",
+        "details": "C’est cette macération prolongée qui lui donne sa robe ambrée unique et sa texture tannique en bouche.",
+        "didYouKnow": "C'est pour cela que les professionnels préfèrent utiliser le terme technique de « vin blanc de macération »."
+      },
+      "4": {
+        "title": "Pigeages & Remontages",
+        "text": "On infuse les peaux blanches dans le jus pour en extraire l'essence.",
+        "details": "Le vigneron applique au raisin blanc les mêmes techniques d'extraction corporelle que pour un grand vin rouge.",
+        "didYouKnow": "La peau des raisins blancs contient aussi des tanins, qui sont libérés et donnent ce grain particulier en bouche."
+      },
+      "5": {
+        "title": "Fermentation alcoolique",
+        "text": "Les levures transforment le sucre alors que les peaux infusent toujours.",
+        "details": "Cette fermentation est très souvent laissée aux levures indigènes (naturelles) pour respecter l'esprit brut de ce vin.",
+        "didYouKnow": "Les arômes développés sont très éloignés des blancs classiques : on y trouve de l'écorce d'orange, du curry et des fruits secs."
+      },
+      "6": {
+        "title": "Fermentation malolactique",
+        "text": "Une étape presque systématique pour assouplir le vin orange.",
+        "details": "Les bactéries viennent adoucir l'acidité et équilibrer la structure tannique très ferme apportée par les peaux.",
+        "didYouKnow": "Cette rondeur naturelle permet de contrebalancer la puissance et la pointe d'amertume typiques de cette vinification."
+      },
+      "7": {
+        "title": "Élevage",
+        "text": "Un temps de repos souvent très long, dans des contenants perméables.",
+        "details": "On utilise traditionnellement des amphores en terre cuite, des jarres ou de vieux fûts pour laisser le vin respirer profondément.",
+        "didYouKnow": "En Géorgie, les « Qvevris » (grandes amphores) sont enterrées dans le sol du chai pour garantir une température parfaite."
+      },
+      "8": {
+        "title": "Mise en bouteille",
+        "text": "Une mise en flacon brute, pour un vin vivant et sans fard.",
+        "details": "Ces vins sont souvent non filtrés, non collés et embouteillés sans aucun sulfite ajouté. Un léger trouble est naturel.",
+        "didYouKnow": "Attention : l'appellation « vin orange » vient uniquement de sa splendide couleur cuivrée, la bouteille ne contient aucune orange !"
+      }
+    }
+  }
+}

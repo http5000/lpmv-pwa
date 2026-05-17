@@ -153,8 +153,8 @@ export const CHAPITRES: Chapitre[] = [
         slug: "du-raisin-au-vin",
         title: "Du raisin au vin",
         sourceModule: 9,
-        status: "coming-soon",
-        teaser: "Rouge, blanc, rosé, orange : quatre chemins depuis la même grappe.",
+        status: "available",
+        teaser: "Rouge, blanc, rosé, orange : 4 chemins depuis la même grappe.",
       },
       {
         slug: "choix-du-vigneron",
