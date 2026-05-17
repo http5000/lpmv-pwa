@@ -1,0 +1,217 @@
+{
+  "didYouKnow": "Le saviez-vous ?",
+  "touchRule": "Ajustez les paramètres pour observer les changements",
+  "title": "Le Climat Façonne le Vin",
+  "subtitle": "\"Le soleil, la pluie et la pente modèlent le vin.\"",
+  "examples": "Exemples",
+  "experimental": "vins expérimentaux",
+  "info": {
+    "title": "Le climat sculpte le vin",
+    "first": {
+      "main": "Le climat façonne la vie de la vigne :",
+      "second": "l’ensoleillement, les pluies, le vent, la température et l’amplitude thermique influencent la croissance de la plante et la qualité des raisins."
+    },
+    "second": "Un climat chaud tend à produire des vins plus riches et puissants, tandis qu’un climat frais favorise la finesse et l’acidité.",
+    "third": {
+      "main": "Avec le sol et le savoir-faire du vigneron,",
+      "bold": "le climat est l’un des trois piliers du terroir."
+    }
+  },
+  "description_block": {
+    "sameResult": "Même résultat",
+    "growth": "Croissance",
+    "ripening": "Maturation",
+    "style": "Style",
+
+    "temperate_oceanic": {
+      "title": "Climat Océanique tempéré",
+      "subtitle": "Climat doux, humide et stable",
+      "growth": "Croissance vigoureuse",
+      "ripening": "Maturation lente, risque de dilution",
+      "style": "Faible alcool, bonne acidité, vins souples et frais",
+      "fruity": "Vins fruités, souples, faciles à boire, à consommer jeunes"
+    },
+
+    "warm_mediterranean": {
+      "title": "Climat Méditerranéen Chaud",
+      "subtitle": "Chaleur, lumière et sécheresse modérée",
+      "growth": "Croissance moyenne à faible",
+      "ripening": "Maturation rapide, teneur en sucre élevée",
+      "style": "Vins chaleureux et puissants, acidité modérée",
+      "fruity": "Vins solaires : rouges riches et rosés expressifs"
+    },
+
+    "dry_continental": {
+      "title": "Climat Continental Sec",
+      "subtitle": "Été chaud, hiver froid et forte amplitude thermique",
+      "growth": "Croissance modérée",
+      "ripening": "Bonne concentration, peaux épaisses",
+      "style": "Tanins marqués, alcool élevé",
+      "fruity": "Vins structurés, de garde, arômes mûrs et épicés"
+    },
+
+    "high_altitude": {
+      "title": "Climat d’Altitude",
+      "subtitle": "Fraîcheur, finesse et maturation lente",
+      "growth": "Croissance lente",
+      "ripening": "Maturation tardive, acidité préservée",
+      "style": "Vins fins, élégants, faible alcool",
+      "fruity": "Vins frais, floraux et minéraux, parfaits en gastronomie"
+    },
+
+    "cool_humid": {
+      "title": "Climat Frais et Humide",
+      "subtitle": "Pluies fortes et peu de chaleur",
+      "growth": "Croissance très vigoureuse, parfois excessive",
+      "ripening": "Maturation incomplète, dilution",
+      "style": "Vins légers, acides et végétaux",
+      "fruity": "Vins vifs, nerveux, faibles en alcool, adaptés aux effervescents"
+    },
+
+    "hot_dry_windy": {
+      "title": "Climat Chaud, Sec et Venteux",
+      "subtitle": "Forte concentration et stress hydrique",
+      "growth": "Croissance faible",
+      "ripening": "Maturation très rapide, petites baies concentrées",
+      "style": "Vins puissants, alcool élevés, faible acidité",
+      "fruity": "Vins solaires, corsés, grande intensité aromatique"
+    },
+
+    "cold_dry_windy": {
+      "title": "Climat Froid, Sec et Venteux",
+      "subtitle": "Tension, finesse et maturation difficile",
+      "growth": "Croissance faible",
+      "ripening": "Maturation incomplète, acidité élevée",
+      "style": "Vins très frais, parfois austères",
+      "fruity": "Vins droits, minéraux, adaptés à la haute gastronomie"
+    },
+
+    "moderate_balanced": {
+      "title": "Climat Modéré et Équilibré",
+      "subtitle": "Conditions idéales, aucun extrême",
+      "growth": "Croissance régulière et saine",
+      "ripening": "Équilibre sucre et acidité",
+      "style": "Vins harmonieux, fins et complexes",
+      "fruity": "Vins équilibrés, expressifs du terroir, potentiel de garde"
+    },
+
+    "hot_humid_tropical": {
+      "title": "Climat Tropical Chaud et Humide",
+      "subtitle": "Très difficile sans irrigation",
+      "growth": "Croissance excessive et difficile à contrôler",
+      "ripening": "Raisins dilués, manque d’équilibre",
+      "style": "Structure faible, peu de typicité",
+      "fruity": "Vins légers, plats, rarement de garde"
+    },
+
+    "cold_dry": {
+      "title": "Climat Froid et Sec",
+      "subtitle": "Maturation difficile et stress élevé",
+      "growth": "Croissance très lente",
+      "ripening": "Blocage possible de la maturation",
+      "style": "Vins faibles en alcool, très acides et végétaux",
+      "fruity": "Vins rustiques, austères, parfois expérimentaux"
+    },
+
+    "hot_humid": {
+      "title": "Climat Chaud et Humide",
+      "subtitle": "Maturation rapide et maladies fréquentes",
+      "growth": "Croissance très vigoureuse, sensible aux champignons",
+      "ripening": "Maturation rapide, jus abondant",
+      "style": "Vins ronds mais instables, faible acidité",
+      "fruity": "Vins aromatiques mais fragiles, à boire jeunes"
+    },
+
+    "windy_balanced": {
+      "title": "Climat Venteux et Équilibré",
+      "subtitle": "Vent bénéfique dans un climat modéré",
+      "growth": "Croissance saine et modérée",
+      "ripening": "Bonne maturation, grappes propres",
+      "style": "Vins précis et concentrés",
+      "fruity": "Vins purs, grande expression aromatique"
+    },
+
+    "composite": {
+      "title": "Climat Composite",
+      "subtitle": "Influences mixtes, terroir atypique",
+      "growth": "Croissance variable",
+      "ripening": "Maturation inégale",
+      "style": "Vins originaux, difficiles à classer",
+      "fruity": "Vins singuliers, expressifs"
+    }
+  },
+
+  "slider": {
+    "sunlight": {
+      "title": "Ensoleillement",
+      "1": "Faible lumière",
+      "2": "Modéré",
+      "3": "Abondant",
+      "4": "Intense",
+      "tooltip": {
+        "firstLine": "Faible lumière: maturité difficile, arômes végétaux",
+        "secondLine": "Trop de soleil: risque de brûlure, perte d’acidité"
+      }
+    },
+
+    "rainfall": {
+      "title": "Pluviométrie",
+      "1": "Climat très sec",
+      "2": "Modérée",
+      "3": "Humide",
+      "4": "Pluies abondantes",
+      "tooltip": {
+        "firstLine": "Trop de pluie: dilution, maladies",
+        "secondLine": "Pas assez: stress hydrique, concentration élevée"
+      }
+    },
+
+    "wind": {
+      "title": "Vent Dominant",
+      "1": "Calme",
+      "2": "Léger",
+      "3": "Fort",
+      "4": "Très fort / mistral",
+      "tooltip": {
+        "firstLine": "Vent fort → moins de maladies, plus de concentration",
+        "secondLine": "Pas de vent → humidité stagnante, risque de moisissures"
+      }
+    },
+
+    "temperatureRange": {
+      "title": "Amplitude thermique Jour/Nuit",
+      "1": "Faible (nuits douces)",
+      "2": "Modérée",
+      "3": "Fort contraste thermique",
+      "4": "Extrême (nuits très fraîches)",
+      "tooltip": {
+        "firstLine": "Amplitude élevée: arômes intenses, acidité préservée",
+        "secondLine": "Amplitude faible: maturité uniforme mais parfois plate"
+      }
+    },
+
+    "altitude": {
+      "title": "Altitude / Pente",
+      "1": "Plaine basse",
+      "2": "Collines",
+      "3": "Vignoble en pente",
+      "4": "Haute altitude",
+      "tooltip": {
+        "firstLine": "Altitude élevée: acidité et finesse",
+        "secondLine": "Plaine basse: maturité rapide mais parfois lourde"
+      }
+    },
+
+    "averageTemperature": {
+      "title": "Température Moyenne",
+      "1": "Très frais (~10°C)",
+      "2": "Frais tempéré (~13°C)",
+      "3": "Chaud tempéré (~17°C)",
+      "4": "Chaud (~21–25°C)",
+      "tooltip": {
+        "firstLine": "Climat frais: faible alcool, acidité élevée",
+        "secondLine": "Climat chaud: sucre élevé, acidité faible, arômes mûrs"
+      }
+    }
+  }
+}

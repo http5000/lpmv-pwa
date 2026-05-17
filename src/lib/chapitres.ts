@@ -50,8 +50,8 @@ export const CHAPITRES: Chapitre[] = [
         slug: "climat",
         title: "Le climat façonne le vin",
         sourceModule: 2,
-        status: "coming-soon",
-        teaser: "Soleil, pluie, vent, altitude : ajuste les curseurs.",
+        status: "available",
+        teaser: "13 climats, 13 personnalités de vin.",
       },
       {
         slug: "roue-terroir",
