@@ -89,8 +89,8 @@ export const CHAPITRES: Chapitre[] = [
         slug: "bio-conventionnel",
         title: "Bio vs Conventionnel",
         sourceModule: 7,
-        status: "coming-soon",
-        teaser: "Swipe vrai / faux : démêle les idées reçues.",
+        status: "available",
+        teaser: "Swipe ← Faux / Vrai → : 8 affirmations, démêle les idées reçues.",
       },
       {
         slug: "biodynamie",
