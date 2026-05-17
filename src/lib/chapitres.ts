@@ -206,8 +206,8 @@ export const CHAPITRES: Chapitre[] = [
         slug: "accords",
         title: "Accords mets & vin",
         sourceModule: null,
-        status: "coming-soon",
-        teaser: "Quel vin pour quel plat — sans se tromper.",
+        status: "available",
+        teaser: "8 familles de plats, 4 principes, et les pièges à éviter.",
       },
       {
         slug: "lecons",
