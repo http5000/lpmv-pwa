@@ -1,13 +1,19 @@
 import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { CarnetList } from "@/components/degustation/CarnetList";
+import { AuthStatusPill } from "@/components/account/AuthStatusPill";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export const metadata = {
   title: "Mon carnet de cave — Dégustation",
   description: "Toutes tes dégustations enregistrées, en un seul endroit.",
 };
 
-export default function CarnetPage() {
+export default async function CarnetPage() {
+  const supabase = await createSupabaseServerClient();
+  const { data } = await supabase.auth.getUser();
+  const email = data.user?.email ?? null;
+
   return (
     <>
       <AppHeader
@@ -32,6 +38,7 @@ export default function CarnetPage() {
             + Nouvelle dégustation
           </Link>
         </div>
+        <AuthStatusPill email={email} next="/chapitres/degustation/carnet" />
 
         <section className="mt-6">
           <CarnetList />

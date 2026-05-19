@@ -29,7 +29,8 @@ import {
   TANINS,
   type StepKey,
 } from "@/lib/content/degustation";
-import { saveTasting, type Tasting } from "@/lib/storage/carnet";
+import { type Tasting } from "@/lib/storage/carnet";
+import { useSaveTasting } from "@/lib/storage/carnetSync";
 
 type TastingDraft = Omit<Tasting, "id" | "createdAt">;
 
@@ -48,6 +49,7 @@ export function TastingGuide() {
   const [step, setStep] = useState<StepKey>("oeil");
   const [draft, setDraft] = useState<TastingDraft>(EMPTY);
   const [saved, setSaved] = useState<Tasting | null>(null);
+  const saveTasting = useSaveTasting();
 
   const stepIndex = STEPS.indexOf(step);
   const isFirst = stepIndex === 0;

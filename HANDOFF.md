@@ -48,7 +48,7 @@ Le user / owner : **Haibi** (compte Vercel `haibis-projects`, compte GitHub à c
 
 ```bash
 # Une fois le repo poussé sur GitHub (voir §4)
-gh repo clone haibi/lpmv-pwa     # ou git clone https://github.com/haibi/lpmv-pwa
+gh repo clone http5000/lpmv-pwa  # ou git clone https://github.com/http5000/lpmv-pwa
 cd lpmv-pwa
 npm install
 ```

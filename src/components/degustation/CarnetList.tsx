@@ -1,19 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Star, Trash2, NotebookPen } from "lucide-react";
-import { listTastings, deleteTasting, type Tasting } from "@/lib/storage/carnet";
+import { useCarnet } from "@/lib/storage/carnetSync";
 
 export function CarnetList() {
-  const [tastings, setTastings] = useState<Tasting[] | null>(null);
+  const { tastings, loading, user, remove } = useCarnet();
   const [confirming, setConfirming] = useState<string | null>(null);
 
-  useEffect(() => {
-    setTastings(listTastings());
-  }, []);
-
-  if (tastings === null) {
+  if (loading) {
     return (
       <div className="rounded-2xl border border-cream-dark bg-cream-light p-6 text-center text-sm text-aubergine-soft">
         Chargement…
@@ -44,8 +40,7 @@ export function CarnetList() {
 
   function handleDelete(id: string) {
     if (confirming === id) {
-      deleteTasting(id);
-      setTastings(listTastings());
+      remove(id);
       setConfirming(null);
     } else {
       setConfirming(id);
@@ -58,7 +53,8 @@ export function CarnetList() {
     <div className="space-y-3">
       <p className="text-xs text-aubergine-soft">
         {tastings.length} dégustation{tastings.length > 1 ? "s" : ""} enregistrée
-        {tastings.length > 1 ? "s" : ""} sur ton appareil.
+        {tastings.length > 1 ? "s" : ""}
+        {user ? " — synchronisées dans ton compte." : " sur cet appareil."}
       </p>
       <ul className="space-y-3">
         {tastings.map((t) => (
