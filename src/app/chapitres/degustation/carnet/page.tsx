@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { CarnetList } from "@/components/degustation/CarnetList";
 import { AuthStatusPill } from "@/components/account/AuthStatusPill";
+import { Reveal } from "@/components/motion/Reveal";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export const metadata = {
@@ -23,24 +24,36 @@ export default async function CarnetPage() {
           { label: "Mon carnet" },
         ]}
       />
-      <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
-        <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
-          Module 2 / 5 — Dégustation
-        </p>
-        <div className="mt-2 flex items-baseline justify-between gap-3">
-          <h1 className="font-serif text-3xl leading-tight text-aubergine">
-            Mon carnet
-          </h1>
-          <Link
-            href="/chapitres/degustation/guide"
-            className="rounded-full bg-aubergine px-4 py-2 font-serif text-xs text-cream-light"
-          >
-            + Nouvelle dégustation
-          </Link>
-        </div>
-        <AuthStatusPill email={email} next="/chapitres/degustation/carnet" />
+      <main className="mx-auto w-full max-w-screen-md flex-1 px-6 pb-24 pt-10 sm:px-10">
+        <Reveal delay={0}>
+          <div className="flex items-baseline justify-between gap-6">
+            <h1 className="display max-w-[12ch]" style={{ fontSize: "var(--text-4xl)" }}>
+              Mon carnet de cave.
+            </h1>
+            <Link
+              href="/chapitres/degustation/guide"
+              className="shrink-0 rounded-full bg-aubergine px-5 py-2.5 font-serif text-sm text-cream-light transition-all duration-200 hover:-translate-y-0.5 hover:bg-aubergine-deep active:translate-y-0 active:scale-[0.98]"
+              style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
+            >
+              + Déguster
+            </Link>
+          </div>
+        </Reveal>
 
-        <section className="mt-6">
+        <Reveal delay={0.1}>
+          <p className="mt-6 max-w-[48ch] text-base leading-relaxed text-aubergine-soft">
+            Chaque bouteille que tu prends le temps d&rsquo;écouter laisse une trace ici.
+            Au fil des saisons, ton palais se dessine.
+          </p>
+        </Reveal>
+
+        <Reveal delay={0.18}>
+          <div className="mt-6">
+            <AuthStatusPill email={email} next="/chapitres/degustation/carnet" />
+          </div>
+        </Reveal>
+
+        <section className="mt-12">
           <CarnetList />
         </section>
       </main>

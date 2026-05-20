@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
+import { Reveal } from "@/components/motion/Reveal";
 import { CHAPITRES, getChapitreBySlug } from "@/lib/chapitres";
 
 export async function generateStaticParams() {
@@ -21,6 +22,11 @@ export async function generateMetadata({
   };
 }
 
+/**
+ * Page chapitre : hero drench aubergine avec titre oversize + mentor,
+ * puis liste de modules en hanging numerals (pas en cartes).
+ * Voir DESIGN.md §Color strategy et §Card discipline.
+ */
 export default async function ChapitrePage({
   params,
 }: {
@@ -30,6 +36,8 @@ export default async function ChapitrePage({
   const chapitre = getChapitreBySlug(slug);
   if (!chapitre) notFound();
 
+  const chapitreIndex = CHAPITRES.findIndex((c) => c.slug === chapitre.slug) + 1;
+
   return (
     <>
       <AppHeader
@@ -38,97 +46,152 @@ export default async function ChapitrePage({
           { label: chapitre.title },
         ]}
       />
-      <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
-        {/* Hero du chapitre */}
-        <div
-          className="rounded-2xl p-6"
-          style={{
-            background: `linear-gradient(135deg, ${chapitre.accent}18, transparent)`,
-          }}
-        >
-          <span className="text-4xl" aria-hidden="true">
-            {chapitre.emoji}
-          </span>
-          <p className="mt-3 font-serif text-[10px] uppercase tracking-[0.3em] text-or">
-            Chapitre
-          </p>
-          <h1 className="mt-1 font-serif text-3xl leading-tight text-aubergine">
-            {chapitre.title}
-          </h1>
-          <p className="mt-2 text-sm text-aubergine-soft">{chapitre.subtitle}</p>
 
-          {/* Voix du mentor */}
-          <blockquote className="mt-5 border-l-2 border-or pl-3 text-sm italic text-aubergine-soft">
-            &ldquo;{chapitre.mentorIntro}&rdquo;
-            <footer className="mt-1 text-xs not-italic text-champetre">
-              — Le Mentor
-            </footer>
-          </blockquote>
+      {/* Hero drench aubergine */}
+      <section className="drench-aubergine">
+        <div className="mx-auto w-full max-w-screen-md px-6 py-16 sm:px-10 sm:py-24">
+          <Reveal delay={0}>
+            <p className="font-serif text-sm italic text-or">
+              Chapitre {chapitreIndex} sur {CHAPITRES.length}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.12}>
+            <h1
+              className="display-tight mt-6 text-cream-light"
+              style={{ fontSize: "var(--text-5xl)" }}
+            >
+              <span className="mr-4 align-baseline" aria-hidden="true">{chapitre.emoji}</span>
+              {chapitre.title}
+            </h1>
+          </Reveal>
+
+          <Reveal delay={0.22}>
+            <p className="mt-6 max-w-[44ch] text-base leading-relaxed text-cream-light/75 sm:text-lg">
+              {chapitre.subtitle}
+            </p>
+          </Reveal>
+
+          {/* Voix du mentor — pas de side-stripe, mise en retrait par typographie */}
+          <Reveal delay={0.35}>
+            <figure className="mt-12 max-w-[40ch] sm:mt-16">
+              <blockquote className="font-serif text-lg italic leading-snug text-or sm:text-xl">
+                « {chapitre.mentorIntro} »
+              </blockquote>
+              <figcaption className="mt-3 text-xs text-cream-light/55">— Le Mentor</figcaption>
+            </figure>
+          </Reveal>
         </div>
+      </section>
 
-        {/* Modules */}
-        <h2 className="mt-8 font-serif text-xl text-aubergine">
-          {chapitre.modules.length} étape
-          {chapitre.modules.length > 1 ? "s" : ""}
-        </h2>
-        <ol className="mt-4 flex flex-col gap-3">
+      {/* Liste modules sur cream */}
+      <main className="mx-auto w-full max-w-screen-md flex-1 px-6 pb-24 pt-16 sm:px-10 sm:pt-20">
+        <Reveal delay={0}>
+          <p className="text-sm text-aubergine-soft">
+            {chapitre.modules.length} étape{chapitre.modules.length > 1 ? "s" : ""} à explorer
+            {chapitre.modules.some((m) => m.status !== "available") && (
+              <>
+                {" "}— certaines arrivent bientôt
+              </>
+            )}.
+          </p>
+        </Reveal>
+
+        <ol className="mt-10">
           {chapitre.modules.map((mod, idx) => {
             const isAvailable = mod.status === "available";
-            const inner = (
-              <div className="flex items-baseline gap-3">
-                <span className="font-serif text-lg text-champetre">
-                  {String(idx + 1).padStart(2, "0")}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <h3
-                    className={`font-serif text-lg leading-tight ${
-                      isAvailable ? "text-aubergine" : "text-aubergine-soft"
-                    }`}
-                  >
-                    {mod.title}
-                  </h3>
-                  <p className="mt-1 text-sm text-aubergine-soft">{mod.teaser}</p>
-                </div>
-                {isAvailable ? (
-                  <span aria-hidden="true" className="self-center text-or">
-                    →
-                  </span>
-                ) : (
-                  <span className="self-center rounded-full bg-cream-dark px-2.5 py-0.5 text-[10px] uppercase tracking-wider text-champetre">
-                    Bientôt
-                  </span>
-                )}
-              </div>
-            );
-
             return (
-              <li key={mod.slug}>
-                {isAvailable ? (
-                  <Link
-                    href={`/chapitres/${chapitre.slug}/${mod.slug}`}
-                    className="group block rounded-xl border border-cream-dark bg-cream-light p-4 transition-all hover:border-or hover:shadow-sm active:scale-[0.99]"
-                  >
-                    {inner}
-                  </Link>
-                ) : (
-                  <div className="block rounded-xl border border-dashed border-cream-dark bg-cream-light/50 p-4">
-                    {inner}
-                  </div>
-                )}
+              <li
+                key={mod.slug}
+                className="border-t border-cream-dark first:border-t-0"
+              >
+                <Reveal delay={0.1 + idx * 0.06}>
+                  <ModuleRow
+                    chapitreSlug={chapitre.slug}
+                    mod={mod}
+                    index={idx}
+                    isAvailable={isAvailable}
+                  />
+                </Reveal>
               </li>
             );
           })}
         </ol>
 
-        <div className="mt-12 text-center">
+        <div className="mt-20">
           <Link
             href="/chapitres"
-            className="text-sm text-aubergine-soft underline-offset-4 hover:text-or hover:underline"
+            className="inline-flex items-center gap-2 text-sm text-aubergine-soft underline-offset-4 transition-colors hover:text-or hover:underline"
           >
-            ← Tous les chapitres
+            <span aria-hidden="true">←</span> Tous les chapitres
           </Link>
         </div>
       </main>
     </>
   );
+}
+
+function ModuleRow({
+  chapitreSlug,
+  mod,
+  index,
+  isAvailable,
+}: {
+  chapitreSlug: string;
+  mod: { slug: string; title: string; teaser: string; status: string };
+  index: number;
+  isAvailable: boolean;
+}) {
+  const inner = (
+    <div className="grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4 py-7 sm:grid-cols-[3rem_1fr_auto] sm:gap-6 sm:py-8">
+      <span
+        aria-hidden="true"
+        className="hanging-numeral select-none"
+        style={{ fontSize: "var(--text-2xl)" }}
+      >
+        {String(index + 1).padStart(2, "0")}
+      </span>
+      <div className="min-w-0">
+        <h3
+          className={`font-serif leading-tight transition-colors duration-300 ${
+            isAvailable ? "text-aubergine group-hover:text-or" : "text-aubergine-soft"
+          }`}
+          style={{
+            fontSize: "var(--text-xl)",
+            transitionTimingFunction: "var(--ease-out-quart)",
+          }}
+        >
+          {mod.title}
+        </h3>
+        <p className="mt-2 max-w-[44ch] text-sm leading-relaxed text-aubergine-soft sm:text-base">
+          {mod.teaser}
+        </p>
+      </div>
+      {isAvailable ? (
+        <span
+          aria-hidden="true"
+          className="self-center text-lg text-aubergine-soft transition-all duration-300 group-hover:translate-x-1 group-hover:text-or"
+          style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
+        >
+          →
+        </span>
+      ) : (
+        <span className="self-center text-xs text-champetre italic">
+          bientôt
+        </span>
+      )}
+    </div>
+  );
+
+  if (isAvailable) {
+    return (
+      <Link
+        href={`/chapitres/${chapitreSlug}/${mod.slug}`}
+        className="group block"
+      >
+        {inner}
+      </Link>
+    );
+  }
+  return <div className="opacity-70">{inner}</div>;
 }

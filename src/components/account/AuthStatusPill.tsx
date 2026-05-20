@@ -1,20 +1,27 @@
 import Link from "next/link";
-import { Cloud, CloudOff, ChevronRight } from "lucide-react";
+import { Cloud, CloudOff } from "lucide-react";
 
 /**
- * Pill compact en haut du carnet : signale l'état de sync vs cloud.
- * Server Component — la version "user" est rendue au SSR depuis le proxy de session.
+ * Indicateur sync compact, à côté du titre du carnet.
+ * Server Component (état SSR depuis cookies session).
  */
 export function AuthStatusPill({ email, next }: { email: string | null; next?: string }) {
   if (email) {
     return (
       <Link
         href="/compte"
-        className="mt-3 inline-flex items-center gap-2 rounded-full bg-or/15 px-3 py-1.5 text-[11px] text-aubergine transition-colors hover:bg-or/25"
+        className="group inline-flex items-center gap-2 text-xs text-aubergine-soft transition-colors duration-200 hover:text-aubergine"
+        style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
       >
         <Cloud size={12} className="text-or" />
-        <span className="truncate max-w-[180px]">Synchronisé · {email}</span>
-        <ChevronRight size={11} className="text-aubergine-soft" />
+        <span>Synchronisé avec <span className="text-aubergine">{email}</span></span>
+        <span
+          aria-hidden="true"
+          className="transition-transform duration-200 group-hover:translate-x-0.5"
+          style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
+        >
+          →
+        </span>
       </Link>
     );
   }
@@ -22,11 +29,18 @@ export function AuthStatusPill({ email, next }: { email: string | null; next?: s
   return (
     <Link
       href={href}
-      className="mt-3 inline-flex items-center gap-2 rounded-full bg-cream-dark/40 px-3 py-1.5 text-[11px] text-aubergine-soft transition-colors hover:bg-cream-dark/70 hover:text-aubergine"
+      className="group inline-flex items-center gap-2 text-xs text-aubergine-soft transition-colors duration-200 hover:text-aubergine"
+      style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
     >
       <CloudOff size={12} />
-      Se connecter pour synchroniser
-      <ChevronRight size={11} />
+      <span>Hors-ligne · se connecter pour synchroniser</span>
+      <span
+        aria-hidden="true"
+        className="transition-transform duration-200 group-hover:translate-x-0.5"
+        style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
+      >
+        →
+      </span>
     </Link>
   );
 }

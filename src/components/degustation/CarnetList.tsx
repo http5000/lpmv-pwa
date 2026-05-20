@@ -4,38 +4,28 @@ import Link from "next/link";
 import { useState } from "react";
 import { Star, Trash2, NotebookPen } from "lucide-react";
 import { useCarnet } from "@/lib/storage/carnetSync";
+import type { Tasting } from "@/lib/storage/carnet";
 
+/**
+ * Carnet de dégustation — liste rythmée façon journal manuscrit.
+ * Pas de cartes identiques : chaque dégustation est une entrée séparée par
+ * un trait fin, avec un poids typographique fort sur le nom du vin.
+ * Voir DESIGN.md §Card discipline.
+ */
 export function CarnetList() {
   const { tastings, loading, user, remove } = useCarnet();
   const [confirming, setConfirming] = useState<string | null>(null);
 
   if (loading) {
     return (
-      <div className="rounded-2xl border border-cream-dark bg-cream-light p-6 text-center text-sm text-aubergine-soft">
+      <div className="py-8 text-center text-sm text-aubergine-soft">
         Chargement…
       </div>
     );
   }
 
   if (tastings.length === 0) {
-    return (
-      <div className="rounded-3xl bg-aubergine/[0.06] p-8 text-center">
-        <NotebookPen size={32} className="mx-auto text-or" />
-        <h2 className="mt-4 font-serif text-xl text-aubergine">
-          Ton carnet est encore vide
-        </h2>
-        <p className="mt-2 text-sm text-aubergine-soft">
-          Chaque vin que tu déguste avec le guide vient s&rsquo;y poser. Au fil
-          du temps, tu verras émerger ton palais.
-        </p>
-        <Link
-          href="/chapitres/degustation/guide"
-          className="mt-5 inline-flex items-center gap-2 rounded-full bg-aubergine px-5 py-3 font-serif text-sm text-cream-light"
-        >
-          Commencer une dégustation
-        </Link>
-      </div>
-    );
+    return <EmptyState />;
   }
 
   function handleDelete(id: string) {
@@ -44,99 +34,145 @@ export function CarnetList() {
       setConfirming(null);
     } else {
       setConfirming(id);
-      // auto-cancel confirm after 4 sec
       setTimeout(() => setConfirming((c) => (c === id ? null : c)), 4000);
     }
   }
 
   return (
-    <div className="space-y-3">
-      <p className="text-xs text-aubergine-soft">
-        {tastings.length} dégustation{tastings.length > 1 ? "s" : ""} enregistrée
-        {tastings.length > 1 ? "s" : ""}
-        {user ? " — synchronisées dans ton compte." : " sur cet appareil."}
+    <div>
+      <p className="text-xs text-champetre">
+        {tastings.length} dégustation{tastings.length > 1 ? "s" : ""}
+        {user ? " · synchronisées" : " · sur cet appareil"}
       </p>
-      <ul className="space-y-3">
+
+      <ol className="mt-8">
         {tastings.map((t) => (
           <li
             key={t.id}
-            className="rounded-2xl border border-cream-dark bg-cream-light p-4"
+            className="border-t border-cream-dark py-8 first:border-t-0 sm:py-10"
           >
-            <div className="flex items-baseline justify-between gap-3">
-              <div className="min-w-0">
-                <h3 className="font-serif text-base text-aubergine">
-                  {t.wineName || "Vin sans nom"}
-                </h3>
-                <p className="mt-0.5 text-xs text-aubergine-soft">
-                  {[t.vintage, t.region].filter(Boolean).join(" · ") ||
-                    new Date(t.createdAt).toLocaleDateString("fr-FR")}
-                </p>
-              </div>
-              <Rating value={t.rating} />
-            </div>
-
-            {(t.nez.aromas?.length ?? 0) > 0 && (
-              <div className="mt-3 flex flex-wrap gap-1.5">
-                {t.nez.aromas!.slice(0, 6).map((a) => (
-                  <span
-                    key={a}
-                    className="rounded-full bg-or/15 px-2 py-0.5 text-[10px] font-medium text-aubergine"
-                  >
-                    {a.split(":")[1] ?? a}
-                  </span>
-                ))}
-                {t.nez.aromas!.length > 6 && (
-                  <span className="text-[10px] text-aubergine-soft">
-                    +{t.nez.aromas!.length - 6}
-                  </span>
-                )}
-              </div>
-            )}
-
-            {t.notes && (
-              <p className="mt-3 text-xs italic leading-relaxed text-aubergine-soft">
-                « {t.notes} »
-              </p>
-            )}
-
-            <div className="mt-3 flex items-center justify-between gap-2 border-t border-cream-dark pt-2">
-              <span className="text-[10px] text-aubergine-soft">
-                {new Date(t.createdAt).toLocaleString("fr-FR", {
-                  dateStyle: "short",
-                  timeStyle: "short",
-                })}
-              </span>
-              <button
-                type="button"
-                onClick={() => handleDelete(t.id)}
-                className={`inline-flex items-center gap-1 rounded-full px-2 py-1 text-[10px] transition-colors ${
-                  confirming === t.id
-                    ? "bg-aubergine text-cream-light"
-                    : "text-aubergine-soft hover:text-aubergine"
-                }`}
-              >
-                <Trash2 size={11} />
-                {confirming === t.id ? "Confirmer la suppression" : "Supprimer"}
-              </button>
-            </div>
+            <TastingEntry
+              tasting={t}
+              confirming={confirming === t.id}
+              onDelete={() => handleDelete(t.id)}
+            />
           </li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 }
 
-function Rating({ value }: { value: number }) {
-  if (!value) return <span className="text-[10px] text-aubergine-soft">non noté</span>;
+function TastingEntry({
+  tasting: t,
+  confirming,
+  onDelete,
+}: {
+  tasting: Tasting;
+  confirming: boolean;
+  onDelete: () => void;
+}) {
+  const aromas = (t.nez.aromas ?? []).slice(0, 8).map((a) => a.split(":")[1] ?? a);
+  const meta = [t.vintage, t.region].filter(Boolean).join(" · ");
+
   return (
-    <div className="flex">
+    <article>
+      <div className="flex items-baseline justify-between gap-4">
+        <h3
+          className="display min-w-0 text-aubergine"
+          style={{ fontSize: "var(--text-2xl)" }}
+        >
+          {t.wineName || "Vin sans nom"}
+        </h3>
+        <Rating value={t.rating} />
+      </div>
+
+      {meta && (
+        <p className="mt-2 text-sm text-aubergine-soft">{meta}</p>
+      )}
+
+      {aromas.length > 0 && (
+        <p className="mt-5 text-sm leading-relaxed text-aubergine">
+          <span className="font-serif italic text-champetre">Au nez · </span>
+          {aromas.join(", ")}
+          {(t.nez.aromas?.length ?? 0) > 8 && (
+            <span className="text-aubergine-soft">, et d&rsquo;autres.</span>
+          )}
+        </p>
+      )}
+
+      {t.notes && (
+        <blockquote
+          className="mt-5 max-w-[60ch] font-serif italic leading-relaxed text-aubergine-soft"
+          style={{ fontSize: "var(--text-base)" }}
+        >
+          « {t.notes} »
+        </blockquote>
+      )}
+
+      <div className="mt-6 flex items-center justify-between gap-3 text-xs text-champetre">
+        <time dateTime={t.createdAt}>
+          {new Date(t.createdAt).toLocaleString("fr-FR", {
+            dateStyle: "long",
+            timeStyle: "short",
+          })}
+        </time>
+        <button
+          type="button"
+          onClick={onDelete}
+          className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 transition-colors duration-200 ${
+            confirming
+              ? "bg-aubergine text-cream-light"
+              : "text-aubergine-soft/70 hover:text-aubergine"
+          }`}
+          style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
+        >
+          <Trash2 size={12} />
+          {confirming ? "Confirmer la suppression" : "Supprimer"}
+        </button>
+      </div>
+    </article>
+  );
+}
+
+function Rating({ value }: { value: number }) {
+  if (!value) {
+    return <span className="shrink-0 text-xs italic text-champetre">non noté</span>;
+  }
+  return (
+    <div className="flex shrink-0 gap-0.5" aria-label={`${value} sur 5`}>
       {[1, 2, 3, 4, 5].map((n) => (
         <Star
           key={n}
-          size={14}
+          size={16}
           className={n <= value ? "fill-or text-or" : "text-cream-dark"}
         />
       ))}
+    </div>
+  );
+}
+
+function EmptyState() {
+  return (
+    <div className="mx-auto max-w-[36ch] py-12 text-center sm:py-16">
+      <NotebookPen size={32} className="mx-auto text-or" />
+      <h3
+        className="mt-6 display text-aubergine"
+        style={{ fontSize: "var(--text-2xl)" }}
+      >
+        Pas encore de bouteille.
+      </h3>
+      <p className="mt-3 text-sm leading-relaxed text-aubergine-soft">
+        La première dégustation est la plus difficile : tout est nouveau.
+        Le guide est là pour t&rsquo;accompagner mot à mot.
+      </p>
+      <Link
+        href="/chapitres/degustation/guide"
+        className="mt-8 inline-flex items-center gap-2 rounded-full bg-aubergine px-6 py-3 font-serif text-sm text-cream-light transition-all duration-200 hover:-translate-y-0.5 hover:bg-aubergine-deep active:translate-y-0 active:scale-[0.98]"
+        style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
+      >
+        Commencer une dégustation
+      </Link>
     </div>
   );
 }

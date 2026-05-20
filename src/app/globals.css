@@ -1,37 +1,90 @@
 @import "tailwindcss";
 
 /* ============================================================
-   LPMV — Charte graphique officielle (mai 2026)
-   Reçue du user le 2026-05-18, voir memory/design_lpmv_charte.md
+   LPMV — Design System
+   Charte officielle reçue du musée le 2026-05-18.
+   Aesthetic lane : artisan field guide. Voir DESIGN.md à la racine.
    ============================================================ */
 
 :root {
-  /* === Couleurs primaires de marque === */
-  --color-aubergine: #310e31;       /* Violet aubergine — couleur signature */
-  --color-or: #ca9a2f;              /* Or moutarde — accent principal */
-  --color-or-olive: #bb9531;        /* Or olive — accent secondaire */
-  --color-champetre: #c6a15b;       /* Or champêtre — soft accent */
-  --color-sable: #cb9966;           /* Sable doré — accent chaud */
+  /* ===========================================================
+     COLOR · Charte officielle (hex non-négociable)
+     =========================================================== */
+  --color-aubergine: #310e31;        /* signature, drench moments forts */
+  --color-aubergine-soft: #6b4a6b;   /* texte secondaire */
+  --color-aubergine-deep: #1d061d;   /* hover, ombre teintée */
 
-  /* === Variations utilitaires === */
-  --color-aubergine-soft: #6b4a6b;  /* Aubergine éclairci pour texte secondaire */
-  --color-aubergine-deep: #1d061d;  /* Aubergine assombri pour hover/focus */
+  --color-or: #ca9a2f;               /* moments de chaleur, accents */
+  --color-or-olive: #bb9531;
+  --color-champetre: #c6a15b;        /* accent soft, metadata */
+  --color-sable: #cb9966;
 
-  /* === Fonds (calés pour pairer avec l'aubergine) === */
-  --color-cream: #faf6ec;           /* Fond principal — crème très clair */
-  --color-cream-light: #fdfaf2;     /* Cartes / sections claires */
-  --color-cream-dark: #efe9d8;      /* Bordures / séparateurs */
+  --color-cream: #faf6ec;            /* surface principale */
+  --color-cream-light: #fdfaf2;      /* surface sur-élevée */
+  --color-cream-dark: #efe9d8;       /* bordures, séparateurs */
 
-  /* === Sémantique de base === */
+  /* Sémantique de base */
   --background: var(--color-cream);
   --foreground: var(--color-aubergine);
+
+  /* ===========================================================
+     TYPOGRAPHY · Échelle modulaire 1.333 (perfect fourth)
+     Cormorant en grand (>=2xl) ou très petit. Pas entre.
+     =========================================================== */
+  --text-2xs: clamp(0.6875rem, 0.65rem + 0.18vw, 0.75rem);
+  --text-xs:  clamp(0.75rem, 0.71rem + 0.2vw, 0.875rem);
+  --text-sm:  clamp(0.875rem, 0.82rem + 0.27vw, 1rem);
+  --text-base: clamp(1rem, 0.93rem + 0.36vw, 1.125rem);
+  --text-lg:  clamp(1.125rem, 1.04rem + 0.43vw, 1.375rem);
+  --text-xl:  clamp(1.375rem, 1.27rem + 0.55vw, 1.75rem);
+  --text-2xl: clamp(1.75rem, 1.59rem + 0.84vw, 2.25rem);
+  --text-3xl: clamp(2.25rem, 2rem + 1.2vw, 3rem);
+  --text-4xl: clamp(3rem, 2.55rem + 2.3vw, 4.5rem);
+  --text-5xl: clamp(4rem, 3.2rem + 4vw, 6.5rem);
+  --text-6xl: clamp(5rem, 3.8rem + 6vw, 9rem);
+
+  /* ===========================================================
+     SPACING · Échelle non-linéaire pour rythme
+     =========================================================== */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-36: 9rem;
+  --space-52: 13rem;
+  --space-80: 20rem;
+
+  /* ===========================================================
+     ELEVATION · Ombres teintées aubergine (jamais grises pures)
+     =========================================================== */
+  --shadow-soft:
+    0 1px 2px oklch(0.22 0.064 327 / 0.04),
+    0 2px 8px oklch(0.22 0.064 327 / 0.04);
+  --shadow-lift:
+    0 2px 4px oklch(0.22 0.064 327 / 0.06),
+    0 8px 24px oklch(0.22 0.064 327 / 0.08);
+
+  /* ===========================================================
+     MOTION · Une seule courbe. Pas de bounce, pas d'elastic.
+     =========================================================== */
+  --ease-out-quart: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 180ms;
+  --duration-base: 260ms;
+  --duration-slow: 600ms;
 }
 
+/* ============================================================
+   THEME · Expose les tokens à Tailwind v4
+   ============================================================ */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* Brand */
   --color-aubergine: var(--color-aubergine);
   --color-aubergine-soft: var(--color-aubergine-soft);
   --color-aubergine-deep: var(--color-aubergine-deep);
@@ -40,27 +93,109 @@
   --color-champetre: var(--color-champetre);
   --color-sable: var(--color-sable);
 
-  /* Fonds */
   --color-cream: var(--color-cream);
   --color-cream-light: var(--color-cream-light);
   --color-cream-dark: var(--color-cream-dark);
 
-  /* Fonts */
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
+
+  /* Expose la typo scale en utilities text-{step} */
+  --text-2xs: var(--text-2xs);
+  --text-xs: var(--text-xs);
+  --text-sm: var(--text-sm);
+  --text-base: var(--text-base);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+  --text-2xl: var(--text-2xl);
+  --text-3xl: var(--text-3xl);
+  --text-4xl: var(--text-4xl);
+  --text-5xl: var(--text-5xl);
+  --text-6xl: var(--text-6xl);
+
+  --shadow-soft: var(--shadow-soft);
+  --shadow-lift: var(--shadow-lift);
 }
 
-/* Pas de mode sombre par défaut — l'identité est cream + aubergine. */
-
+/* ============================================================
+   BASE · Body, sélection, lecture
+   ============================================================ */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
-  /* Légère texture (TODO : tester avec un grain crème) */
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Sélection de texte aux couleurs de marque */
 ::selection {
   background: var(--color-or);
   color: var(--color-aubergine);
+}
+
+/* Lecture longue : largeur de ligne raisonnable */
+.prose-measure {
+  max-width: 65ch;
+}
+
+/* ============================================================
+   DISPLAY HEADINGS · Cormorant grand + leading serré
+   ============================================================ */
+.display {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 0.95;
+}
+
+.display-tight {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 0.9;
+}
+
+/* ============================================================
+   HANGING NUMERAL · Numéro en marge, pas en kicker
+   ============================================================ */
+.hanging-numeral {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 300;
+  font-feature-settings: "lnum" 1;
+  font-variant-numeric: lining-nums;
+  color: var(--color-champetre);
+  line-height: 1;
+}
+
+/* ============================================================
+   AUBERGINE DRENCH · Surfaces narratives clés
+   ============================================================ */
+.drench-aubergine {
+  background: var(--color-aubergine);
+  color: var(--color-cream-light);
+}
+
+.drench-aubergine ::selection {
+  background: var(--color-or);
+  color: var(--color-aubergine);
+}
+
+/* ============================================================
+   MOTION · Page entrance helper
+   ============================================================ */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-up {
+    animation: fade-up var(--duration-slow) var(--ease-out-quart) both;
+  }
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

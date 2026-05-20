@@ -1,6 +1,7 @@
 import { AppHeader } from "@/components/AppHeader";
 import { LoginForm } from "@/components/account/LoginForm";
 import { AccountStatus } from "@/components/account/AccountStatus";
+import { Reveal } from "@/components/motion/Reveal";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export const metadata = {
@@ -19,29 +20,40 @@ export default async function ComptePage({ searchParams }: { searchParams: Searc
   return (
     <>
       <AppHeader crumbs={[{ label: "Mon compte" }]} />
-      <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
-        <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">Compte</p>
-        <h1 className="mt-2 font-serif text-3xl leading-tight text-aubergine">
-          {user ? "Tu es connecté" : "Garder ton carnet, partout"}
-        </h1>
-        <p className="mt-3 text-sm text-aubergine-soft">
-          {user
-            ? "Tes dégustations sont sauvegardées dans le cloud et synchronisées entre tes appareils."
-            : "Ton carnet vit pour l'instant sur cet appareil. Connecte-toi pour le retrouver partout, sans le perdre."}
-        </p>
+      <main className="mx-auto w-full max-w-screen-md flex-1 px-6 pb-24 pt-12 sm:px-10 sm:pt-16">
+        <Reveal delay={0}>
+          <h1
+            className="display max-w-[14ch]"
+            style={{ fontSize: "var(--text-4xl)" }}
+          >
+            {user ? "Te voilà connecté." : "Garder ton carnet, partout."}
+          </h1>
+        </Reveal>
+
+        <Reveal delay={0.1}>
+          <p className="mt-6 max-w-[46ch] text-base leading-relaxed text-aubergine-soft">
+            {user
+              ? "Tes dégustations sont sauvegardées dans le cloud et synchronisées entre tes appareils. Tu peux te déconnecter sans rien perdre."
+              : "Ton carnet vit pour l'instant sur ce téléphone. Connecte-toi pour le retrouver partout — sans mot de passe, juste un lien dans ta boîte mail."}
+          </p>
+        </Reveal>
 
         {error && !user && (
-          <p
-            role="alert"
-            className="mt-4 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-xs text-red-800"
-          >
-            Connexion impossible : {decodeURIComponent(error)}
-          </p>
+          <Reveal delay={0.16}>
+            <p
+              role="alert"
+              className="mt-8 max-w-[46ch] border-l-0 bg-or/10 px-5 py-4 text-sm text-aubergine-deep"
+            >
+              Connexion impossible : {decodeURIComponent(error)}
+            </p>
+          </Reveal>
         )}
 
-        <section className="mt-8">
-          {user ? <AccountStatus email={user.email ?? "(email inconnu)"} /> : <LoginForm next={next} />}
-        </section>
+        <Reveal delay={0.22}>
+          <section className="mt-12 max-w-[42ch]">
+            {user ? <AccountStatus email={user.email ?? "(email inconnu)"} /> : <LoginForm next={next} />}
+          </section>
+        </Reveal>
       </main>
     </>
   );
