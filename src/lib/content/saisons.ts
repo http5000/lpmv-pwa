@@ -56,7 +56,7 @@ export const SAISONS: Saison[] = [
         {
           title: "Brûlage ou broyage des sarments",
           description:
-            "Les sarments coupés sont brûlés au milieu des rangs (image emblématique de l'hiver viticole), ou broyés pour enrichir le sol en matière organique.",
+            "Les sarments coupés sont souvent broyés pour enrichir le sol en matière organique. Le brûlage, image emblématique de l'hiver viticole, est interdit dans de nombreuses régions pour des raisons environnementales.",
         },
         {
           title: "Plantation des jeunes ceps",
@@ -73,7 +73,7 @@ export const SAISONS: Saison[] = [
     threats: {
       title: "Les risques",
       items: [
-        "Gel hivernal sévère (< -15°C) qui peut endommager le tronc",
+        "Gel hivernal sévère (< -20°C) qui peut endommager le tronc (le bois résiste jusqu'à -15°C en dormance)",
         "Maladies du bois latentes (esca, eutypiose) — fléaux qui montent",
         "Sangliers et chevreuils qui broutent les jeunes ceps",
       ],
@@ -210,7 +210,7 @@ export const SAISONS: Saison[] = [
         {
           title: "Le ban des vendanges",
           description:
-            "Date officielle déclenchée par l'INAO et le syndicat de l'appellation, après mesures de maturité. Avant cette date, interdit de vendanger (sauf cuvées spéciales).",
+            "Date officielle fixée par les syndicats locaux de chaque appellation, après mesures de maturité sur les parcelles. L'INAO valide le cadre des AOC. Avant cette date, interdit de vendanger (sauf cuvées spéciales).",
         },
         {
           title: "Choisir le moment exact",

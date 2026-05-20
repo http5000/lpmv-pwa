@@ -72,9 +72,9 @@
     "center": {
       "title": "Chaque village a sa signature :",
       "items": {
-        "1": { "name": "Damery", "type": "Meunier fruité" },
-        "2": { "name": "Aÿ", "type": "Pinot Noir puissant" },
-        "3": { "name": "Avize", "type": "Chardonnay minéral" }
+        "1": { "name": "Damery", "type": "Village — Meunier fruité" },
+        "2": { "name": "Aÿ", "type": "Grand Cru — Pinot Noir" },
+        "3": { "name": "Avize", "type": "Grand Cru — Chardonnay" }
       }
     },
     "bottom": {
@@ -156,9 +156,9 @@
         "taste": "Sensation"
       },
       "items": [
-        { "label": "Brut Nature", "sugar": "0-3", "taste": "Tranchant, pur, minéral" },
+        { "label": "Brut Nature", "sugar": "< 3", "taste": "Tranchant, pur, minéral" },
         { "label": "Extra Brut", "sugar": "0-6", "taste": "Très sec, précis" },
-        { "label": "Brut", "sugar": "0-12", "taste": "L'équilibre classique" },
+        { "label": "Brut", "sugar": "< 12", "taste": "L'équilibre classique" },
         { "label": "Extra Dry", "sugar": "12-17", "taste": "Tendre, suave" },
         { "label": "Sec", "sugar": "17-32", "taste": "Rond, gourmand" },
         { "label": "Demi-sec", "sugar": "32-50", "taste": "Doux (pour le dessert)" }

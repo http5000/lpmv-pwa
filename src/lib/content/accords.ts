@@ -239,7 +239,7 @@ export const DISH_CATEGORIES: DishCategory[] = [
         dish: "Fromages bleus (roquefort, fourme, stilton)",
         wines: [
           { name: "Sauternes ou Monbazillac", style: "Liquoreux" },
-          { name: "Porto Vintage", style: "Rouge muté" },
+          { name: "Porto Tawny 10 ans", style: "Notes de noix et caramel" },
           { name: "Maury ou Rasteau", style: "VDN du Sud" },
         ],
         reason:

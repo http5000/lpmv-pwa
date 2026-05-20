@@ -234,7 +234,7 @@ export const LECONS: Lecon[] = [
       {
         title: "Le liège naturel",
         body:
-          "Permet une micro-oxygénation qui aide les vins de garde. Risque : le « goût de bouchon » (TCA) qui ruine 1 à 3 % des bouteilles.",
+          "Permet une micro-oxygénation qui aide les vins de garde. Risque : le « goût de bouchon » (TCA) qui ruine 1 à 2 % des bouteilles (les progrès récents ont réduit ce taux).",
       },
       {
         title: "La capsule à vis",
@@ -270,7 +270,7 @@ export const LECONS: Lecon[] = [
       {
         title: "Vin nature",
         body:
-          "Pas de définition légale, mais une charte (Vin Méthode Nature 2019). Raisins bio, vendanges manuelles, levures indigènes, intrants quasi nuls, sulfites maximum 30 mg/L. C'est le plus exigeant philosophiquement, le plus fragile à boire.",
+          "Pas de définition légale, mais une charte (Vin Méthode Nature 2019). Raisins bio, vendanges manuelles, levures indigènes, intrants quasi nuls, sulfites maximum 30 mg/L pour les rouges, 20 mg/L pour les blancs et rosés. C'est le plus exigeant philosophiquement, le plus fragile à boire.",
       },
       {
         title: "Conventionnel raisonné / HVE",

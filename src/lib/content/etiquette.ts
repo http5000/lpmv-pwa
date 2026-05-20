@@ -169,7 +169,7 @@ export const ZOOMS: Zoom[] = [
       {
         label: "Échelle du dosage",
         description:
-          "Brut Nature (0-3 g/L) → Extra Brut (0-6) → Brut (0-12) → Extra Dry (12-17) → Sec (17-32) → Demi-sec (32-50). Le sucre ajouté à la dernière minute.",
+          "Brut Nature (< 3 g/L, sans ajout de sucre) → Extra Brut (0-6) → Brut (< 12 g/L) → Extra Dry (12-17) → Sec (17-32) → Demi-sec (32-50). Le sucre ajouté à la dernière minute.",
       },
       {
         label: "RM, NM, CM, RC…",
