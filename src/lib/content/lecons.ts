@@ -25,11 +25,11 @@ export const CATEGORY_META: Record<
   Lecon["category"],
   { label: string; emoji: string; color: string }
 > = {
-  decouverte: { label: "Découverte", emoji: "🌱", color: "#94B486" },
-  service: { label: "Servir", emoji: "🍷", color: "#7A1F2B" },
-  achat: { label: "Acheter", emoji: "💸", color: "#CA9A2F" },
-  deguster: { label: "Déguster", emoji: "👃", color: "#6B4A6B" },
-  cellier: { label: "Conserver", emoji: "🍾", color: "#7A8B5A" },
+  decouverte: { label: "Découverte", emoji: "🌱", color: "#C6A15B" }, /* champetre */
+  service: { label: "Servir", emoji: "🍷", color: "#310E31" },       /* aubergine */
+  achat: { label: "Acheter", emoji: "💸", color: "#CA9A2F" },        /* or */
+  deguster: { label: "Déguster", emoji: "👃", color: "#6B4A6B" },    /* aubergine-soft */
+  cellier: { label: "Conserver", emoji: "🍾", color: "#C6A15B" },    /* champetre */
 };
 
 export const LECONS: Lecon[] = [

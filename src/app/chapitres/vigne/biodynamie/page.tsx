@@ -14,7 +14,7 @@ function ActLabel({ num, label }: { num: number; label: string }) {
       <span className="font-serif text-4xl leading-none text-or/40">
         {String(num).padStart(2, "0")}
       </span>
-      <span className="font-serif text-[10px] uppercase tracking-[0.4em] text-or">
+      <span className="font-serif text-sm italic text-or">
         {label}
       </span>
     </div>
@@ -82,7 +82,7 @@ export default function BiodynamiePage() {
         ]}
       />
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
-        <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+        <p className="font-serif text-sm italic text-champetre">
           Module 4 / 4 — Vigne & Viticulture
         </p>
         <h1 className="mt-2 font-serif text-3xl leading-tight text-aubergine">
@@ -289,7 +289,7 @@ export default function BiodynamiePage() {
 
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl border border-cream-dark bg-cream-light p-4">
-              <h3 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+              <h3 className="font-serif text-sm italic text-champetre">
                 Côté production
               </h3>
               <ul className="mt-2 space-y-2 text-sm leading-relaxed text-aubergine">
@@ -302,7 +302,7 @@ export default function BiodynamiePage() {
               </ul>
             </div>
             <div className="rounded-2xl border border-or/30 bg-or/[0.06] p-4">
-              <h3 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+              <h3 className="font-serif text-sm italic text-champetre">
                 Les deux côtés du miroir
               </h3>
               <ul className="mt-2 space-y-2 text-sm leading-relaxed text-aubergine [&_strong]:text-or">

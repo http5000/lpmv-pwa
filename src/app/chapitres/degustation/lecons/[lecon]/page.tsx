@@ -54,7 +54,7 @@ export default async function LeconPage({
           style={{ background: `linear-gradient(160deg, ${cat.color}33, ${cat.color}08)` }}
         >
           <p
-            className="font-serif text-[10px] uppercase tracking-[0.4em]"
+            className="font-serif text-sm italic"
             style={{ color: cat.color }}
           >
             {cat.emoji} {cat.label}
@@ -86,11 +86,8 @@ export default async function LeconPage({
         </article>
 
         {/* Takeaway */}
-        <section
-          className="mt-8 rounded-2xl border-l-4 bg-aubergine/[0.06] p-5"
-          style={{ borderLeftColor: cat.color }}
-        >
-          <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+        <section className="mt-8 rounded-2xl border border-or/30 bg-or/[0.05] p-5">
+          <p className="font-serif text-sm italic text-champetre">
             À retenir
           </p>
           <p className="mt-2 font-serif text-base leading-relaxed text-aubergine">
@@ -107,7 +104,7 @@ export default async function LeconPage({
             >
               <span className="text-2xl">{prev.emoji}</span>
               <div className="min-w-0">
-                <span className="block text-[10px] uppercase tracking-wider text-champetre">
+                <span className="block font-serif text-xs italic text-champetre">
                   ← Précédent
                 </span>
                 <span className="truncate font-serif text-sm text-aubergine">
@@ -124,7 +121,7 @@ export default async function LeconPage({
               className="flex flex-1 items-center justify-end gap-3 rounded-xl border border-cream-dark bg-cream-light p-3 text-right transition-all hover:border-or active:scale-[0.99]"
             >
               <div className="min-w-0">
-                <span className="block text-[10px] uppercase tracking-wider text-champetre">
+                <span className="block font-serif text-xs italic text-champetre">
                   Suivant →
                 </span>
                 <span className="truncate font-serif text-sm text-aubergine">

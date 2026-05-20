@@ -39,7 +39,7 @@ function Section({
     <section className="border-t border-cream-dark py-5">
       <div className="flex items-center gap-2">
         <Image src={iconSrc} alt="" width={28} height={28} className="h-7 w-7" />
-        <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+        <h2 className="font-serif text-sm italic text-champetre">
           {label}
         </h2>
       </div>
@@ -108,7 +108,7 @@ export default async function SolPage({
         </div>
 
         <div className="px-5 pt-6">
-          <span className="rounded-full bg-aubergine/[0.08] px-3 py-1 font-serif text-[10px] uppercase tracking-[0.3em] text-aubergine">
+          <span className="rounded-full bg-aubergine/[0.08] px-3 py-1 font-serif text-xs text-aubergine">
             Sol n°{sol.id}
           </span>
           <h1 className="mt-3 font-serif text-4xl leading-tight text-aubergine">
@@ -144,7 +144,7 @@ export default async function SolPage({
                 height={32}
                 className="h-8 w-8"
               />
-              <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+              <h2 className="font-serif text-sm italic text-champetre">
                 {labels.profile}
               </h2>
             </div>
@@ -183,7 +183,7 @@ export default async function SolPage({
                 className="h-10 w-10 shrink-0 object-contain"
               />
               <div className="flex min-w-0 flex-col">
-                <span className="text-[10px] uppercase tracking-wider text-champetre">
+                <span className="font-serif text-xs italic text-champetre">
                   ← Précédent
                 </span>
                 <span className="truncate font-serif text-sm text-aubergine">
@@ -200,7 +200,7 @@ export default async function SolPage({
               className="flex flex-1 items-center justify-end gap-3 rounded-xl border border-cream-dark bg-cream-light p-3 text-right transition-all hover:border-or active:scale-[0.99]"
             >
               <div className="flex min-w-0 flex-col">
-                <span className="text-[10px] uppercase tracking-wider text-champetre">
+                <span className="font-serif text-xs italic text-champetre">
                   Suivant →
                 </span>
                 <span className="truncate font-serif text-sm text-aubergine">

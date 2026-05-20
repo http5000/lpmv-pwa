@@ -17,7 +17,7 @@ function ActLabel({ num, label }: { num: number; label: string }) {
       <span className="font-serif text-4xl leading-none text-or/40">
         {String(num).padStart(2, "0")}
       </span>
-      <span className="font-serif text-[10px] uppercase tracking-[0.4em] text-or">
+      <span className="font-serif text-sm italic text-or">
         {label}
       </span>
     </div>
@@ -27,7 +27,7 @@ function ActLabel({ num, label }: { num: number; label: string }) {
 function ListBlock({ title, items }: { title: string; items: string[] }) {
   return (
     <div>
-      <h4 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+      <h4 className="font-serif text-sm italic text-champetre">
         {title}
       </h4>
       <ul className="mt-1.5 space-y-1 text-sm leading-relaxed text-aubergine [&_strong]:text-or">
@@ -55,7 +55,7 @@ export default function ChoixVigneronPage() {
         ]}
       />
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
-        <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+        <p className="font-serif text-sm italic text-champetre">
           Module 2 / 3 — Vinification
         </p>
         <h1 className="mt-2 font-serif text-3xl leading-tight text-aubergine">
@@ -178,7 +178,7 @@ export default function ChoixVigneronPage() {
                       ] as const
                     ).map(([k, label]) => (
                       <li key={k} className="rounded-lg border border-cream-dark bg-cream p-3">
-                        <p className="font-serif text-[10px] uppercase tracking-[0.25em] text-or">
+                        <p className="font-serif text-xs italic text-or">
                           {label}
                         </p>
                         <p className="mt-1 text-sm leading-relaxed text-aubergine">
@@ -283,7 +283,7 @@ export default function ChoixVigneronPage() {
 
           {/* 3 philosophies */}
           <div className="mt-8 rounded-3xl bg-aubergine/[0.06] p-5">
-            <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+            <p className="font-serif text-sm italic text-champetre">
               Trois philosophies de cave
             </p>
             <ul className="mt-4 grid gap-3 sm:grid-cols-3">

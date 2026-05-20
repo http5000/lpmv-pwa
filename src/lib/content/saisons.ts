@@ -39,7 +39,7 @@ export const SAISONS: Saison[] = [
     name: "Hiver",
     period: "décembre → février",
     tagline: "« La vigne dort, mais le vigneron décide. »",
-    accent: "#6B7A8A",
+    accent: "#310E31", /* aubergine — hiver : dormance, profondeur */
     vine: {
       title: "La vigne au repos",
       description:
@@ -90,7 +90,7 @@ export const SAISONS: Saison[] = [
     name: "Printemps",
     period: "mars → mai",
     tagline: "« La vigne se réveille — tout peut encore basculer. »",
-    accent: "#94B486",
+    accent: "#C6A15B", /* champetre — printemps : éveil terreux */
     vine: {
       title: "Le réveil de la sève",
       description:
@@ -141,7 +141,7 @@ export const SAISONS: Saison[] = [
     name: "Été",
     period: "juin → août",
     tagline: "« Le raisin change de couleur — le compte à rebours commence. »",
-    accent: "#D8A14C",
+    accent: "#CA9A2F", /* or — été : chaleur, soleil */
     vine: {
       title: "De la fleur à la baie mûre",
       description:
@@ -198,7 +198,7 @@ export const SAISONS: Saison[] = [
     name: "Automne",
     period: "septembre → novembre",
     tagline: "« Le jour J — ni trop tôt, surtout pas trop tard. »",
-    accent: "#A04830",
+    accent: "#CB9966", /* sable — automne : vendange ambrée */
     vine: {
       title: "L'apogée — puis le retour au repos",
       description:

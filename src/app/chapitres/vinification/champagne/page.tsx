@@ -14,7 +14,7 @@ function ActLabel({ num, label }: { num: number; label: string }) {
       <span className="font-serif text-4xl leading-none text-or/40">
         {String(num).padStart(2, "0")}
       </span>
-      <span className="font-serif text-[10px] uppercase tracking-[0.4em] text-or">
+      <span className="font-serif text-sm italic text-or">
         {label}
       </span>
     </div>
@@ -34,7 +34,7 @@ export default function ChampagnePage() {
         ]}
       />
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
-        <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+        <p className="font-serif text-sm italic text-champetre">
           Module 3 / 3 — Vinification
         </p>
         <h1 className="mt-2 font-serif text-3xl leading-tight text-aubergine">
@@ -71,7 +71,7 @@ export default function ChampagnePage() {
               >
                 <div className="flex items-baseline justify-between gap-3">
                   <h3 className="font-serif text-xl text-aubergine">{cep.label}</h3>
-                  <span className="font-serif text-[10px] uppercase tracking-[0.25em] text-champetre">
+                  <span className="font-serif text-xs italic text-champetre">
                     {String(idx + 1).padStart(2, "0")}
                   </span>
                 </div>
@@ -122,7 +122,7 @@ export default function ChampagnePage() {
 
           {/* Une équation à 3 inconnues */}
           <div className="mt-5 rounded-2xl border border-cream-dark bg-cream-light p-4">
-            <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+            <p className="font-serif text-sm italic text-champetre">
               Une équation à trois inconnues
             </p>
             <ul className="mt-3 grid grid-cols-3 gap-2 text-center">
@@ -139,7 +139,7 @@ export default function ChampagnePage() {
 
           {/* Signature des villages */}
           <div className="mt-3 rounded-2xl bg-aubergine/[0.05] p-4">
-            <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+            <p className="font-serif text-sm italic text-champetre">
               Chaque village a sa signature
             </p>
             <ul className="mt-3 space-y-2">
@@ -157,7 +157,7 @@ export default function ChampagnePage() {
 
           {/* Vins de réserve */}
           <div className="mt-3 rounded-2xl border border-or/30 bg-or/[0.06] p-4">
-            <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+            <p className="font-serif text-sm italic text-champetre">
               Le trésor des caves — les vins de réserve
             </p>
             <ul className="mt-3 space-y-2">
@@ -224,7 +224,7 @@ export default function ChampagnePage() {
           </h2>
 
           <div className="mt-4 rounded-2xl border border-cream-dark bg-cream-light p-4">
-            <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+            <p className="font-serif text-sm italic text-champetre">
               Sa mission sacrée
             </p>
             <div
@@ -235,7 +235,7 @@ export default function ChampagnePage() {
 
           {/* Dosage scale */}
           <div className="mt-4 rounded-2xl bg-aubergine/[0.05] p-4">
-            <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+            <p className="font-serif text-sm italic text-champetre">
               L&rsquo;échelle du sucre — le dosage
             </p>
             <p className="mt-2 text-sm leading-relaxed text-aubergine">
@@ -294,7 +294,7 @@ export default function ChampagnePage() {
 
         {/* Game v2 teaser */}
         <section className="mt-12 rounded-3xl border-2 border-dashed border-or/40 bg-or/[0.04] p-6 text-center">
-          <p className="font-serif text-[10px] uppercase tracking-[0.4em] text-or">
+          <p className="font-serif text-sm italic text-or">
             Bientôt — Chef de Cave (jeu)
           </p>
           <h2 className="mt-2 font-serif text-2xl leading-tight text-aubergine">

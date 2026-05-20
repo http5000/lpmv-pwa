@@ -22,7 +22,7 @@ export default function ClimatPage() {
         ]}
       />
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
-        <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+        <p className="font-serif text-sm italic text-champetre">
           Module 2 / 3 — Terroir
         </p>
         <h1 className="mt-2 font-serif text-3xl leading-tight text-aubergine">

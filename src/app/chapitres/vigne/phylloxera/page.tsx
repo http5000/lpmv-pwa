@@ -14,7 +14,7 @@ function ActLabel({ num, label }: { num: number; label: string }) {
       <span className="font-serif text-4xl leading-none text-or/40">
         {String(num).padStart(2, "0")}
       </span>
-      <span className="font-serif text-[10px] uppercase tracking-[0.4em] text-or">
+      <span className="font-serif text-sm italic text-or">
         Acte {num} — {label}
       </span>
     </div>
@@ -46,7 +46,7 @@ export default function PhylloxeraPage() {
         ]}
       />
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
-        <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+        <p className="font-serif text-sm italic text-champetre">
           Module 2 / 4 — Vigne & Viticulture
         </p>
         <h1 className="mt-2 font-serif text-3xl leading-tight text-aubergine">

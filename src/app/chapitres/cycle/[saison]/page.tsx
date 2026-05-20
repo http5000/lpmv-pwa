@@ -23,9 +23,7 @@ export async function generateMetadata({
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
-      {children}
-    </h2>
+    <p className="font-serif text-sm italic text-champetre">{children}</p>
   );
 }
 
@@ -59,7 +57,7 @@ export default async function SaisonPage({
             background: `linear-gradient(160deg, ${s.accent}33, ${s.accent}08)`,
           }}
         >
-          <p className="font-serif text-[10px] uppercase tracking-[0.4em] text-or">
+          <p className="font-serif text-sm italic text-or">
             Saison {s.order} / 4 · {s.period}
           </p>
           <div className="mt-4 text-6xl" aria-hidden="true">
@@ -108,10 +106,7 @@ export default async function SaisonPage({
         </section>
 
         {/* Bloc 3 : focus */}
-        <section
-          className="mt-10 rounded-2xl border-l-4 bg-aubergine/[0.05] p-5"
-          style={{ borderLeftColor: s.accent }}
-        >
+        <section className="mt-10 rounded-2xl bg-aubergine/[0.06] p-5">
           <SectionLabel>Zoom du mois</SectionLabel>
           <h3 className="mt-1 font-serif text-xl leading-tight text-aubergine">
             {s.focus.title}
@@ -160,7 +155,7 @@ export default async function SaisonPage({
             >
               <span className="text-2xl">{prev.emoji}</span>
               <div className="flex min-w-0 flex-col">
-                <span className="text-[10px] uppercase tracking-wider text-champetre">
+                <span className="font-serif text-xs italic text-champetre">
                   ← Saison précédente
                 </span>
                 <span className="font-serif text-sm text-aubergine">
@@ -177,7 +172,7 @@ export default async function SaisonPage({
               className="flex flex-1 items-center justify-end gap-3 rounded-xl border border-cream-dark bg-cream-light p-3 text-right transition-all hover:border-or active:scale-[0.99]"
             >
               <div className="flex min-w-0 flex-col">
-                <span className="text-[10px] uppercase tracking-wider text-champetre">
+                <span className="font-serif text-xs italic text-champetre">
                   Saison suivante →
                 </span>
                 <span className="font-serif text-sm text-aubergine">

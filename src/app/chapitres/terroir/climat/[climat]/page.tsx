@@ -39,7 +39,7 @@ function Block({
     <section
       className={`rounded-2xl border border-cream-dark bg-cream-light p-4 ${className}`}
     >
-      <h2 className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+      <h2 className="font-serif text-sm italic text-champetre">
         {label}
       </h2>
       <p className="mt-2 text-sm leading-relaxed text-aubergine">{value}</p>
@@ -89,7 +89,7 @@ export default async function ClimatPage({
         </div>
 
         <div className="px-5 pt-6">
-          <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+          <p className="font-serif text-sm italic text-champetre">
             Climat
           </p>
           <h1 className="mt-2 font-serif text-3xl leading-tight text-aubergine">
@@ -127,7 +127,7 @@ export default async function ClimatPage({
               href={`/chapitres/terroir/climat/${prev.slug}`}
               className="flex flex-1 flex-col rounded-xl border border-cream-dark bg-cream-light p-3 transition-all hover:border-or active:scale-[0.99]"
             >
-              <span className="text-[10px] uppercase tracking-wider text-champetre">
+              <span className="font-serif text-xs italic text-champetre">
                 ← Précédent
               </span>
               <span className="truncate font-serif text-sm text-aubergine">
@@ -142,7 +142,7 @@ export default async function ClimatPage({
               href={`/chapitres/terroir/climat/${next.slug}`}
               className="flex flex-1 flex-col items-end rounded-xl border border-cream-dark bg-cream-light p-3 text-right transition-all hover:border-or active:scale-[0.99]"
             >
-              <span className="text-[10px] uppercase tracking-wider text-champetre">
+              <span className="font-serif text-xs italic text-champetre">
                 Suivant →
               </span>
               <span className="truncate font-serif text-sm text-aubergine">

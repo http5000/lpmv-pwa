@@ -22,7 +22,7 @@ export default function RoueTerroirPage() {
         ]}
       />
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
-        <p className="font-serif text-[10px] uppercase tracking-[0.3em] text-or">
+        <p className="font-serif text-sm italic text-champetre">
           Module 3 / 3 — Terroir
         </p>
         <h1 className="mt-2 font-serif text-3xl leading-tight text-aubergine">
@@ -51,7 +51,7 @@ export default function RoueTerroirPage() {
         </section>
 
         {/* Règle du jeu */}
-        <section className="mt-5 rounded-2xl border-l-4 border-or bg-cream-light p-4">
+        <section className="mt-5 rounded-2xl border border-or/30 bg-or/[0.05] p-4">
           <h2 className="font-serif text-sm font-medium text-aubergine">
             {info.secondary.title}
           </h2>
