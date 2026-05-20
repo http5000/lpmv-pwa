@@ -73,7 +73,7 @@ export const SAISONS: Saison[] = [
     threats: {
       title: "Les risques",
       items: [
-        "Gel hivernal sévère (< -20°C) qui peut endommager le tronc (le bois résiste jusqu'à -15°C en dormance)",
+        "Gel hivernal sévère (< -15°C) qui peut endommager le tronc",
         "Maladies du bois latentes (esca, eutypiose) — fléaux qui montent",
         "Sangliers et chevreuils qui broutent les jeunes ceps",
       ],

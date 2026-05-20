@@ -333,9 +333,9 @@ export const TANINS = [
 ];
 
 export const SUCROSITE = [
-  { key: "sec", label: "Sec", description: "0-9 g/L" },
-  { key: "demi-sec", label: "Demi-sec", description: "9-18 g/L" },
-  { key: "moelleux", label: "Moelleux", description: "18-45 g/L" },
+  { key: "brut-sec", label: "Brut / Sec", description: "0-4 g/L" },
+  { key: "demi-sec", label: "Demi-sec", description: "4-12 g/L" },
+  { key: "moelleux", label: "Moelleux", description: "12-45 g/L" },
   { key: "liquoreux", label: "Liquoreux", description: "+ de 45 g/L" },
 ];
 
@@ -343,7 +343,7 @@ export const ALCOOL = [
   { key: "leger", label: "Léger", description: "< 11°" },
   { key: "modere", label: "Modéré", description: "11-13°" },
   { key: "chaud", label: "Chaud", description: "13-14°" },
-  { key: "brulant", label: "Puissant", description: "+ de 14°" },
+  { key: "brulant", label: "Brûlant", description: "+ de 14°" },
 ];
 
 export const FINALE = [
