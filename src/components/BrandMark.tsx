@@ -8,11 +8,11 @@ import { Logo } from "./Logo";
 export function BrandMark({
   href = "/",
   size = "sm",
-  variant = "aubergine",
+  variant = "bare",
 }: {
   href?: string;
   size?: "sm" | "md" | "lg";
-  variant?: "aubergine" | "or";
+  variant?: "bare" | "aubergine" | "or";
 }) {
   return (
     <Link

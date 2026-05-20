@@ -26,6 +26,11 @@ export type Chapitre = {
   mentorIntro: string;
   /** Couleur d'accent secondaire du chapitre (en plus du bordeaux primaire). */
   accent: string;
+  /** Image d'illustration du chapitre (dans /public/chapitres/). Stock Unsplash
+   *  temporaire, à remplacer par les photos du musée quand dispo. */
+  image: string;
+  /** Alt narratif de l'image. */
+  imageAlt: string;
   modules: ChapitreModule[];
 };
 
@@ -38,6 +43,8 @@ export const CHAPITRES: Chapitre[] = [
     mentorIntro:
       "Avant la vigne, avant le vin, il y a le sol qu'on foule. Touche-le, écoute-le. C'est lui qui décide.",
     accent: "#7A5230",
+    image: "/chapitres/terroir.jpg",
+    imageAlt: "Rangs de vigne s'étirant vers l'horizon sous une lumière dorée de fin de journée.",
     modules: [
       {
         slug: "sols",
@@ -70,6 +77,8 @@ export const CHAPITRES: Chapitre[] = [
     mentorIntro:
       "Maintenant que tu connais la terre, regarde la plante. Elle est plus maligne qu'elle n'en a l'air.",
     accent: "#4A5D3A",
+    image: "/chapitres/vigne.jpg",
+    imageAlt: "Grappe de raisin blanc mûr suspendue dans le feuillage d'un cep, en plein soleil.",
     modules: [
       {
         slug: "anatomie",
@@ -109,6 +118,8 @@ export const CHAPITRES: Chapitre[] = [
     mentorIntro:
       "Le vigneron ne dort jamais vraiment. Suis-le sur douze mois, du sécateur à la cuve.",
     accent: "#8B6914",
+    image: "/chapitres/cycle.jpg",
+    imageAlt: "Mains gantées travaillant la terre meuble autour de jeunes pousses vertes.",
     modules: [
       {
         slug: "hiver",
@@ -148,6 +159,8 @@ export const CHAPITRES: Chapitre[] = [
     mentorIntro:
       "Le raisin est arrivé. Maintenant, mille décisions. Chacune sculpte le vin que tu boiras.",
     accent: "#7A1F2B",
+    image: "/chapitres/vinification.jpg",
+    imageAlt: "Quatre verres alignés sur une barrique, du blanc pâle au rouge profond.",
     modules: [
       {
         slug: "du-raisin-au-vin",
@@ -180,6 +193,8 @@ export const CHAPITRES: Chapitre[] = [
     mentorIntro:
       "Tout ce que tu as appris se retrouve dans le verre. Sens, observe, dis-le avec tes mots.",
     accent: "#6B2A4C",
+    image: "/chapitres/degustation.jpg",
+    imageAlt: "Verre de vin rouge et grappe de raisin sur un fond sombre, lumière intime.",
     modules: [
       {
         slug: "guide",

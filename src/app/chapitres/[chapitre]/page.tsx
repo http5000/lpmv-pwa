@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
@@ -23,9 +24,9 @@ export async function generateMetadata({
 }
 
 /**
- * Page chapitre : hero drench aubergine avec titre oversize + mentor,
- * puis liste de modules en hanging numerals (pas en cartes).
- * Voir DESIGN.md §Color strategy et §Card discipline.
+ * Page chapitre : hero photographique (image + overlay aubergine), puis voix
+ * du Mentor en pull-quote, puis modules en liste hanging-numerals.
+ * Voir DESIGN.md §Imagery et §Card discipline.
  */
 export default async function ChapitrePage({
   params,
@@ -47,57 +48,69 @@ export default async function ChapitrePage({
         ]}
       />
 
-      {/* Hero drench aubergine */}
-      <section className="drench-aubergine">
-        <div className="mx-auto w-full max-w-screen-md px-6 py-16 sm:px-10 sm:py-24">
+      {/* Hero photographique */}
+      <section className="relative flex min-h-[58vh] items-end overflow-hidden">
+        <Image
+          src={chapitre.image}
+          alt={chapitre.imageAlt}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        {/* Overlay aubergine pour lisibilité du texte */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to top, oklch(0.14 0.054 327 / 0.92) 0%, oklch(0.14 0.054 327 / 0.55) 45%, oklch(0.14 0.054 327 / 0.15) 100%)",
+          }}
+        />
+        <div className="relative z-10 mx-auto w-full max-w-screen-md px-6 pb-12 pt-24 sm:px-10 sm:pb-16">
           <Reveal delay={0}>
             <p className="font-serif text-sm italic text-or">
               Chapitre {chapitreIndex} sur {CHAPITRES.length}
             </p>
           </Reveal>
-
           <Reveal delay={0.12}>
             <h1
-              className="display-tight mt-6 text-cream-light"
+              className="display-tight mt-4 text-cream-light"
               style={{ fontSize: "var(--text-5xl)" }}
             >
-              <span className="mr-4 align-baseline" aria-hidden="true">{chapitre.emoji}</span>
+              <span className="mr-3 align-baseline" aria-hidden="true">{chapitre.emoji}</span>
               {chapitre.title}
             </h1>
           </Reveal>
-
           <Reveal delay={0.22}>
-            <p className="mt-6 max-w-[44ch] text-base leading-relaxed text-cream-light/75 sm:text-lg">
+            <p className="mt-4 max-w-[42ch] text-base leading-relaxed text-cream-light/85 sm:text-lg">
               {chapitre.subtitle}
             </p>
-          </Reveal>
-
-          {/* Voix du mentor — pas de side-stripe, mise en retrait par typographie */}
-          <Reveal delay={0.35}>
-            <figure className="mt-12 max-w-[40ch] sm:mt-16">
-              <blockquote className="font-serif text-lg italic leading-snug text-or sm:text-xl">
-                « {chapitre.mentorIntro} »
-              </blockquote>
-              <figcaption className="mt-3 text-xs text-cream-light/55">— Le Mentor</figcaption>
-            </figure>
           </Reveal>
         </div>
       </section>
 
-      {/* Liste modules sur cream */}
-      <main className="mx-auto w-full max-w-screen-md flex-1 px-6 pb-24 pt-16 sm:px-10 sm:pt-20">
+      <main className="mx-auto w-full max-w-screen-md flex-1 px-6 pb-24 pt-12 sm:px-10 sm:pt-16">
+        {/* Voix du Mentor en pull-quote (pas de side-stripe) */}
         <Reveal delay={0}>
-          <p className="text-sm text-aubergine-soft">
-            {chapitre.modules.length} étape{chapitre.modules.length > 1 ? "s" : ""} à explorer
-            {chapitre.modules.some((m) => m.status !== "available") && (
-              <>
-                {" "}— certaines arrivent bientôt
-              </>
-            )}.
+          <figure className="max-w-[44ch]">
+            <blockquote
+              className="font-serif italic leading-snug text-aubergine"
+              style={{ fontSize: "var(--text-xl)" }}
+            >
+              « {chapitre.mentorIntro} »
+            </blockquote>
+            <figcaption className="mt-3 text-xs text-champetre">— Le Mentor</figcaption>
+          </figure>
+        </Reveal>
+
+        <Reveal delay={0.1}>
+          <p className="mt-14 text-sm text-aubergine-soft">
+            {chapitre.modules.length} étape{chapitre.modules.length > 1 ? "s" : ""} à explorer.
           </p>
         </Reveal>
 
-        <ol className="mt-10">
+        <ol className="mt-6">
           {chapitre.modules.map((mod, idx) => {
             const isAvailable = mod.status === "available";
             return (
@@ -105,7 +118,7 @@ export default async function ChapitrePage({
                 key={mod.slug}
                 className="border-t border-cream-dark first:border-t-0"
               >
-                <Reveal delay={0.1 + idx * 0.06}>
+                <Reveal delay={0.14 + idx * 0.06}>
                   <ModuleRow
                     chapitreSlug={chapitre.slug}
                     mod={mod}
@@ -118,7 +131,7 @@ export default async function ChapitrePage({
           })}
         </ol>
 
-        <div className="mt-20">
+        <div className="mt-16">
           <Link
             href="/chapitres"
             className="inline-flex items-center gap-2 text-sm text-aubergine-soft underline-offset-4 transition-colors hover:text-or hover:underline"
@@ -143,7 +156,7 @@ function ModuleRow({
   isAvailable: boolean;
 }) {
   const inner = (
-    <div className="grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4 py-7 sm:grid-cols-[3rem_1fr_auto] sm:gap-6 sm:py-8">
+    <div className="grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4 py-7 sm:grid-cols-[3rem_1fr_auto] sm:gap-6">
       <span
         aria-hidden="true"
         className="hanging-numeral select-none"
@@ -176,19 +189,14 @@ function ModuleRow({
           →
         </span>
       ) : (
-        <span className="self-center text-xs text-champetre italic">
-          bientôt
-        </span>
+        <span className="self-center text-xs italic text-champetre">bientôt</span>
       )}
     </div>
   );
 
   if (isAvailable) {
     return (
-      <Link
-        href={`/chapitres/${chapitreSlug}/${mod.slug}`}
-        className="group block"
-      >
+      <Link href={`/chapitres/${chapitreSlug}/${mod.slug}`} className="group block">
         {inner}
       </Link>
     );

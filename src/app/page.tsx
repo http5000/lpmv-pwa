@@ -1,45 +1,59 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { Reveal } from "@/components/motion/Reveal";
 
 /**
- * Accueil — calme, aéré, hospitalier. Voir DESIGN.md §Vision.
- * Pas de drench, pas d'oversize agressif : un cream qui respire,
- * le logo officiel comme point d'ancrage, une promesse courte,
- * un bouton. Le ton est celui d'une porte ouverte, pas d'un slogan.
+ * Accueil — l'app faite par Le Petit Musée du Vin pour apprendre le vin.
+ * S'adresse autant aux visiteurs du musée qu'à ceux qui ne sont jamais venus.
+ *
+ * Ton : accessible, décomplexé, aéré (cf le site du musée). Cream qui respire,
+ * logo officiel en aubergine, une vraie photo, une promesse courte, un bouton.
  */
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-1 flex-col bg-cream">
-      <div className="mx-auto flex w-full max-w-screen-sm flex-1 flex-col items-center justify-center px-6 py-16 text-center">
+      <div className="mx-auto flex w-full max-w-screen-sm flex-1 flex-col items-center px-6 pt-12 pb-16 text-center sm:pt-16">
         <Reveal delay={0}>
-          <Logo size="lg" variant="aubergine" />
+          <Logo size="lg" variant="bare" />
         </Reveal>
 
-        <Reveal delay={0.18}>
+        <Reveal delay={0.16}>
+          <div className="mt-12 w-full overflow-hidden rounded-3xl shadow-[var(--shadow-lift)] sm:mt-14">
+            <Image
+              src="/chapitres/hero.jpg"
+              alt="Un verre de vin rouge posé face à un vignoble qui descend vers un lac et des collines."
+              width={1200}
+              height={800}
+              priority
+              className="aspect-[3/2] w-full object-cover"
+            />
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.32}>
           <h1
-            className="display mt-16 max-w-[14ch] text-aubergine sm:mt-20"
+            className="display mt-12 max-w-[16ch] text-aubergine"
             style={{ fontSize: "var(--text-3xl)" }}
           >
-            Le vin, à ton rythme.
+            Comprendre le vin, de la vigne au verre.
           </h1>
         </Reveal>
 
-        <Reveal delay={0.3}>
-          <p className="mt-6 max-w-[34ch] text-base leading-relaxed text-aubergine-soft">
-            Le compagnon du Petit Musée du Vin.
-            <br className="hidden sm:inline" />
+        <Reveal delay={0.44}>
+          <p className="mt-6 max-w-[36ch] text-base leading-relaxed text-aubergine-soft">
+            L&rsquo;application du Petit Musée du Vin pour apprendre le vin.
             {" "}Cinq chapitres pour comprendre une gorgée.
           </p>
         </Reveal>
 
-        <Reveal delay={0.46}>
+        <Reveal delay={0.58}>
           <Link
             href="/chapitres"
-            className="group mt-14 inline-flex items-center gap-3 rounded-full bg-aubergine px-7 py-3.5 font-serif text-base text-cream-light transition-all duration-200 hover:-translate-y-0.5 hover:bg-aubergine-deep active:translate-y-0 active:scale-[0.98]"
+            className="group mt-12 inline-flex items-center gap-3 rounded-full bg-aubergine px-8 py-3.5 font-serif text-base text-cream-light transition-all duration-200 hover:-translate-y-0.5 hover:bg-aubergine-deep active:translate-y-0 active:scale-[0.98]"
             style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
           >
-            <span>Entrer</span>
+            <span>Explorer</span>
             <span
               aria-hidden="true"
               className="transition-transform duration-300 group-hover:translate-x-1"
@@ -50,7 +64,6 @@ export default function Home() {
           </Link>
         </Reveal>
       </div>
-
     </main>
   );
 }

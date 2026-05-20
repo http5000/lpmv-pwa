@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { Reveal } from "@/components/motion/Reveal";
@@ -8,9 +9,9 @@ export const metadata = {
 };
 
 /**
- * Liste des 5 chapitres en table-of-contents manuscrit.
- * Hanging numerals à gauche, titres Cormorant grand, statut en métadonnée discrète.
- * Pas de side-stripe, pas de cartes — voir DESIGN.md §Card discipline.
+ * Liste des 5 chapitres en cartes image-led.
+ * Photo du chapitre à gauche, titre + sous-titre + avancement à droite.
+ * Le numéro est une légende discrète ("Chapitre 1"), pas un chiffre qui flotte.
  */
 export default function ChapitresPage() {
   return (
@@ -24,13 +25,13 @@ export default function ChapitresPage() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <p className="mt-6 max-w-[44ch] text-base leading-relaxed text-aubergine-soft">
-            Le chemin suggéré va du sol jusqu&rsquo;à ta gorgée. Pioche où tu veux,
+          <p className="mt-6 max-w-[46ch] text-base leading-relaxed text-aubergine-soft">
+            Le chemin va du sol jusqu&rsquo;à ta gorgée. Mais tu peux piocher où tu veux,
             quand tu veux.
           </p>
         </Reveal>
 
-        <ol className="mt-16 sm:mt-20">
+        <ol className="mt-12 flex flex-col gap-4 sm:mt-16 sm:gap-5">
           {CHAPITRES.map((chapitre, idx) => {
             const moduleCount = chapitre.modules.length;
             const available = chapitre.modules.filter(
@@ -38,71 +39,54 @@ export default function ChapitresPage() {
             ).length;
             const isComplete = available === moduleCount;
             return (
-              <li key={chapitre.slug} className="border-t border-cream-dark first:border-t-0">
-                <Reveal delay={0.2 + idx * 0.06}>
+              <li key={chapitre.slug}>
+                <Reveal delay={0.18 + idx * 0.07}>
                   <Link
                     href={`/chapitres/${chapitre.slug}`}
-                    className="group grid grid-cols-[3.5rem_1fr_auto] items-baseline gap-5 py-8 sm:grid-cols-[4.5rem_1fr_auto] sm:gap-8 sm:py-10"
+                    className="group flex items-stretch overflow-hidden rounded-3xl border border-cream-dark bg-cream-light transition-all duration-300 hover:-translate-y-0.5 hover:border-champetre hover:shadow-[var(--shadow-lift)]"
+                    style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
                   >
-                    {/* Hanging numeral */}
-                    <span
-                      aria-hidden="true"
-                      className="hanging-numeral select-none transition-colors duration-300 group-hover:text-or"
-                      style={{
-                        fontSize: "var(--text-4xl)",
-                        transitionTimingFunction: "var(--ease-out-quart)",
-                      }}
-                    >
-                      {idx + 1}
-                    </span>
+                    {/* Image */}
+                    <div className="relative w-28 shrink-0 overflow-hidden sm:w-44">
+                      <Image
+                        src={chapitre.image}
+                        alt={chapitre.imageAlt}
+                        fill
+                        sizes="(max-width: 640px) 112px, 176px"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
+                      />
+                    </div>
 
-                    {/* Titre + sous-titre + statut */}
-                    <div className="min-w-0">
+                    {/* Texte */}
+                    <div className="flex min-w-0 flex-1 flex-col justify-center p-5 sm:p-7">
+                      <p className="font-serif text-sm italic text-champetre">
+                        Chapitre {idx + 1}
+                      </p>
                       <h2
-                        className="display text-aubergine transition-colors duration-300 group-hover:text-or"
+                        className="mt-1 display text-aubergine transition-colors duration-300 group-hover:text-or"
                         style={{
-                          fontSize: "var(--text-3xl)",
+                          fontSize: "var(--text-2xl)",
                           transitionTimingFunction: "var(--ease-out-quart)",
                         }}
                       >
-                        <span className="mr-3" aria-hidden="true">{chapitre.emoji}</span>
                         {chapitre.title}
                       </h2>
-                      <p className="mt-2 max-w-[40ch] text-sm leading-relaxed text-aubergine-soft sm:text-base">
+                      <p className="mt-2 text-sm leading-relaxed text-aubergine-soft">
                         {chapitre.subtitle}
                       </p>
-                      <p className="mt-4 font-sans text-xs text-champetre">
-                        {isComplete ? (
-                          <>Les {moduleCount} modules sont là.</>
-                        ) : (
-                          <>{available} sur {moduleCount} modules disponibles.</>
-                        )}
+                      <p className="mt-3 text-xs text-champetre">
+                        {isComplete
+                          ? `Les ${moduleCount} modules sont là.`
+                          : `${available} sur ${moduleCount} modules disponibles.`}
                       </p>
                     </div>
-
-                    {/* Indicateur de direction, baseline du titre */}
-                    <span
-                      aria-hidden="true"
-                      className="self-center text-2xl text-aubergine-soft transition-all duration-300 group-hover:translate-x-1 group-hover:text-or"
-                      style={{ transitionTimingFunction: "var(--ease-out-quart)" }}
-                    >
-                      →
-                    </span>
                   </Link>
                 </Reveal>
               </li>
             );
           })}
         </ol>
-
-        {/* Fin de liste : citation discrète qui ouvre vers la suite */}
-        <Reveal delay={0.6}>
-          <div className="mt-24 border-t border-cream-dark pt-12">
-            <p className="font-serif text-sm italic leading-relaxed text-champetre">
-              Tout finit dans le verre. Mais on apprend mieux quand on commence par le sol.
-            </p>
-          </div>
-        </Reveal>
       </main>
     </>
   );
