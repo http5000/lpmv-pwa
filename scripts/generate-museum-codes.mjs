@@ -93,7 +93,8 @@ for (let i = 1; i <= count; i++) {
 
   try {
     const promoCode = await stripe.promotionCodes.create({
-      coupon: couponId,
+      // API 2026-04-22.dahlia : coupon encapsulé dans promotion.{type,coupon}
+      promotion: { type: "coupon", coupon: couponId },
       code,
       max_redemptions: 1,
       metadata: { source: "museum_lpmv", batch_date: new Date().toISOString().slice(0, 10) },
