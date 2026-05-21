@@ -1,4 +1,5 @@
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { RoueTerroir } from "@/components/roue/RoueTerroir";
 import { countRealCombos, getRoueContent } from "@/lib/content/roue-terroir";
 
@@ -21,6 +22,7 @@ export default function RoueTerroirPage() {
           { label: "Roue Terroir" },
         ]}
       />
+      <PremiumGate label="Roue des Terroirs">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 3 / 3 — Terroir
@@ -77,6 +79,7 @@ export default function RoueTerroirPage() {
           autres attendent que tu les tires.
         </p>
       </main>
+      </PremiumGate>
     </>
   );
 }

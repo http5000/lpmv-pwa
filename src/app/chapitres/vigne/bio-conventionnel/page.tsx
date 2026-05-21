@@ -1,4 +1,5 @@
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { SwipeQuiz } from "@/components/bio-conv/SwipeQuiz";
 import { getBioConvContent } from "@/lib/content/bio-conv";
 
@@ -19,6 +20,7 @@ export default function BioConvPage() {
           { label: "Bio vs Conventionnel" },
         ]}
       />
+      <PremiumGate label="Bio vs Conventionnel">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 3 / 4 — Vigne & Viticulture
@@ -31,6 +33,7 @@ export default function BioConvPage() {
           <SwipeQuiz content={content} />
         </section>
       </main>
+      </PremiumGate>
     </>
   );
 }

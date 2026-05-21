@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import {
   getAllSolSlugs,
   getSolBySlug,
@@ -89,6 +90,7 @@ export default async function SolPage({
           { label: sol.shortTitle },
         ]}
       />
+      <PremiumGate label="Sols du Terroir">
       <main className="mx-auto w-full max-w-screen-sm flex-1 pb-16">
         {/* Hero — image détourée du sol sur fond doux */}
         <div
@@ -229,6 +231,7 @@ export default async function SolPage({
           </Link>
         </div>
       </main>
+      </PremiumGate>
     </>
   );
 }

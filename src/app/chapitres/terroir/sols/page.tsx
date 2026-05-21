@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { SolsMap } from "@/components/sols/SolsMap";
 import { getSolsContent } from "@/lib/content/sols";
 
@@ -21,6 +22,7 @@ export default function SolsPage() {
           { label: "Sols" },
         ]}
       />
+      <PremiumGate label="Sols du Terroir">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 1 / 3 — Terroir
@@ -115,6 +117,7 @@ export default function SolsPage() {
           </Link>
         </div>
       </main>
+      </PremiumGate>
     </>
   );
 }

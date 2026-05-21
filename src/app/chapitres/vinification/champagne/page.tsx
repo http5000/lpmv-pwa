@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { getChampagneContent } from "@/lib/content/champagne";
 
 export const metadata = {
@@ -33,6 +34,7 @@ export default function ChampagnePage() {
           { label: "Champagne" },
         ]}
       />
+      <PremiumGate label="Vinification Champagne">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 3 / 3 — Vinification
@@ -307,6 +309,7 @@ export default function ChampagnePage() {
           </p>
         </section>
       </main>
+      </PremiumGate>
     </>
   );
 }

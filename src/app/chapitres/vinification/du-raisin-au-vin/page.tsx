@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { VinificationTabs } from "@/components/raisin-vin/VinificationTabs";
 import { getRaisinVinContent } from "@/lib/content/raisin-vin";
 
@@ -21,6 +22,7 @@ export default function RaisinVinPage() {
           { label: "Du raisin au vin" },
         ]}
       />
+      <PremiumGate label="Du Raisin au Vin">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 1 / 3 — Vinification
@@ -53,6 +55,7 @@ export default function RaisinVinPage() {
           <VinificationTabs paths={paths} />
         </section>
       </main>
+      </PremiumGate>
     </>
   );
 }

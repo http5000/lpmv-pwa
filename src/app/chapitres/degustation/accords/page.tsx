@@ -1,4 +1,5 @@
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { AccordsExplorer } from "@/components/accords/AccordsExplorer";
 import { DISH_CATEGORIES, PRINCIPES, TRAPS } from "@/lib/content/accords";
 
@@ -18,6 +19,7 @@ export default function AccordsPage() {
           { label: "Accords mets & vin" },
         ]}
       />
+      <PremiumGate label="Accords Mets &amp; Vin">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 4 / 5 — Dégustation
@@ -94,6 +96,7 @@ export default function AccordsPage() {
           </ul>
         </section>
       </main>
+      </PremiumGate>
     </>
   );
 }

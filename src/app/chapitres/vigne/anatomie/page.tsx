@@ -1,4 +1,5 @@
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { VigneScroll } from "@/components/anatomie/VigneScroll";
 import { getAnatomieContent } from "@/lib/content/anatomie";
 
@@ -20,6 +21,7 @@ export default function AnatomiePage() {
           { label: "Anatomie" },
         ]}
       />
+      <PremiumGate label="Anatomie de la Vigne">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 1 / 4 — Vigne & Viticulture
@@ -78,6 +80,7 @@ export default function AnatomiePage() {
             .join("\n")}
         </style>
       </main>
+      </PremiumGate>
     </>
   );
 }

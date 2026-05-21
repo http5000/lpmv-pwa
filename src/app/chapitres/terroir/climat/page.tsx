@@ -1,4 +1,5 @@
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { ClimatsGallery } from "@/components/climats/ClimatsGallery";
 import { getClimatsContent } from "@/lib/content/climats";
 
@@ -21,6 +22,7 @@ export default function ClimatPage() {
           { label: "Climat" },
         ]}
       />
+      <PremiumGate label="Climats du Terroir">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 2 / 3 — Terroir
@@ -62,6 +64,7 @@ export default function ClimatPage() {
           {climats.length} climats à explorer
         </div>
       </main>
+      </PremiumGate>
     </>
   );
 }

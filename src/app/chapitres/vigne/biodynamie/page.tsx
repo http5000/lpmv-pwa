@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { getBiodynamieContent } from "@/lib/content/biodynamie";
 
 export const metadata = {
@@ -81,6 +82,7 @@ export default function BiodynamiePage() {
           { label: "Biodynamie" },
         ]}
       />
+      <PremiumGate label="Biodynamie">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 4 / 4 — Vigne & Viticulture
@@ -373,6 +375,7 @@ export default function BiodynamiePage() {
           </div>
         </section>
       </main>
+      </PremiumGate>
     </>
   );
 }

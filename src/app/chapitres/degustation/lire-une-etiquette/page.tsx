@@ -1,4 +1,5 @@
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { EtiquetteInteractive } from "@/components/etiquette/EtiquetteInteractive";
 import { ZOOMS } from "@/lib/content/etiquette";
 
@@ -18,6 +19,7 @@ export default function EtiquettePage() {
           { label: "Lire une étiquette" },
         ]}
       />
+      <PremiumGate label="Lire une Étiquette">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 3 / 5 — Dégustation
@@ -68,6 +70,7 @@ export default function EtiquettePage() {
           ))}
         </section>
       </main>
+      </PremiumGate>
     </>
   );
 }

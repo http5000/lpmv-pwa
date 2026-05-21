@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { SAISONS, getSaisonBySlug } from "@/lib/content/saisons";
 
 export async function generateStaticParams() {
@@ -49,6 +50,7 @@ export default async function SaisonPage({
           { label: s.name },
         ]}
       />
+      <PremiumGate label="Cycle de la Vigne">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         {/* Hero coloré */}
         <div
@@ -195,6 +197,7 @@ export default async function SaisonPage({
           </Link>
         </div>
       </main>
+      </PremiumGate>
     </>
   );
 }

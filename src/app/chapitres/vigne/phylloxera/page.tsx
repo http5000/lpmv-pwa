@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import { getPhylloxeraContent } from "@/lib/content/phylloxera";
 
 export const metadata = {
@@ -45,6 +46,7 @@ export default function PhylloxeraPage() {
           { label: "Phylloxéra" },
         ]}
       />
+      <PremiumGate label="Le Phylloxera">
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         <p className="font-serif text-sm italic text-champetre">
           Module 2 / 4 — Vigne & Viticulture
@@ -282,6 +284,7 @@ export default function PhylloxeraPage() {
           </p>
         </section>
       </main>
+      </PremiumGate>
     </>
   );
 }

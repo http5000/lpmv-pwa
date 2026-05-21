@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import {
   getAllClimatSlugs,
   getClimatBySlug,
@@ -70,6 +71,7 @@ export default async function ClimatPage({
           { label: c.title.replace(/^Climat\s+/i, "") },
         ]}
       />
+      <PremiumGate label="Climats du Terroir">
       <main className="mx-auto w-full max-w-screen-sm flex-1 pb-16">
         {/* Hero */}
         <div
@@ -163,6 +165,7 @@ export default async function ClimatPage({
           </Link>
         </div>
       </main>
+      </PremiumGate>
     </>
   );
 }

@@ -1,11 +1,15 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
+import { PremiumGate } from "@/components/PremiumGate";
 import {
   CATEGORY_META,
   LECONS,
   getLeconBySlug,
 } from "@/lib/content/lecons";
+
+/** Leçons accessibles sans abonnement premium */
+const FREE_LECONS = ["erreurs-debutant", "temperature-service", "vocabulaire-base"] as const;
 
 export async function generateStaticParams() {
   return LECONS.map((l) => ({ lecon: l.slug }));
@@ -33,6 +37,8 @@ export default async function LeconPage({
   const cat = CATEGORY_META[l.category];
 
   // Prev/next dans la même catégorie ? Plus simple : prev/next dans toutes les leçons
+  const isFree = (FREE_LECONS as readonly string[]).includes(slug);
+
   const index = LECONS.findIndex((x) => x.slug === slug);
   const prev = index > 0 ? LECONS[index - 1] : null;
   const next = index < LECONS.length - 1 ? LECONS[index + 1] : null;
@@ -47,6 +53,7 @@ export default async function LeconPage({
           { label: l.title },
         ]}
       />
+      <PremiumGate label={l.title} skip={isFree}>
       <main className="mx-auto w-full max-w-screen-sm flex-1 px-5 pb-16 pt-6">
         {/* Hero */}
         <div
@@ -144,6 +151,7 @@ export default async function LeconPage({
           </Link>
         </div>
       </main>
+      </PremiumGate>
     </>
   );
 }
