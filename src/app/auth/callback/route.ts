@@ -7,8 +7,16 @@
  *
  * Erreurs : si pas de code ou échec d'échange, on redirige vers /compte?error=...
  * pour donner un feedback explicite — jamais d'erreur opaque.
+ *
+ * Note Capacitor : quand CAPACITOR_BUILD=1, Next.js fait un export statique et ne
+ * peut pas inclure de Route Handlers dynamiques. On force "force-static" pour que
+ * le build passe — au build time il n'y a pas de code donc cette route retourne
+ * une simple redirection vers /compte?error=missing_code, ce qui est un fichier
+ * statique inoffensif. Dans l'app native, l'auth est gérée par CapacitorAuthHandler
+ * via le deep link lpmv://auth/callback ; cette route n'est jamais utilisée.
  */
 import { NextResponse, type NextRequest } from "next/server";
+
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export async function GET(request: NextRequest) {

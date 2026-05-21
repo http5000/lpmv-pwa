@@ -3,18 +3,18 @@ import { AppHeader } from "@/components/AppHeader";
 import { CarnetList } from "@/components/degustation/CarnetList";
 import { AuthStatusPill } from "@/components/account/AuthStatusPill";
 import { Reveal } from "@/components/motion/Reveal";
-import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export const metadata = {
   title: "Mon carnet de cave — Dégustation",
   description: "Toutes tes dégustations enregistrées, en un seul endroit.",
 };
 
-export default async function CarnetPage() {
-  const supabase = await createSupabaseServerClient();
-  const { data } = await supabase.auth.getUser();
-  const email = data.user?.email ?? null;
-
+/**
+ * Shell statique — compatible export Capacitor et Vercel SSR.
+ * AuthStatusPill lit la session côté client (useSession), pas besoin
+ * de createSupabaseServerClient ici.
+ */
+export default function CarnetPage() {
   return (
     <>
       <AppHeader
@@ -49,7 +49,7 @@ export default async function CarnetPage() {
 
         <Reveal delay={0.18}>
           <div className="mt-6">
-            <AuthStatusPill email={email} next="/chapitres/degustation/carnet" />
+            <AuthStatusPill next="/chapitres/degustation/carnet" />
           </div>
         </Reveal>
 

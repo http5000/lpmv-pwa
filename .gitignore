@@ -42,3 +42,14 @@ next-env.d.ts
 
 .vercel
 .env*.local
+
+# Capacitor — native build artifacts
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+ios/Pods/
+ios/.xcode.env.local
+*.ipa
+*.apk
+*.aab

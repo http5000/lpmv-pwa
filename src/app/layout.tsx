@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Josefin_Sans } from "next/font/google";
 import "./globals.css";
+import { CapacitorAuthHandler } from "@/components/CapacitorAuthHandler";
 
 /**
  * Typographies — charte LPMV
@@ -54,6 +55,7 @@ export default function RootLayout({
       className={`${serif.variable} ${sans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-aubergine font-sans">
+        <CapacitorAuthHandler />
         {children}
       </body>
     </html>
