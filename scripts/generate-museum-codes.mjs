@@ -53,7 +53,18 @@ if (!STRIPE_SECRET_KEY || STRIPE_SECRET_KEY.includes("REMPLACER")) {
 const stripe = new Stripe(STRIPE_SECRET_KEY, { apiVersion: "2026-04-22.dahlia" });
 
 const count = parseInt(process.argv[2] ?? "10", 10);
-const prefix = (process.argv[3] ?? "MUSEE").toUpperCase().replace(/[^A-Z0-9]/g, "");
+const prefix = (process.argv[3] ?? "CAVE").toUpperCase().replace(/[^A-Z0-9]/g, "");
+
+// Charset sans caractères ambigus (0/O, 1/I/L)
+const CHARSET = "ABCDEFGHJKMNPQRSTUVWXYZ23456789";
+
+function randomCode(pfx) {
+  let rand = "";
+  for (let i = 0; i < 6; i++) {
+    rand += CHARSET[Math.floor(Math.random() * CHARSET.length)];
+  }
+  return `${pfx}-${rand.slice(0, 3)}-${rand.slice(3)}`;
+}
 
 if (isNaN(count) || count < 1 || count > 500) {
   console.error("❌  count doit être entre 1 et 500");
@@ -87,9 +98,12 @@ const results = [];
 let created = 0;
 let errors = 0;
 
-for (let i = 1; i <= count; i++) {
-  const paddedIndex = String(i).padStart(4, "0");
-  const code = `${prefix}-${paddedIndex}`;
+const usedCodes = new Set();
+for (let i = 0; i < count; i++) {
+  // Générer un code unique dans ce batch
+  let code;
+  do { code = randomCode(prefix); } while (usedCodes.has(code));
+  usedCodes.add(code);
 
   try {
     const promoCode = await stripe.promotionCodes.create({
